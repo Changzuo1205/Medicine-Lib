@@ -5,6 +5,9 @@
 # Raw source materials
 02_Raw/
 
+!02_Raw/Lectures/
+!02_Raw/Lectures/**
+
 # Temporary processing files
 temp/
 

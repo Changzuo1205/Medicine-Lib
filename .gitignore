@@ -1,0 +1,12 @@
+# Claudeian local state
+.claudian/
+
+# Obsidian device/workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Temporary processing files
+temp/
+
+# Obsidian trash
+.trash/

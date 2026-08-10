@@ -12,6 +12,10 @@
 temp/
 
 .obsidian/workspace.json
+.obsidian/plugins/
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/graph.json
 
 # Claude local/session data
 .claudian/

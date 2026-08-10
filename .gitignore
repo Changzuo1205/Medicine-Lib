@@ -1,12 +1,18 @@
-# Claudeian local state
-.claudian/
+# =========================
+# Medicine-Lib Git Sync
+# =========================
 
-# Obsidian device/workspace state
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+# Raw source materials
+02_Raw/
 
 # Temporary processing files
 temp/
 
-# Obsidian trash
-.trash/
+.obsidian/workspace.json
+
+# Claude local/session data
+.claudian/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db

@@ -1,6 +1,7 @@
 ---
 type: system
 status: active
+last_updated: 2026-09-07
 tags:
   - system/status
 ---
@@ -9,15 +10,31 @@ tags:
 
 用于跟踪知识库中需要关注的知识。
 
+## 摘要（2026-09-07 /study 后更新）
+
+- **V2 结构**：`Physiology/` 与 `Pathophysiology/` 已退役（38 节点存档），活跃节点 5
+- **活跃概念节点**：5（1 Disease · 4 Immunology）
+- **已注册学科**：1（`[[03_Concepts/Immunology/README|Immunology]]`）
+- **已摄入讲座**：5 份
+- **已注册来源**：4 个讲座 ID
+- **学习材料（本次 /study 后）**：
+  - Questions：**15 活跃**（Q-Imm-01 ~ 15，仅 Immunology）— 详见 `[[05_Study/Questions/README|Questions]]`
+  - Flashcards：**10 张**（FC-Imm-01 ~ 10）— 详见 `[[05_Study/Flashcards/README|Flashcards]]`
+  - Review Session：**1 个**（`Session-2026-09-07-Immunology-Overview`）— 详见 `[[05_Study/Review/README|Review]]`
+  - Wrong-Answers：0（首次 /study，尚未产生错题）
+- **Source Status**：全部 5 节点 `source_status: needs_review`（lecture-derived）
+- **退役题目**：27 道（Q-CircS2-01..10 + Q-Ur-01..15 + Quiz-GI-* x 2）— 已移至 `[[99_System/Archive/Questions-Retired/|Questions-Retired]]`，对应未注册学科（Cardiology/Nephrology/Gastroenterology）注册时可复活
+- **Knowledge Gaps**：见 [[03_Concepts/Immunology/README|Immunology README]] 待建清单；后续章节（抗体 / 补体 / 细胞因子 / MHC / TCR 信号 / 超敏分型 等）尚未摄入
+
 ## Knowledge Gaps
 
-_（暂无）_
+_（暂无具体条目 — 见 Dashboard 的 Knowledge Gaps 表格）_
 
 | 日期 | 主题 | 缺口描述 | 来源需求 | 状态 |
 
 ## Needs Review
 
-_（暂无）_
+_（暂无 — 全部 lecture-derived 节点均带 `source_status: needs_review` 标记，但未单独列）_
 
 | 日期 | 节点 | 原因 | 优先级 | 状态 |
 

@@ -35,7 +35,8 @@ tags:
 - [[03_Concepts/Tests/README|Tests]]
 - [[03_Concepts/Drugs/README|Drugs]]
 - [[03_Concepts/Procedures/README|Procedures]]
-- [[03_Concepts/Pathophysiology/README|Pathophysiology]]
+- [[03_Concepts/Immunology/README|Immunology]]（已注册学科）
+- [[99_System/Archive/Concepts-Retired/|Concepts-Retired Archive]]（V1 按知识类型节点存档）
 
 ## 临床推理入口
 

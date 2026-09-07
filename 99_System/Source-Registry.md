@@ -34,6 +34,7 @@ _（暂无）_
 | S-LEC-001 | Circulation Section 2 — Electrophysiology & Physiological Properties of Cardiac Muscle | 马泽刚 | 2026.04 | needs_review |
 | S-LEC-002 | Circulation Section 3 — Physiology of the Blood Vessels | 马泽刚 | 2026.05 | needs_review |
 | S-LEC-003 | Gastrointestinal Function: Digestion and Absorption（消化和吸收） | 杜希恂 | 2026 | needs_review |
+| S-LEC-004 | Medical Immunology Chapter 1 — 免疫学概述（Immunology Overview） | 杨艳艳 | 2026 秋 | needs_review |
 
 ## Other Sources — 其他
 

@@ -38,4 +38,5 @@ Medicine-Lib/
 - [[Knowledge-Status]] — 知识状态跟踪（Knowledge Gaps / Needs Review / 冲突 / 无来源 / 过时）
 - [[Source-Registry]] — 来源登记表
 - [[Change-Log]] — 结构变更日志
+- [[Textbook-Import-SOP]] — 教材导入流程（Reference Registration 标准操作流程 + 命令模板）
 - [[99_System/Templates/01_Disease|Templates]] — 知识节点模板（15 个）

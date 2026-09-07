@@ -176,19 +176,33 @@ AI 不应随意修改原始资料。
 
 这是核心知识库。
 
+**V2（2026-09-07 起）改用"按学科组织"为主。** V1 中的 `Physiology/` 与 `Pathophysiology/` 目录已废弃删除（详见 [[Change-Log]] 2026-09-07 第三条）。
+
 包括：
 
 ```text
+# 已注册学科（Disciplines）
+Immunology/             ← V2 新增，按学科组织；目录内可混合 physiology / pathophysiology 类型
+
+# 跨学科"知识类型"目录（保留）
 Diseases/
 Symptoms/
 Signs/
 Tests/
 Drugs/
 Procedures/
-Pathophysiology/
 ```
 
 每个重要医学概念尽可能建立独立 Markdown 文件。
+
+**新建节点规则（V2）**：
+
+1. 优先放在**已注册学科目录**下（如 `Immunology/`）
+2. `frontmatter.type` 标识知识类型（physiology / pathophysiology / disease / drug …）
+3. `frontmatter.tags` 必须包含学科标签（如 `medicine/immunology`）与类型标签
+4. 严禁新建 `Physiology/` 或 `Pathophysiology/` 目录；新节点禁止放入 Archive
+
+**注册新学科**：在 `03_Concepts/<学科>/` 下建立目录，创建 `README.md`，迁移相关节点。
 
 ---
 

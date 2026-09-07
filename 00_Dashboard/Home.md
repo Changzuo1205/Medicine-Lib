@@ -19,9 +19,9 @@ last_refresh: 2026-09-07
 | AGENTS.md 规范 | ✅ 已就绪 | 32 节规则完整；V2 起改用"按学科组织" |
 | 目录骨架 | ✅ 已就绪 | 00–07 + 99 + 08_Courses |
 | 已注册学科 | 1 | `[[03_Concepts/Immunology/README\|Immunology]]` |
-| 知识节点 | ✅ 已创建 | 1 Disease · 4 Immunology = **5 节点**（active 状态） |
+| 知识节点 | ✅ 已创建 | 1 Disease · 4 Immunology · 7 Infectious Disease = **12 节点**（active 状态） |
 | 退役存档 | 38 节点 | 见 [[99_System/Archive/Concepts-Retired/\|Concepts-Retired]]（按学科注册时可复活） |
-| 原始资料 | ✅ 部分导入 | 5 份课程 PDF 在 `02_Raw/Lectures/`（Circulation §2/§3、Urine 2026 春、GI Digestion、免疫学绪论） |
+| 原始资料 | ✅ 部分导入 | 7 份课程 PDF 在 `02_Raw/Lectures/`（Circulation §2/§3、Urine 2026 春、GI Digestion、免疫学绪论、病原与感染性疾病Ⅰ绪论 + 细菌形态与结构） |
 | 临床推理材料 | ⚠️ 尚未创建 | `04_Clinical/` 全部子目录空 |
 | 学习材料 | ✅ 部分创建 | 27 道题（10 CircS2 + 12 Ur + 3 Ur Review Set + 2 Quiz）；Flashcards / Wrong-Answers / Review 仍空 |
 | 模板 | ✅ 已就绪 | 20 套模板在 `99_System/Templates/` |
@@ -32,6 +32,7 @@ last_refresh: 2026-09-07
 ### 已注册学科
 
 - [[03_Concepts/Immunology/README|Immunology]] — 免疫学（4 节点）
+- [[03_Concepts/Infectious Disease/README|Infectious Disease]] — 病原与感染性疾病 Ⅰ（0 节点，待 /ingest）
   - [[Immune System]] · [[Innate Immunity]] · [[Adaptive Immunity]] · [[Immune Dysregulation]]
 
 ### 待注册的学科候选（基于已退役知识，未来按需注册）
@@ -99,6 +100,7 @@ _（尚无内容 — 学习活动开始后在此记录）_
 | 药物节点 | `03_Concepts/Drugs/` | 高 |
 | 操作/治疗节点 | `03_Concepts/Procedures/` | 中 |
 | 免疫学子节点 | `03_Concepts/Immunology/` 内"待建"清单 | 高（详见 [[03_Concepts/Immunology/README\|Immunology README]]） |
+| 病原与感染疾病 Ⅰ 节点 | `03_Concepts/Infectious Disease/` 内待建清单 | 高（详见 [[03_Concepts/Infectious Disease/README\|Infectious Disease README]]） |
 | 鉴别诊断 | `04_Clinical/Differential/` | 高 |
 | 临床算法 | `04_Clinical/Algorithms/` | 高 |
 | 病例 | `04_Clinical/Cases/` | 中 |

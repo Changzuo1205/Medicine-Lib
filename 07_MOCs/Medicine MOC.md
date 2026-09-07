@@ -36,6 +36,7 @@ tags:
 - [[03_Concepts/Drugs/README|Drugs]]
 - [[03_Concepts/Procedures/README|Procedures]]
 - [[03_Concepts/Immunology/README|Immunology]]（已注册学科）
+- [[03_Concepts/Infectious Disease/README|Infectious Disease]]（已注册学科 — 病原与感染性疾病 Ⅰ）
 - [[99_System/Archive/Concepts-Retired/|Concepts-Retired Archive]]（V1 按知识类型节点存档）
 
 ## 临床推理入口

@@ -182,7 +182,8 @@ AI 不应随意修改原始资料。
 
 ```text
 # 已注册学科（Disciplines）
-Immunology/             ← V2 新增，按学科组织；目录内可混合 physiology / pathophysiology 类型
+Immunology/             ← V2 注册学科 1（4 节点）
+Infectious Disease/     ← V2 注册学科 2（病原与感染性疾病 Ⅰ，0 节点，待 /ingest）
 
 # 跨学科"知识类型"目录（保留）
 Diseases/

@@ -138,3 +138,84 @@ tags:
 
 - Archive 文件 `99_System/Archive/Questions-Retired/` 完全保留，**未真正删除**
 - 如需彻底删除，请告知
+
+## 2026-09-07 — 注册新学科：病原与感染性疾病 Ⅰ
+
+> 用户反馈：注册"病原与感染性疾病 Ⅰ"为新学科。这是 V2 重构后**第二个**已注册学科。
+
+### 操作
+
+- **新建学科目录**：`03_Concepts/Infectious Disease/`
+- **新建 README**：`03_Concepts/Infectious Disease/README.md` — 包含学科范围（病原生物学 / 抗感染免疫 / 各系统感染性疾病 / 抗感染药物 / 诊断）、待建节点清单（病原 / 疾病 / 药物 / 机制 / 检查 / 算法 / 病例）、使用规则
+
+### 文件结构
+
+```
+03_Concepts/
+├── Immunology/                        ← 已注册学科 1（4 节点）
+└── Infectious Disease/                ← 已注册学科 2（0 节点，待 /ingest）
+    └── README.md
+```
+
+### 系统文件更新
+
+- `[[00_Dashboard/Home|Dashboard]]` — 顶部统计"已注册学科"改为 2；新增 Infectious Disease 条目与 Knowledge Gaps 行
+- `[[07_MOCs/Medicine MOC|Medicine MOC]]` — 新增 `Infectious Disease` 链接
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 更新已注册学科数
+
+### 与现有结构的关系
+
+- 与 `[[06_Specialties/Infectious Disease/README|06_Specialties/Infectious Disease]]`（专科导航）共存 — 专科导航保留 06 层职责
+- 与 `[[Infectious Disease MOC]]`（导航页）共存 — MOC 在 07 层，学科在 03 层
+- 与 `[[03_Concepts/Immunology|Immunology]]` 协作 — 免疫学概念放 Immunology；本学科只放感染相关免疫应用（如免疫逃逸、疫苗等）
+
+### 待 /ingest
+
+- 等用户提供病原与感染性疾病 Ⅰ 的课程 PPT / 教材后，按 `/ingest` 流程建立具体 Concept 节点
+- README 中已列出待建节点清单（按病原 / 疾病 / 药物 / 机制 / 检查 / 算法 / 病例分类）
+
+## 2026-09-07 — /ingest 病原与感染性疾病Ⅰ 绪论 + 第1章 细菌的形态与结构
+
+> 用户对刚注册的 `[[03_Concepts/Infectious Disease|Infectious Disease]]` 学科执行首次 /ingest。原始资料：`02_Raw/Lectures/1 绪论.pdf`（36 页）+ `02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf`（16 页），讲者赵巍（病原生物学教研室）。
+
+### 注册讲座来源
+
+- `S-LEC-005` — 《绪论》（赵巍，2026 秋）
+- `S-LEC-006` — 《第1章 细菌的形态与结构》（赵巍，2026 秋）
+
+### Created（Course / Lecture 层）
+
+- `[[08_Courses/Pathogen and Infectious Diseases I/Course|病原与感染性疾病Ⅰ Course]]`
+- `[[08_Courses/Pathogen and Infectious Diseases I/Lectures/01 绪论|01 绪论 Lecture]]`
+- `[[08_Courses/Pathogen and Infectious Diseases I/Lectures/02 细菌的形态与结构|02 细菌的形态与结构 Lecture]]`
+
+### Created（Concept 层 — 全部放在 `03_Concepts/Infectious Disease/`）
+
+| 节点 | type | 核心内容 |
+|------|------|----------|
+| [[Medical Microbiology]] | pathophysiology | 学科定义、研究对象（病原体三大类）、学科任务（病原学/致病机制/诊断防治） |
+| [[Microbial Classification]] | pathophysiology | 微生物三大类对比（大小、细胞结构、细胞器、细胞核、核酸、能量代谢） |
+| [[Infection vs Transmission]] | pathophysiology | 感染 vs 传染的关键区分；耳源性脑膜炎 vs 流脑 |
+| [[Koch's Postulates]] | pathophysiology | 郭霍法则经典四条件 + 现代修正原因 + Fredericks 1996 修正案 |
+| [[Bacterium]] | pathophysiology | 细菌定义（两大特征：原始核质 + 肽聚糖）+ 广义 vs 狭义 + 6 类原核细胞型微生物 |
+| [[Bacterial Morphology]] | pathophysiology | μm 测量 + 三种基本形态 + 球菌排列 + 螺形菌 4 属 + 典型 vs 衰退型 |
+| [[Bacterial Structure]] | pathophysiology | 基本结构（4 种）+ 特殊结构（4 种）+ 革兰染色临床意义 + L 型菌 + 芽胞 |
+
+### Updated
+
+- `[[99_System/Source-Registry|Source-Registry]]` — 追加 S-LEC-005/006
+- `[[00_Dashboard/Home|Dashboard]]` — 顶部统计更新（学科已注册 2、活跃节点 +7 = 12）
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 摘要更新（Infectious Disease 7 节点）
+
+### 未变更
+
+- `02_Raw/Lectures/1 绪论.pdf`、`02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf` — 未修改
+- `AGENTS.md` — 未修改
+- `03_Concepts/Immunology/` — 未触及
+
+### 待 /ingest 后续章节
+
+- 第2章 细菌的生理（生长繁殖、代谢、遗传变异）
+- 第3章 细菌的致病性与抗感染免疫
+- 第4-14 章：各类细菌（球菌、杆菌、螺形菌、放线菌、支原体、衣原体、立克次体、螺旋体）
+- 第15章+：真菌、寄生虫

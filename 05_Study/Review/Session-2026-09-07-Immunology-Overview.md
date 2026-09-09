@@ -5,7 +5,7 @@ course: "[[08_Courses/Medical Immunology/Course|医学免疫学]]"
 date: 2026-09-07
 scope: 免疫学概述（Chapter 1）
 method: recall + interpretation + clinical reasoning + MCQ
-source: "[[02_Raw/Lectures/第一章 免疫学概述.pdf|S-LEC-004]]"
+source: "[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|S-LEC-004]]"
 ---
 
 # /study Session — 免疫学概述（2026-09-07）

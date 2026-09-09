@@ -23,7 +23,7 @@ last_reviewed: 2026-09-07
 **三大特点**：特异性、耐受性、记忆性。
 
 > [!info] 来源
-> - 主来源：[[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
+> - 主来源：[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
 > - 来源登记：[[Source-Registry#S-LEC-004]]
 > - evidence_level: C；source_status: needs_review
 
@@ -161,7 +161,7 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
+- [[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
 - 来源登记：[[Source-Registry#S-LEC-004]]
 - evidence_level: C
 - source_status: needs_review（"4~5 天起效"是经验时间，特定抗原与既往暴露史会改变时相；Th17 / Treg 等扩展亚群未在 PPT 中详述）

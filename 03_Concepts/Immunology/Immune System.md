@@ -19,7 +19,7 @@ last_reviewed: 2026-09-07
 免疫系统是机体执行免疫功能的物质基础，由免疫器官和组织、免疫细胞、免疫分子三部分组成，承担**免疫防御、免疫监视、免疫自稳**三项基本功能。
 
 > [!info] 来源
-> - 主来源：[[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]]
+> - 主来源：[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]]
 > - 来源登记：[[Source-Registry#S-LEC-004]]
 > - evidence_level: C（医学教材 / 课程资料）；source_status: needs_review（待与权威教材逐句核对）
 
@@ -164,7 +164,7 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — Sections 1, 3, 6
+- [[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — Sections 1, 3, 6
 - 来源登记：[[Source-Registry#S-LEC-004]]
 - evidence_level: C（医学教材 / 课程 PPT）
 - source_status: needs_review（PPT 中部分细节如脾脏细胞比例、肝脏 APC 名单等需对照标准教材核对）

@@ -37,6 +37,8 @@ _（暂无）_
 | S-LEC-004 | Medical Immunology Chapter 1 — 免疫学概述（Immunology Overview） | 杨艳艳 | 2026 秋 | needs_review |
 | S-LEC-005 | Medical Microbiology Chapter 0 — 绪论（赵巍，2026 秋） | 赵巍 | 2026 秋 | needs_review |
 | S-LEC-006 | Medical Microbiology Chapter 1 — 细菌的形态与结构（Bacterial Morphology & Structure） | 赵巍 | 2026 秋 | needs_review |
+| S-LEC-007 | Clinical Epidemiology Chapter 0 — 流行病学绪论（栗世如，2026 秋） | 栗世如 | 2026 秋 | needs_review |
+| S-LEC-008 | Clinical Epidemiology Chapter 1 — 疾病的分布（Distribution of Disease） | 栗世如 | 2026 秋 | needs_review |
 
 ## Other Sources — 其他
 

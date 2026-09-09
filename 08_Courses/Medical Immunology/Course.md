@@ -80,5 +80,5 @@ _（暂无；待 review 后补充）_
 
 ## Source
 
-- 课程 PPT：[[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳）]]
+- 课程 PPT：[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳）]]
 - 来源登记：[[Source-Registry#S-LEC-004]]

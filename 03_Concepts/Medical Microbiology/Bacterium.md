@@ -4,7 +4,7 @@ status: active
 specialties:
   - Infectious Disease
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
   - medicine/microbiology
   - medicine/pathogen
@@ -25,7 +25,7 @@ last_reviewed: 2026-09-07
 2. 绝大多数具有**肽聚糖（peptidoglycan）**
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — p3
+> - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — p3
 > - 来源登记：[[Source-Registry#S-LEC-006]]
 
 ## Pathological Mechanism
@@ -62,5 +62,5 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf]] — p3
+- [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf]] — p3
 - 来源登记：[[Source-Registry#S-LEC-006]]

@@ -13,10 +13,10 @@ tags:
 ## 摘要（2026-09-07 /study 后更新）
 
 - **V2 结构**：`Physiology/` 与 `Pathophysiology/` 已退役（38 节点存档），活跃节点 5
-- **活跃概念节点**：12（1 Disease · 4 Immunology · 7 Infectious Disease）
-- **已注册学科**：2（`[[03_Concepts/Immunology/README|Immunology]]` · `[[03_Concepts/Infectious Disease/README|Infectious Disease]]`）
-- **已摄入讲座**：7 份
-- **已注册来源**：6 个讲座 ID（S-LEC-001 ~ 006，见 [[Source-Registry]]）
+- **活跃概念节点**：29（1 Disease · 4 Immunology · 7 Medical Microbiology · **17 Clinical Epidemiology**；Human Parasitology 0 节点待 /ingest）
+- **已注册学科**：4（`[[03_Concepts/Immunology|Immunology]]` · `[[03_Concepts/Medical Microbiology|Medical Microbiology]]` · `[[03_Concepts/Human Parasitology|Human Parasitology]]` · `[[03_Concepts/Clinical Epidemiology|Clinical Epidemiology]]`）
+- **已摄入讲座**：9 份（含临床流行病学 2 讲：绪论、疾病的分布）；**02_Raw/Lectures/ 已按学科子目录重组**（4 个学科）
+- **已注册来源**：8 个讲座 ID（S-LEC-001 ~ 008）（S-LEC-001 ~ 006，见 [[Source-Registry]]）
 - **学习材料（本次 /study 后）**：
   - Questions：**15 活跃**（Q-Imm-01 ~ 15，仅 Immunology）— 详见 `[[05_Study/Questions/README|Questions]]`
   - Flashcards：**10 张**（FC-Imm-01 ~ 10）— 详见 `[[05_Study/Flashcards/README|Flashcards]]`

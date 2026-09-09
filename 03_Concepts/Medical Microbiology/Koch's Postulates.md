@@ -5,7 +5,7 @@ specialties:
   - Infectious Disease
   - History of Medicine
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
   - medicine/hypothesis
 evidence_level: C
@@ -20,7 +20,7 @@ last_reviewed: 2026-09-07
 1884 年由德国科学家**罗伯特·郭霍（Robert Koch, 1843—1910）** 提出，用于确定某种特定微生物是否为某种特定疾病的病原体的**经典判据**。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 第三节
+> - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 第三节
 > - 来源登记：[[Source-Registry#S-LEC-005]]
 
 ## Pathological Mechanism
@@ -60,6 +60,6 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 绪论.pdf]] — p23-25
+- [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p23-25
 - 来源登记：[[Source-Registry#S-LEC-005]]
 - 进一步参考：Koch R. *Mittheilungen aus dem Kaiserlichen Gesundheitsamte* 1884; 2:1-18.

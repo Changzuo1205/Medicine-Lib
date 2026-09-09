@@ -29,7 +29,7 @@ last_reviewed: 2026-09-07
 当免疫系统的**成分缺乏 / 功能缺陷**、**免疫应答水平过高或过低**、或**对自身抗原的免疫耐受被打破**、或**免疫调节功能发生紊乱**时，所出现的异常免疫应答可导致相关疾病的发生。
 
 > [!info] 来源
-> - 主来源：[[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第五节
+> - 主来源：[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第五节
 > - 来源登记：[[Source-Registry#S-LEC-004]]
 > - evidence_level: C；source_status: needs_review
 
@@ -105,7 +105,7 @@ _（待建，按疾病表逐项建立 Disease 节点后再回链）_
 
 ## Sources
 
-- [[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第五节、第七节、第八节主线图
+- [[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第五节、第七节、第八节主线图
 - 来源登记：[[Source-Registry#S-LEC-004]]
 - evidence_level: C
 - source_status: needs_review（PPT 仅给分类与例子，未给出具体分子机制或临床流行病学数据；超敏反应分型见后续章节）

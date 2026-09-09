@@ -183,7 +183,9 @@ AI 不应随意修改原始资料。
 ```text
 # 已注册学科（Disciplines）
 Immunology/             ← V2 注册学科 1（4 节点）
-Infectious Disease/     ← V2 注册学科 2（病原与感染性疾病 Ⅰ，0 节点，待 /ingest）
+Medical Microbiology/   ← V2 注册学科 2（医学微生物学，7 节点；从病原与感染性疾病 Ⅰ 拆分）
+Human Parasitology/     ← V2 注册学科 3（人体寄生虫学，0 节点；从病原与感染性疾病 Ⅰ 拆分，待 /ingest）
+Clinical Epidemiology/ ← V2 注册学科 4（临床流行病学，0 节点，待 /ingest）
 
 # 跨学科"知识类型"目录（保留）
 Diseases/

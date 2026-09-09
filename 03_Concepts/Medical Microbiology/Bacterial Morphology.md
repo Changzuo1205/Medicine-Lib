@@ -4,7 +4,7 @@ status: active
 specialties:
   - Infectious Disease
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
   - medicine/microbiology
 evidence_level: C
@@ -19,7 +19,7 @@ last_reviewed: 2026-09-07
 细菌的**大小**（以 μm 为单位）与**形态**（球菌、杆菌、螺形菌）特征。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — 第一节
+> - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — 第一节
 > - 来源登记：[[Source-Registry#S-LEC-006]]
 
 ## Pathological Mechanism
@@ -77,5 +77,5 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf]] — p5-15
+- [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf]] — p5-15
 - 来源登记：[[Source-Registry#S-LEC-006]]

@@ -176,7 +176,7 @@ tags:
 
 ## 2026-09-07 — /ingest 病原与感染性疾病Ⅰ 绪论 + 第1章 细菌的形态与结构
 
-> 用户对刚注册的 `[[03_Concepts/Infectious Disease|Infectious Disease]]` 学科执行首次 /ingest。原始资料：`02_Raw/Lectures/1 绪论.pdf`（36 页）+ `02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf`（16 页），讲者赵巍（病原生物学教研室）。
+> 用户对刚注册的 `[[03_Concepts/Infectious Disease|Infectious Disease]]` 学科执行首次 /ingest。原始资料：`02_Raw/Lectures/Medical Microbiology/1 绪论.pdf`（36 页）+ `02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf`（16 页），讲者赵巍（病原生物学教研室）。
 
 ### 注册讲座来源
 
@@ -209,7 +209,7 @@ tags:
 
 ### 未变更
 
-- `02_Raw/Lectures/1 绪论.pdf`、`02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf` — 未修改
+- `02_Raw/Lectures/Medical Microbiology/1 绪论.pdf`、`02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf` — 未修改
 - `AGENTS.md` — 未修改
 - `03_Concepts/Immunology/` — 未触及
 
@@ -219,3 +219,282 @@ tags:
 - 第3章 细菌的致病性与抗感染免疫
 - 第4-14 章：各类细菌（球菌、杆菌、螺形菌、放线菌、支原体、衣原体、立克次体、螺旋体）
 - 第15章+：真菌、寄生虫
+
+## 2026-09-08 — 学科拆分：病原与感染性疾病Ⅰ → 医学微生物学 + 人体寄生虫学
+
+> 用户反馈：将"病原与感染性疾病Ⅰ"按学科本质拆分为两个独立学科：**医学微生物学（Medical Microbiology）** + **人体寄生虫学（Human Parasitology）**。原课程包含 微生物（44 课时）+ 寄生虫（22 课时）= 66 课时。
+
+### 拆分前后
+
+| | 拆分前 | 拆分后 |
+|---|--------|--------|
+| 课程 | 病原与感染性疾病Ⅰ | 医学微生物学 + 人体寄生虫学 |
+| 学科目录 | `03_Concepts/Infectious Disease/` | `03_Concepts/Medical Microbiology/` + `03_Concepts/Human Parasitology/` |
+| Course 目录 | `08_Courses/Pathogen and Infectious Diseases I/` | `08_Courses/Medical Microbiology/` + `08_Courses/Human Parasitology/` |
+
+### 操作
+
+#### Concept 层
+
+- **新建** `03_Concepts/Medical Microbiology/` 学科目录
+- **新建** `03_Concepts/Human Parasitology/` 学科目录
+- **移动 7 个 Concept 节点**（全部属于微生物学）：
+  - Medical Microbiology · Microbial Classification · Infection vs Transmission · Koch's Postulates · Bacterium · Bacterial Morphology · Bacterial Structure
+  - 起点：`03_Concepts/Infectious Disease/` → 终点：`03_Concepts/Medical Microbiology/`
+- **更新 7 个文件的 frontmatter**：将 `tags: medicine/infectious-disease` 改为 `medicine/medical-microbiology`
+- **新建** `03_Concepts/Medical Microbiology/README.md`（专注微生物学范围）
+- **新建** `03_Concepts/Human Parasitology/README.md`（专注寄生虫学范围）
+- **删除** 空目录 `03_Concepts/Infectious Disease/`
+
+#### Course 层
+
+- **移动 Course**：`Pathogen and Infectious Diseases I/Course.md` → `Medical Microbiology/Course.md`
+- **移动 2 个 Lectures**：`Pathogen and Infectious Diseases I/Lectures/{01 绪论, 02 细菌的形态与结构}.md` → `Medical Microbiology/Lectures/`
+- **更新 Course 与 Lectures**：标题改为"医学微生物学"；补充拆分说明；添加 `discipline: Medical Microbiology` 字段
+- **新建** `08_Courses/Human Parasitology/Course.md`（空课程，待 /ingest）
+- **删除** 空目录 `Pathogen and Infectious Diseases I/`
+
+### 系统文件更新
+
+- `[[00_Dashboard/Home|Dashboard]]` — 已注册学科 2→3；活跃节点统计更新；Knowledge Gaps 拆分两行
+- `[[07_MOCs/Medicine MOC|Medicine MOC]]` — 拆分两行（Medical Microbiology + Human Parasitology）
+- `[[07_MOCs/Infectious Disease MOC|Infectious Disease MOC]]` — 顶部说明拆分；分"微生物学"和"寄生虫学"两个 section 引用
+- `[[AGENTS.md|AGENTS]]` — 已注册学科列表更新（2 → 3 个）
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 已注册学科数更新
+
+### 未变更
+
+- 原始 PDF（`02_Raw/Lectures/Medical Microbiology/1 绪论.pdf`、`1 2 第1章 细菌的形态与结构 1.pdf`）— 未修改
+- Source Registry 的 `S-LEC-005/006` — 保持原文件名不变（按 Source-Status 原则，**重新 ingest 时再注册新的寄生虫学章节**）
+- 06_Specialties/Infectious Disease/ — 临床专科导航保留（与学科拆分无关）
+
+### 待 /ingest
+
+- 等用户提供寄生虫学章节 PPT / 教材后，执行 `/ingest 人体寄生虫学 第X章`
+- `03_Concepts/Human Parasitology/README.md` 已列出完整待建节点清单（蠕虫 / 原虫 / 节肢动物 / 寄生虫病 / 抗寄生虫药 / 检查 / 算法 / 病例）
+
+## 2026-09-09 — 注册新学科：临床流行病学（Clinical Epidemiology）
+
+> 用户反馈：注册"临床流行病学"作为第 4 个已注册学科。同时 `02_Raw/Lectures/` 下新增两份临床流行病学 PPTX 原始资料。
+
+### 操作
+
+- **新建学科目录**：`03_Concepts/Clinical Epidemiology/`
+- **新建 README**：`03_Concepts/Clinical Epidemiology/README.md` — 包含学科范围（流行病学基础、病因与因果、研究设计、偏倚与混杂、诊断试验评价、治疗效果评价、预后研究、系统综述/Meta 分析、EBM、公共卫生监测）、待建节点清单、使用规则
+
+### 02_Raw/Lectures 更新
+
+- **新增文件**（2 份 PPTX）：
+  - `02_Raw/Lectures/Clinical Epidemiology/流行病学绪论.pdf`（4.4 MB）
+  - `02_Raw/Lectures/Clinical Epidemiology/疾病的分布.pdf`（5.1 MB）
+- **更新 `02_Raw/Lectures/README.md`** — 重新组织为**按学科分组**的清单：
+  - 医学微生物学（3 份）
+  - 免疫学（1 份）
+  - 临床流行病学（2 份）— 含 PPTX ⚠标注
+  - 人体寄生虫学（0 份，待补充）
+  - 基础学科（前期讲座 — Circulation / Urine / Digestion）
+- **待办项**：
+  - 注册 `S-LEC-007/008`（待用户 /ingest）
+  - 安装 `python-pptx` 库（当前工具基于 pypdf，无法直接提取 PPTX）
+  - 提供临床流行病学后续章节
+  - 提供人体寄生虫学第 1 章及后续章节
+
+### 系统文件更新
+
+- `[[00_Dashboard/Home|Dashboard]]` — 已注册学科 3→4；Knowledge Gaps 新增临床流行病学行
+- `[[07_MOCs/Medicine MOC|Medicine MOC]]` — 新增 Clinical Epidemiology 链接
+- `[[AGENTS.md|AGENTS]]` — 已注册学科列表（3 → 4）
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 已注册学科数（3 → 4）
+
+### 未变更
+
+- 原始 PDF/PPTX 文件 — 未修改
+- 现有 Concept 节点 — 未触及
+- Source Registry（`S-LEC-005/006`）— 未变更；待 /ingest 时再登记新章节
+
+### 待 /ingest
+
+- 等用户执行 `/ingest 临床流行病学 绪论`（或类似指令），时再执行完整 ingest 流程
+- README 已列出完整待建节点清单（按 10 个主题分组）
+
+## 2026-09-09 — /ingest 临床流行病学 绪论 + 疾病的分布
+
+> 用户反馈：对刚注册的 `[[03_Concepts/Clinical Epidemiology|Clinical Epidemiology]]` 学科执行首次 /ingest。原始资料：`02_Raw/Lectures/Clinical Epidemiology/流行病学绪论.pdf`（91 张）+ `02_Raw/Lectures/Clinical Epidemiology/疾病的分布.pdf`（109 张），讲者栗世如（公共卫生学院流行病与卫生统计学系）。
+
+### 工具确认
+
+- **python-pptx 已安装**（版本 1.0.2）→ 可直接提取 PPTX 内容
+- 本次 /ingest 共处理 **200 张 PPT（91 + 109）**
+
+### 注册讲座来源
+
+- `S-LEC-007` — 《流行病学绪论》（栗世如，2026 秋）
+- `S-LEC-008` — 《疾病的分布》（栗世如，2026 秋）
+
+### Created（Course / Lecture 层）
+
+- `[[08_Courses/Clinical Epidemiology/Course|临床流行病学 Course]]`
+- `[[08_Courses/Clinical Epidemiology/Lectures/01 流行病学绪论|01 流行病学绪论 Lecture]]`
+- `[[08_Courses/Clinical Epidemiology/Lectures/02 疾病的分布|02 疾病的分布 Lecture]]`
+
+### Created（Concept 层 — 全部放在 `03_Concepts/Clinical Epidemiology/`）
+
+| 节点 | type | 核心内容 |
+|------|------|----------|
+| [[Epidemiology]] | pathophysiology | 学科定义、三个层次、三个阶段、三种方法、三大要素 |
+| [[History of Epidemiology]] | pathophysiology | 3 阶段 + 关键人物（Hippocrates / Lind / Jenner / Snow / Pasteur / Koch / Doll & Hill / Framingham / INCLEN） |
+| [[Disease Frequency Measures]] | pathophysiology | 测量指标总览（发病 / 患病 / 死亡 + 6 项子指标） |
+| [[Incidence Rate]] | pathophysiology | 三要素 + 平均人口数 + 标准化处理 |
+| [[Prevalence]] | pathophysiology | 时点/期间患病率 + 患病率=发病率×病程 公式 |
+| [[Mortality Rate]] | pathophysiology | 粗死亡率 + 标化死亡率 + 死亡专率 |
+| [[Case Fatality Rate]] | pathophysiology | 与死亡率区别 + SARS 6.55% / 埃博拉 55% |
+| [[Survival Rate]] | pathophysiology | 1/3/5 年生存率 + 与病死率区别 |
+| [[Disease Distribution]] | pathophysiology | 三间分布（人间/时间/空间）总览 |
+| [[Epidemic Intensity]] | pathophysiology | 散发/暴发/流行/大流行 + 暴发 vs 短期波动 |
+| [[Distribution by Population]] | pathophysiology | 年龄/性别/职业/民族/婚姻/行为/流动人口 + 横断面 vs 出生队列分析 |
+| [[Distribution by Time]] | pathophysiology | 短期波动/季节性/周期性/长期趋势 + 伦敦大雾案例 |
+| [[Distribution by Place]] | pathophysiology | 国家间/城乡/聚集性/地方性 + 三类地方性 + 输入性疾病 |
+| [[Migration Epidemiology]] | pathophysiology | 移民流行病学方法学 + 日本移民胃癌经典研究 |
+| [[Clinical Epidemiology (concept)\|Clinical Epidemiology]] | pathophysiology | 1938 John Paul 提出；1982 INCLEN；DME 三要素 |
+| [[Evidence-Based Medicine]] | pathophysiology | "证据在哪里？" + PICO 框架 + 证据等级金字塔 |
+| [[Meta-Analysis]] | pathophysiology | 累积 20万+ RCT 的系统总结；PRISMA；森林图 / 漏斗图 |
+
+### Updated
+
+- `[[99_System/Source-Registry|Source-Registry]]` — 追加 S-LEC-007/008
+- `[[00_Dashboard/Home|Dashboard]]` — 节点数 12 → 29（+17 Clinical Epidemiology）
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 已注册学科仍 4；活跃节点 12 → 29
+
+### 未变更
+
+- `02_Raw/Lectures/*.pptx` — 未修改
+- `AGENTS.md` — 未修改
+- `03_Concepts/{Immunology, Medical Microbiology, Human Parasitology}/` — 未触及
+
+### 待 /ingest 后续章节
+
+- 病因与因果推断（Hill 标准）
+- 研究设计（描述性 / 病例对照 / 队列 / RCT）
+- 偏倚与混杂（3 大类 35 种偏倚）
+- 诊断试验评价（Se / Sp / PPV / NPV / LR / ROC）
+- 治疗效果评价（RR / ARR / NNT / NNH）
+- 预后研究（KM / Cox）
+- 系统综述与 Meta 分析（深入）
+- EBM 与 GRADE 证据分级
+- 公共卫生监测与爆发调查
+- 现场流行病学
+
+## 2026-09-09 — 02_Raw/Lectures/ 重组：按学科建立子目录
+
+> 用户反馈：`02_Raw/Lectures/` 下文件越来越多，需要按课程（学科）分类整理。
+
+### 重组前后
+
+**重组前**（扁平结构）：
+```
+02_Raw/Lectures/
+├── 1 绪论.pdf                            （医学微生物学）
+├── 1 2 第1章 细菌的形态与结构 1.pdf         （医学微生物学）
+├── 第一章 免疫学概述.pdf                      （医学免疫学）
+├── 流行病学绪论.pptx                        （临床流行病学）
+├── 疾病的分布.pptx                          （临床流行病学）
+└── README.md
+```
+
+**重组后**（按学科子目录）：
+```
+02_Raw/Lectures/
+├── Medical Immunology/
+│   └── 第一章 免疫学概述.pdf
+├── Medical Microbiology/
+│   ├── 1 绪论.pdf
+│   └── 1 2 第1章 细菌的形态与结构 1.pdf
+├── Human Parasitology/                    （空目录，待 /ingest）
+├── Clinical Epidemiology/
+│   ├── 流行病学绪论.pptx
+│   └── 疾病的分布.pptx
+└── README.md
+```
+
+### 操作
+
+- **新建 4 个学科子目录**（与 `03_Concepts/` 中已注册学科一一对应）
+- **移动 5 个文件**到对应子目录（保留原始文件名）
+- **保留原始文件名**（避免破坏引用 + 保留追溯性）
+
+### 引用更新
+
+- **批量更新 39 个文件**中的 `02_Raw/Lectures/<file>` → `02_Raw/Lectures/<Discipline>/<file>`：
+  - 18 个 Clinical Epidemiology Concept 节点
+  - 4 个 Immunology Concept 节点
+  - 7 个 Medical Microbiology Concept 节点
+  - 1 个 Review Session
+  - 2 个 Clinical Epidemiology Lectures
+  - 1 个 Medical Immunology Lecture
+  - 2 个 Medical Microbiology Lectures
+  - 3 个 Course 文件（CE / MI / MM）
+  - 1 个 Change-Log（保持链接完整性）
+
+### 系统文件
+
+- `02_Raw/Lectures/README.md` 完全重写：
+  - 顶部增加"组织结构"说明（与已注册学科一一对应）
+  - 各分组更新文件路径
+  - 底部增加"文件整理历史"小节
+
+### 未变更
+
+- 原始 PDF / PPTX 文件内容
+- `02_Raw/Textbooks/` 目录（已有自己的学科子目录）
+- `03_Concepts/`、`04_Clinical/`、`05_Study/` 内容（仅引用路径更新）
+
+### 设计原则
+
+- **学科目录与 03_Concepts/ 一致**：确保原始资料与正式知识按同一坐标系组织
+- **保留原始文件名**：避免破坏引用追溯；命名格式 `<序号> <章节名>`
+- **人类寄生虫学保留空目录**：待 /ingest 后填充
+
+## 2026-09-09 — PPT→PDF 自动转换 + 保留原文件
+
+> 用户反馈：当讲座原始文件为 PPT/PPTX 时，自动转换为 PDF 并保留原文件。
+
+### 转换工具
+
+- **使用**：Python `win32com.client` + Microsoft PowerPoint COM 自动化
+- **方法**：调用 `Presentations.SaveAs(path, 32)`，其中 `32 = ppSaveAsPDF`
+- **前提**：本地需安装 Microsoft PowerPoint（本机已安装 Office 16）
+
+### 操作
+
+- **新建**：`02_Raw/Lectures/Clinical Epidemiology/流行病学绪论.pdf`（4.0 MB，由 .pptx 4.4 MB 转换）
+- **新建**：`02_Raw/Lectures/Clinical Epidemiology/疾病的分布.pdf`（3.8 MB，由 .pptx 5.1 MB 转换）
+- **保留**：原 PPTX 文件**未删除**（用于编辑源）
+
+### Active 文件引用更新（22 个文件）
+
+| 范围 | 文件数 |
+|------|--------|
+| `03_Concepts/Clinical Epidemiology/*.md` | 18 |
+| `08_Courses/Clinical Epidemiology/Course.md` | 1 |
+| `08_Courses/Clinical Epidemiology/Lectures/01,02.md` | 2 |
+| `99_System/Change-Log.md` | 1 |
+| **合计** | **22** |
+
+所有 `*.pptx` 引用 → 改为 `*.pdf`。
+
+### 系统文件
+
+- `02_Raw/Lectures/README.md` 完全重写：
+  - 新增 **"文件格式转换规则"** 章节（PDF 首选 / PPTX 保留 / COM 脚本）
+  - 更新 Clinical Epidemiology 分组（4 文件 = 2 PPTX + 2 PDF）
+
+### 设计原则
+
+- **PDF 为首选引用**：跨平台稳定、可视化好、文件大小通常更小
+- **PPTX 保留为源**：可编辑、保留原始结构
+- **统一引用规范**：Active 文件统一指向 PDF，PPTX 仅作源
+
+### 待 /ingest 规则更新
+
+- 未来 /ingest 任何 PPT/PPTX 文件时，自动执行转换 + 保留
+- 建议将转换逻辑写入 `99_System/` 下的 SOP 文档（如 `PPT-to-PDF-SOP.md`）

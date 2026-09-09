@@ -4,7 +4,7 @@ status: active
 specialties:
   - Infectious Disease
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
   - medicine/microbiology
 evidence_level: C
@@ -19,7 +19,7 @@ last_reviewed: 2026-09-07
 根据微生物的**大小、有无细胞的基本结构、细胞核的分化程度**和**核酸组成**等，将微生物分为**三大类**：非细胞型、原核细胞型、真核细胞型。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 第一节
+> - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 第一节
 > - 来源登记：[[Source-Registry#S-LEC-005]]
 > - 已描述微生物种类约 **135,000 种**（PPT p9，数据待权威来源复核）
 
@@ -55,5 +55,5 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 绪论.pdf]] — p7-15
+- [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p7-15
 - 来源登记：[[Source-Registry#S-LEC-005]]

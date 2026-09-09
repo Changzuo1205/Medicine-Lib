@@ -4,7 +4,7 @@ status: active
 specialties:
   - Infectious Disease
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
 evidence_level: C
 source_status: needs_review
@@ -20,7 +20,7 @@ last_reviewed: 2026-09-07
 **传染（transmission / contagion）**：病原体从一个宿主传播到另一个宿主，引起感染。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 课程介绍 p3
+> - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 课程介绍 p3
 > - 参考：微生物学第 10 版 p64；整合教材第 2 版 p3、p125
 > - 来源登记：[[Source-Registry#S-LEC-005]]
 
@@ -54,5 +54,5 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 绪论.pdf]] — p3
+- [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p3
 - 来源登记：[[Source-Registry#S-LEC-005]]

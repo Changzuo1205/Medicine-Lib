@@ -4,7 +4,7 @@ status: active
 specialties:
   - Infectious Disease
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
   - medicine/microbiology
 evidence_level: C
@@ -19,7 +19,7 @@ last_reviewed: 2026-09-07
 细菌（原核细胞）的结构分为**基本结构**（所有细菌均有）和**特殊结构**（部分细菌具有）。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — 第二节
+> - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — 第二节
 > - 来源登记：[[Source-Registry#S-LEC-006]]
 > - 注：本 PPT 仅介绍结构**总览**，具体细节（细胞壁肽聚糖、LPS、磷壁酸、荚膜化学、鞭毛结构、菌毛分型、芽胞形成机制）预计在后续章节展开
 
@@ -72,6 +72,6 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 2 第1章 细菌的形态与结构 1.pdf]] — p15-16
+- [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf]] — p15-16
 - 来源登记：[[Source-Registry#S-LEC-006]]
 - 进一步参考：医学微生物学第 10 版 第 2-4 章

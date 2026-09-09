@@ -1,0 +1,54 @@
+---
+type: course
+status: active
+course_code:
+semester: 2026 秋
+instructor: 赵巍（病原生物学教研室）
+discipline: Human Parasitology
+textbook:
+---
+
+# 人体寄生虫学（Human Parasitology）
+
+> 课程历史：原"病原与感染性疾病 Ⅰ"在 2026-09-08 拆分为 **医学微生物学（微生物部分）+ 人体寄生虫学（寄生虫部分）** 两个独立学科课程。本课程即拆分后的"人体寄生虫学"。
+
+## Course Overview
+
+研究**医学寄生虫**（蠕虫、原虫、医学节肢动物）的生物学特性、致病机制、人体抗寄生虫免疫、寄生虫病的诊断与防治。
+
+本课程是基础医学与临床医学的桥梁学科。课程内容涵盖：
+
+- **医学蠕虫**：线虫、吸虫、绦虫
+- **医学原虫**：疟原虫、阿米巴、弓形虫、利什曼原虫等
+- **医学节肢动物**：蚊、蝇、蚤、虱、蜱、螨等（侧重传播媒介）
+
+> 课程拆分说明：
+> - 原"病原与感染性疾病 Ⅰ" = 微生物（44 课时）+ 寄生虫（22 课时）= 66 课时
+> - 拆分后：
+>   - [[../Medical Microbiology/Course|医学微生物学]] = 微生物部分（约 44 课时）
+>   - **人体寄生虫学**（本课程）= 寄生虫部分（约 22 课时）
+
+## Lectures
+
+_（暂无 — 待 /ingest 寄生虫章节后补充）_
+
+## Exam Topics
+
+_（暂无；待 review 后补充）_
+
+## Reviews
+
+_（暂无）_
+
+## Knowledge Gaps
+
+详见 [[../../03_Concepts/Human Parasitology/README|Human Parasitology README]] 中"待建节点"清单（蠕虫 / 原虫 / 节肢动物 / 寄生虫病 / 抗寄生虫药 / 检查 / 算法 / 病例）。
+
+## Related Medical Knowledge
+
+_（暂无 — 待 /ingest 后补充；将涵盖蠕虫、原虫、节肢动物等核心节点）_
+
+## Source
+
+- 关联课程：[[../Medical Microbiology/Course|医学微生物学 Course]]
+- 待登记：用户提供寄生虫学章节 PPT 后执行 `/ingest` 并登记 `S-LEC-00X`

@@ -4,7 +4,7 @@ status: active
 specialties:
   - Infectious Disease
 tags:
-  - medicine/infectious-disease
+  - medicine/medical-microbiology
   - medicine/pathophysiology
   - medicine/microbiology
 evidence_level: C
@@ -19,7 +19,7 @@ last_reviewed: 2026-09-07
 研究与医学有关的**病原微生物的生物学特性**和**致病机制**，**人体的抗感染免疫机制**，以及建立这些微生物所致**人类感染及感染性疾病**（含传染病）、**超敏反应性疾病**和**肿瘤**等的**病原学诊断方法**和**防治措施**的一门学科，以控制和消灭感染和相关疾病，达到保障和提高人类健康水平的目的。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 第二节
+> - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf|《绪论》（赵巍，2026 秋）]] — 第二节
 > - 来源登记：[[Source-Registry#S-LEC-005]]
 > - evidence_level: C（医学教材 / 课程 PPT）；source_status: needs_review
 
@@ -56,5 +56,5 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/1 绪论.pdf]] — p16
+- [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p16
 - 来源登记：[[Source-Registry#S-LEC-005]]

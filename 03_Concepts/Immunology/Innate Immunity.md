@@ -23,7 +23,7 @@ last_reviewed: 2026-09-07
 由**模式识别受体（PRR）**识别病原体相关分子模式（PAMP）和危险相关分子模式（DAMP），无需抗原预先致敏，效应在数分钟至 4 天内启动。
 
 > [!info] 来源
-> - 主来源：[[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
+> - 主来源：[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
 > - 来源登记：[[Source-Registry#S-LEC-004]]
 > - evidence_level: C（医学教材 / 课程资料）；source_status: needs_review
 
@@ -124,7 +124,7 @@ last_reviewed: 2026-09-07
 
 ## Sources
 
-- [[02_Raw/Lectures/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
+- [[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《免疫学概述》（杨艳艳，2026 秋）]] — 第二节、第四节
 - 来源登记：[[Source-Registry#S-LEC-004]]
 - evidence_level: C
 - source_status: needs_review（细胞亚群比例、趋化因子时间窗等需对照标准教材核对）

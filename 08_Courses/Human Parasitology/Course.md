@@ -30,7 +30,7 @@ textbook:
 
 ## Lectures
 
-_（暂无 — 待 /ingest 寄生虫章节后补充）_
+- [[Lectures/01 寄生虫学总论|01 寄生虫学总论]]
 
 ## Exam Topics
 
@@ -51,4 +51,6 @@ _（暂无 — 待 /ingest 后补充；将涵盖蠕虫、原虫、节肢动物�
 ## Source
 
 - 关联课程：[[../Medical Microbiology/Course|医学微生物学 Course]]
-- 待登记：用户提供寄生虫学章节 PPT 后执行 `/ingest` 并登记 `S-LEC-00X`
+- 原始资料：
+  - [[02_Raw/Lectures/Human Parasitology/第一讲 寄生虫学总论2026秋 28号字(1).pdf|《第一讲 寄生虫学总论 2026 秋》（申成华）]]
+- 来源登记：[[Source-Registry#S-LEC-009]]

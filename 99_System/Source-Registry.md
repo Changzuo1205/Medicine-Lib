@@ -39,6 +39,8 @@ _（暂无）_
 | S-LEC-006 | Medical Microbiology Chapter 1 — 细菌的形态与结构（Bacterial Morphology & Structure） | 赵巍 | 2026 秋 | needs_review |
 | S-LEC-007 | Clinical Epidemiology Chapter 0 — 流行病学绪论（栗世如，2026 秋） | 栗世如 | 2026 秋 | needs_review |
 | S-LEC-008 | Clinical Epidemiology Chapter 1 — 疾病的分布（Distribution of Disease） | 栗世如 | 2026 秋 | needs_review |
+| S-LEC-009 | Human Parasitology Chapter 1 — 寄生虫学总论（申成华，2026 秋） | 申成华 | 2026 秋 | needs_review |
+| S-LEC-010 | Medical Immunology Chapter 3 — 抗原（Antigen） | 杨艳艳 | 2026 秋 | needs_review |
 
 ## Other Sources — 其他
 

@@ -98,12 +98,17 @@ pythoncom.CoUninitialize()
 - 关联课程：`[[08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]`
 - 引用约定：Active 文件统一指向 **PDF 版本**；PPTX 保留供编辑
 
-### Human Parasitology — 0 份
+### Human Parasitology — 2 份（1 PPT + 1 PDF）
 
-_（暂无 — 等用户提供 PPT / PDF 后补充）_
+| 文件 | 章节 | 类型 |
+|------|------|------|
+| `第一讲 寄生虫学总论2026秋 28号字(1).ppt` | 第 1 讲 寄生虫学总论 | PPT（原始）|
+| `第一讲 寄生虫学总论2026秋 28号字(1).pdf` | 第 1 讲 寄生虫学总论 | **PDF（首选参考）** |
 
-- 关联学科：`[[03_Concepts/Human Parasitology|Human Parasitology]]`
+- 来源登记：`S-LEC-009`（寄生虫学总论）
+- 关联学科：`[[03_Concepts/Human Parasitology|Human Parasitology]]`（11 节点）
 - 关联课程：`[[08_Courses/Human Parasitology/Course|Human Parasitology Course]]`
+- 引用约定：Active 文件统一指向 **PDF 版本**；PPT 保留供编辑
 
 ## 文件整理历史
 
@@ -114,5 +119,5 @@ _（暂无 — 等用户提供 PPT / PDF 后补充）_
 ## 待办
 
 - [ ] 提供临床流行病学后续章节（横断面研究、病例对照、队列研究、RCT、诊断试验评价、治疗评价、预后研究、系统综述深入、EBM 深入等）
-- [ ] 提供人体寄生虫学第 1 章及后续章节
+
 - [ ] 是否将基础学科（循环 / 泌尿 / 消化）作为新学科注册？

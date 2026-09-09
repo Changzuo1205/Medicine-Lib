@@ -19,9 +19,9 @@ last_refresh: 2026-09-07
 | AGENTS.md 规范 | ✅ 已就绪 | 32 节规则完整；V2 起改用"按学科组织" |
 | 目录骨架 | ✅ 已就绪 | 00–07 + 99 + 08_Courses |
 | 已注册学科 | 4 | `[[03_Concepts/Immunology\|Immunology]]` / `[[03_Concepts/Medical Microbiology\|Medical Microbiology]]` / `[[03_Concepts/Human Parasitology\|Human Parasitology]]` / `[[03_Concepts/Clinical Epidemiology\|Clinical Epidemiology]]` |
-| 知识节点 | ✅ 已创建 | 1 Disease · 4 Immunology · 7 Medical Microbiology · 17 Clinical Epidemiology = **29 节点**（active 状态） |
+| 知识节点 | ✅ 已创建 | 1 Disease · 16 Immunology · 7 Medical Microbiology · 17 Clinical Epidemiology · 11 Human Parasitology = **52 节点**（active 状态） |
 | 退役存档 | 38 节点 | 见 [[99_System/Archive/Concepts-Retired/\|Concepts-Retired]]（按学科注册时可复活） |
-| 原始资料 | ✅ 部分导入 | 9 份课程资料在 `02_Raw/Lectures/`（含临床流行病学 2 讲 PPTX，已 /ingest） |
+| 原始资料 | ✅ 部分导入 | 11 份课程资料在 `02_Raw/Lectures/`（含免疫学抗原章节 1 讲 PDF，已 /ingest） |
 | 临床推理材料 | ⚠️ 尚未创建 | `04_Clinical/` 全部子目录空 |
 | 学习材料 | ✅ 部分创建 | 27 道题（10 CircS2 + 12 Ur + 3 Ur Review Set + 2 Quiz）；Flashcards / Wrong-Answers / Review 仍空 |
 | 模板 | ✅ 已就绪 | 20 套模板在 `99_System/Templates/` |
@@ -33,7 +33,7 @@ last_refresh: 2026-09-07
 
 - [[03_Concepts/Immunology/README|Immunology]] — 免疫学（4 节点）
 - [[03_Concepts/Medical Microbiology/README|Medical Microbiology]] — 医学微生物学（7 节点；从原病原与感染性疾病 Ⅰ拆分）
-- [[03_Concepts/Human Parasitology/README|Human Parasitology]] — 人体寄生虫学（0 节点，待 /ingest；从原病原与感染性疾病 Ⅰ拆分）
+- [[03_Concepts/Human Parasitology/README|Human Parasitology]] — 人体寄生虫学（**11 节点**；从原病原与感染性疾病 Ⅰ拆分）
 - [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学（0 节点，待 /ingest）
   - [[Immune System]] · [[Innate Immunity]] · [[Adaptive Immunity]] · [[Immune Dysregulation]]
 

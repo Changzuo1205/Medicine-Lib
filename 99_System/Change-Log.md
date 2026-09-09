@@ -498,3 +498,202 @@ tags:
 
 - 未来 /ingest 任何 PPT/PPTX 文件时，自动执行转换 + 保留
 - 建议将转换逻辑写入 `99_System/` 下的 SOP 文档（如 `PPT-to-PDF-SOP.md`）
+
+## 2026-09-09 — /ingest 人体寄生虫学 总论
+
+> 用户对刚注册的 `[[03_Concepts/Human Parasitology|Human Parasitology]]` 学科执行首次 /ingest。原始资料：`02_Raw/Lectures/Human Parasitology/第一讲 寄生虫学总论2026秋 28号字(1).ppt`（旧版 PPT 格式，6.1 MB），讲者申成华（病原生物学教研室）。
+
+### 工具确认 + PPT→PDF 转换
+
+- **旧版 .ppt 格式**：python-pptx 不支持，仅支持 .pptx
+- 通过 **Microsoft PowerPoint COM 自动化** 处理 → 生成 PDF（2.5 MB）
+- 保留原 .pt 文件供编辑（按 PPT→PDF 规则）
+
+### 注册讲座来源
+
+- `S-LEC-009` — 《第一讲 寄生虫学总论》（申成华，2026 秋）
+
+### Created（Course / Lecture 层）
+
+- `[[08_Courses/Human Parasitology/Course|Human Parasitology Course]]`（更新：从空 → 含 1 个 Lecture）
+- `[[08_Courses/Human Parasitology/Lectures/01 寄生虫学总论|01 寄生虫学总论 Lecture]]`
+
+### Created（Concept 层 — 11 个节点，全部放在 `03_Concepts/Human Parasitology/`）
+
+| 节点 | 核心内容 |
+|------|----------|
+| [[Parasitology]] | 学科定义、范畴（蠕虫/原虫/节肢动物）、在医学中的位置 |
+| [[Medical Helminthology]] | 蠕虫分类（吸虫/绦虫/线虫/棘头虫） |
+| [[Medical Protozoology]] | 原虫（疟原虫/阿米巴/弓形虫/隐孢子虫/肺孢子虫） |
+| [[Medical Arthropodology]] | 节肢动物（蚊/蚤/虱/蜱螨）作为传播媒介 |
+| [[Symbiosis Types]] | 三种共生类型（片利/互利/寄生）+ 寄生演化方向 |
+| [[Parasite Life Cycle]] | 直接型 vs 间接型 + 感染期 + 世代交替 |
+| [[Parasite-Host Classification]] | 寄生虫分类（部位/时间/宿主选择/免疫）+ 宿主分类（终/中/保虫/转续） |
+| [[Parasitic Zoonoses]] | WHO TDR 10 大热带病 + 新现/再现/动物源性寄生虫病 |
+| [[Parasitic Infection Characteristics]] | 5 大临床特点（慢性/隐性/多寄生/异位/幼虫移行）+ 致病机制 |
+| [[Parasitic Disease Epidemiology]] | 3 个环节 + 7 类传播途径 + 3 类影响因素 + 流行特点 |
+| [[Parasitic Disease Prevention]] | 3 大环节阻断 + 我国防控成果（血吸虫 79.9万 / 疟疾 2021 消灭 / 丝虫 1994 消灭 / 黑热病 1958 消灭）|
+
+### Updated
+
+- `[[99_System/Source-Registry|Source-Registry]]` — 追加 S-LEC-009
+- `[[02_Raw/Lectures/Human Parasitology/]]` — 新建 PDF（2.5 MB）
+- `[[03_Concepts/Human Parasitology/README|README]]` — 已建节点清单更新
+- `[[08_Courses/Human Parasitology/Course|Course]]` — Lectures 列表添加
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 节点统计（12 → 23）
+
+### 未变更
+
+- `02_Raw/Lectures/Human Parasitology/第一讲 寄生虫学总论...ppt`（保留）
+- AGENTS.md（已正确列出 Human Parasitology 为注册学科 3）
+
+### 待 /ingest 后续章节
+
+- 线虫概论及线虫各论（6h）
+- 吸虫概论及各论（4h）
+- 绦虫概论及各论（4h）
+- 医学原虫学各论（5h）
+- 医学节肢动物学各论（1h）
+
+## 2026-09-09 — /ingest 免疫学 抗原（Chapter 3）
+
+> 用户对 `[[03_Concepts/Immunology|Immunology]]` 学科执行第 2 次 /ingest（第 1 次为 2026-09-07 免疫学概述）。原始资料：`02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf`（56 页），讲者杨艳艳（基础医学院免疫学系）。
+
+### 注册讲座来源
+
+- `S-LEC-010` — 《第 3 章 抗原》（杨艳艳，2026 秋）
+
+### Created（Course / Lecture 层）
+
+- `[[08_Courses/Medical Immunology/Course|Medical Immunology Course]]`（更新：加入 Lecture 03）
+- `[[08_Courses/Medical Immunology/Lectures/03 抗原|03 抗原 Lecture]]`
+
+### Created（Concept 层 — 12 个节点，全部放在 `03_Concepts/Immunology/`）
+
+| 节点 | 核心内容 |
+|------|----------|
+| [[Antigen]] | 抗原定义 + 两大特性（免疫原性 + 免疫反应性） |
+| [[Complete Antigen vs Hapten]] | 完全抗原 vs 半抗原 + 半抗原-载体效应 |
+| [[Epitope]] | 抗原表位（线性 vs 构象）+ 抗原结合价 |
+| [[T Cell Epitope vs B Cell Epitope]] | T 表位（线性、MHC 必需） vs B 表位（构象为主、表面、无 MHC） |
+| [[Cross-Reaction]] | 共同抗原表位 + 交叉反应（链球菌-心脏交叉为例）|
+| [[Immunogenicity Factors]] | 7 大抗原自身因素 + 宿主因素 + 接种途径 |
+| [[TD-Ag vs TI-Ag]] | 胸腺依赖性 vs 非依赖性抗原（结构 + 抗体 + 免疫记忆对比）|
+| [[Antigen Classification by Origin]] | 异嗜性 / 异种 / 同种异型 / 自身 / 独特型抗原 |
+| [[Endogenous vs Exogenous Antigen]] | 内源性（MHC I/CD8⁺） vs 外源性（MHC II/CD4⁺）|
+| [[Superantigen]] | 超抗原：非特异性激活 2–20% T 细胞 → 中毒性休克 |
+| [[Adjuvant]] | 佐剂：氢氧化铝 / MF59 / AS04 / VLP / 弗氏等 |
+| [[Mitogen]] | 丝裂原：PHA、ConA、LPS、PWM + 淋巴细胞转化实验 |
+
+### Updated
+
+- `[[99_System/Source-Registry|Source-Registry]]` — 追加 S-LEC-010
+- `[[08_Courses/Medical Immunology/Course|Course]]` — Lectures 列表 + Source 列表同步
+- `[[99_System/Knowledge-Status|Knowledge-Status]]` — 节点统计（40 → 52）
+
+### 未变更
+
+- `02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf` — 未修改
+- AGENTS.md（已正确列出 Immunology 为注册学科 1）
+
+### 教学要点（来自 Lecture 03）
+
+- **抗原两大特性**：免疫原性（被 TCR/BCR 识别+激活） + 免疫反应性（与效应产物结合）
+- **完全抗原 vs 半抗原**：半抗原 = 只有免疫反应性；与载体交联后获得免疫原性
+- **表位是关键**：T 表位（线性、MHC 必需）vs B 表位（构象为主、表面、无需 MHC）
+- **TD-Ag vs TI-Ag**：免疫记忆是关键差异 → 影响疫苗设计
+- **按亲缘分类**：异嗜性 / 异种 / 同种异型（HLA）/ 自身 / 独特型
+- **内/外源性抗原**：MHC I（CD8⁺） vs MHC II（CD4⁺）
+- **超抗原**：非特异性激活 2–20% T 细胞 → 中毒性休克
+- **佐剂机制**：延缓降解、促进摄取、激活 APC、调节应答类型
+- **接种途径**：皮内 > 皮下 > 肌内 > 腹腔 > 静脉
+
+### 课堂测试题（已记录在 Lecture 文件）
+
+9 道 PPT 测试题（p47-55）：
+- Q-Imm-16（半抗原多选）
+- Q-Imm-17（抗原特异性决定基础）
+- Q-Imm-18（B 细胞表位错误选项）
+- Q-Imm-19（最强免疫原性物质）
+- Q-Imm-20（免疫原性因素错误项）
+- Q-Imm-21（最强免疫途径）
+- Q-Imm-22（ABO 血型抗原分类）
+- Q-Imm-23（超抗原特性）
+- Q-Imm-24（佐剂错误描述）
+
+### 待 /ingest 后续章节
+
+- 第 4 章：免疫器官与组织
+- 第 5 章：抗体（免疫球蛋白）
+- 第 6 章：补体系统
+- 第 7-8 章：T/B 淋巴细胞
+- 第 9 章：细胞因子
+- 第 10 章：MHC / HLA
+- 第 11 章：抗原递呈
+- ...
+
+## 2026-09-09 — 02_Raw/Textbooks/ 重组：按学科建立子目录
+
+> 用户反馈：`02_Raw/Textbooks/` 下文件散落，需要按学科分类整理。延续 02_Raw/Lectures/ 已有的按学科子目录组织方式。
+
+### 重组前后
+
+**重组前**（散落 + 1 个子目录）：
+
+```
+02_Raw/Textbooks/
+├── 11.医学微生物学.pdf                    ← 散落
+├── 免疫系统与疾病.pdf                       ← 散落
+├── 流行病学9版教材.pdf                      ← 散落
+├── README.md
+└── Pathology/                              ← 已有
+    ├── README.md
+    └── 《病理学（第10版）》.pdf
+```
+
+**重组后**（按学科子目录，与 03_Concepts/ 注册学科一一对应）：
+
+```
+02_Raw/Textbooks/
+├── Medical Microbiology/                  ← 注册学科 2
+│   └── 11.医学微生物学.pdf
+├── Medical Immunology/                    ← 注册学科 1
+│   └── 免疫系统与疾病.pdf
+├── Human Parasitology/                    ← 注册学科 3（空，待补充）
+├── Clinical Epidemiology/                 ← 注册学科 4
+│   └── 流行病学9版教材.pdf
+├── Pathology/                             ← 病理学（未注册学科）
+│   ├── README.md
+│   └── 《病理学（第10版）》.pdf
+└── README.md
+```
+
+### 操作
+
+- **新建 4 个学科子目录**（与 `03_Concepts/` 已注册学科一一对应）：
+  - `Medical Microbiology/`
+  - `Medical Immunology/`
+  - `Human Parasitology/`（空，预留）
+  - `Clinical Epidemiology/`
+- **移动 3 个散落文件**到对应子目录（保留原始文件名）
+- **保留** `Pathology/` 既有结构与 `README.md`（已注册为 Reference Source）
+
+### 关联更新
+
+- `02_Raw/Textbooks/README.md` 完全重写：
+  - 顶部增加 "组织结构" 图示（5 个学科子目录）
+  - 各分组更新文件路径 + 状态标注
+  - 新增 "待办"：3 本新教材待注册 Reference Source
+- `02_Raw/README.md`（顶层）— 标注 Textbooks + Lectures 已按学科子目录组织
+
+### 设计原则
+
+- **学科目录与 03_Concepts/ 一致**：未来注册新学科时同步建立对应 Textbooks 子目录
+- **保留原始文件名**：避免破坏引用追溯
+- **Pathology 子目录保留**：已注册的 Reference Source 文档不被破坏
+
+### 待办（不影响当前物理整理）
+
+- 为 3 本新教材（医学微生物学 / 免疫系统与疾病 / 流行病学 9 版）按 `[[99_System/Textbook-Import-SOP|SOP]]` 建立 Reference Source README（包含元信息、完整性检查记录）
+- 提供人体寄生虫学教材
+- 是否将基础学科（循环 / 泌尿 / 消化）作为新学科注册？

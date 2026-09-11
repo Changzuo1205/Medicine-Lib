@@ -9,6 +9,14 @@ tags:
 
 > 医学知识总导航页。本页仅为导航，具体医学知识存放在 03_Concepts 与 04_Clinical，按 [[AGENTS.md]] 规范维护。
 
+## 已注册学科
+
+- [[03_Concepts/Immunology/README|Immunology]] — 免疫学
+- [[03_Concepts/Medical Microbiology/README|Medical Microbiology]] — 医学微生物学
+- [[03_Concepts/Human Parasitology/README|Human Parasitology]] — 人体寄生虫学
+- [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学
+- [[03_Concepts/Pathology/README|Pathology]] — 病理学（2026-09-11 注册，21 节点）
+
 ## 专科 MOC
 
 - [[Cardiology MOC]]

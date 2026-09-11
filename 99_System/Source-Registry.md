@@ -1,4 +1,4 @@
----
+﻿---
 type: system
 status: active
 tags:
@@ -42,6 +42,7 @@ _（暂无）_
 | S-LEC-009 | Human Parasitology Chapter 1 — 寄生虫学总论（申成华，2026 秋） | 申成华 | 2026 秋 | needs_review |
 | S-LEC-010 | Medical Immunology Chapter 3 — 抗原（Antigen） | 杨艳艳 | 2026 秋 | needs_review |
 
+| S-LEC-011 | Pathology Chapter 1 — Cellular Adaptation and Injury（组织细胞适应与损伤） | 优课联盟 UOOC（2026 秋） | 2026 秋 | needs_review |
 ## Other Sources — 其他
 
 _（暂无）_

@@ -9,6 +9,207 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-11 — 注册新学科：病理学（Pathology）与首个 /ingest
+
+> 用户反馈：注册“病理学”作为第 5 个已注册学科，同时对第一章“组织细胞适应与损伤”执行 /ingest。
+
+### 操作
+
+#### Concept 层
+
+- **新建学科目录**：`03_Concepts/Pathology/`
+- **新建 README**：`03_Concepts/Pathology/README.md`（包含学科范围、已建/待建节点、使用规则）
+- **新建第一章 MOC**：`03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury.md`（适应 + 可逆损伤 + 细胞死亡 三大板块导航）
+- **新建 21 个概念节点**（均 `type: pathophysiology`）：
+
+| 节点 | type | 要点 |
+|----------|------|----------|
+| [[Atrophy]] | pathophysiology | 萎缩（6 种病理性类型 + 质量变化） |
+| [[Hypertrophy]] | pathophysiology | 肥大（代偿性与内分泌性） |
+| [[Hyperplasia]] | pathophysiology | 增生（分裂能力与组织对应） |
+| [[Metaplasia]] | pathophysiology | 化生（上皮与间叶） |
+| [[Cellular Aging]] | pathophysiology | 细胞老化 |
+| [[Cell Injury]] | pathophysiology | 损伤原因（8 类）与机制 |
+| [[Cellular Swelling]] | pathophysiology | 细胞水肿 / 水变性 |
+| [[Fatty Change]] | pathophysiology | 脂肪变（胝斑心、脂肪脑） |
+| [[Hyaline Degeneration]] | pathophysiology | 玻璃样变（3 型） |
+| [[Amyloidosis]] | pathophysiology | 淀粉样变 |
+| [[Mucoid Degeneration]] | pathophysiology | 黏液样变 |
+| [[Pathologic Pigmentation]] | pathophysiology | 四种色素：含铁血黄素 / 脂褐素 / 黑色素 / 胆红素 |
+| [[Pathologic Calcification]] | pathophysiology | 营养不良性 / 转移性钙化 |
+| [[Cell Death]] | pathophysiology | 细胞死亡总论 |
+| [[Necrosis]] | pathophysiology | 坏死总论 + 组织学变化 |
+| [[Coagulative Necrosis]] | pathophysiology | 凝固性坏死 |
+| [[Liquefactive Necrosis]] | pathophysiology | 液化性坏死 |
+| [[Caseous Necrosis]] | pathophysiology | 干酪样坏死 |
+| [[Fat Necrosis]] | pathophysiology | 脂肪坏死 |
+| [[Fibrinoid Necrosis]] | pathophysiology | 纤维蛋白样坏死 |
+| [[Gangrene]] | pathophysiology | 坏痁（干/湿/气） |
+| [[Apoptosis]] | pathophysiology | 调式（调引与调小体） |
+
+> **节点计数：21 个 pathophysiology + 1 个 MOC（该 MOC 本身不计入 active 节点总数）**
+
+#### System 层
+
+- **新建：** `02_Raw/lectures/Pathology/`（原始讲义目录）与 `02_Raw/lectures/Pathology/README.md`
+- **更新：** `99_System/Source-Registry.md` — 追加 `S-LEC-011`：Pathology Chapter 1 — Cellular Adaptation and Injury（优课联盟 UOOC，2026 秋）
+
+### 安全网
+
+- 所有新建节点 `source_status: needs_review`（lecture-derived，待与权威教材逐句核对）
+- 原始 `.docx` 未修改；文件名保留（“笔记—组织细胞适应与损伤.docx”）
+- Wiki-links 在互联同一章内都能正常解析
+
+### 未变更
+
+- `AGENTS.md` — 未修改（学科注册规则已在 V2 中明确）
+- `00_Dashboard/Home.md` — 需后续手动更新学科统计
+- `07_MOCs/Medicine MOC.md` — 需后续补充 Pathology 行
+- `99_System/Knowledge-Status.md` — 需后续更新节点总数
+- `08_Courses/` — 未创建 Pathology Course（仅需要时可占位）
+
+### 待 /ingest 后续章节
+
+- 第二章 损伤的修复
+- 第三章 局部血液循环障碍
+- 第四章 炎症
+- 第五章 肿瘤
+- 第六章 免疫病理
+- 第七”十八章 各论（各系统疾病）
+
+## 2026-09-11 — /setup 病理学：建立课程上下文层
+
+> 用户反馈：在完成 [[03_Concepts/Pathology|Pathology]] 学科首个 /ingest 后进行 /setup，为 [[02_Raw/Lectures/Pathology/Pathology|Pathology 课程]] 建立课程上下文层。
+
+### 操作
+
+#### Course 层
+
+- **新建课程目录**：`08_Courses/Pathology/`
+- **新建 Course**：`08_Courses/Pathology/Course.md`
+  - course_code: `UOOC-MED-PATHOLOGY-2026`
+  - semester: 2026 秋
+  - instructor: 优课联盟 UOOC 慕课（线上学习）
+  - discipline: Pathology
+  - textbook: 人卫版《病理学》（第 9/10 版）
+- **新建 Lectures/ 子目录**
+- **新建 Lecture**：`08_Courses/Pathology/Lectures/01 组织细胞适应与损伤.md`
+  - 类型：lecture（chapter 1）
+  - 涻盖：适应 5 种 + 损伤 8 原因机制 + 可逆性变性 7 种 + 细胞死亡 6 亚型 + 调弎
+  - 源头：`S-LEC-011`（[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx]]）
+  - 并详细链接所有 21 个 [[03_Concepts/Pathology|θ理学学科]] 节点及第一章 MOC
+  - 包含 `Class Notes` （源文本特点 / 我的疑问 / AI 补充）
+
+#### 未创建
+
+- **Exams/** 子目录 — 待 review 后补充
+- **Reviews/** 子目录 — 待 /study 时创建
+- **02–18 章 Lecture** — 待 /ingest 后逐章创建
+
+### 与现有学科的区别
+
+- Pathology 是唯一以 **UOOC 慕课形态** 设立的 Course；其他 Course（Medical Immunology / Microbiology / Parasitology / Epidemiology）为现席课形态，含 `instructor: 具体老师`
+- Pathology Course 的 “考核比例” 与 “讲者” 字段使用 UOOC 平台专属说明（6030期末）
+
+### 安全网
+
+- 原始 `.docx` 未修改
+- `99_System/Source-Registry.md` `S-LEC-011` 未变更
+- `99_System/Knowledge-Status.md` 未变更（课程上下文层不计入 active 节点总数）
+- AGENTS.md 未修改
+
+### 待执行
+
+- [ ] /ingest 后续章节时同步创建对应 Lecture
+- [ ] /study Pathology 后创建 Exams/ 与 Reviews/ 子目录
+- [ ] Pathology Course 与 [[02_Raw/Lectures/Pathology/README]] 双向链接验证
+
+## 2026-09-11 — 制定 /ingest 详细 SOP
+
+> 用户反馈：规范 `/ingest` 作业流程。依据 Pathology · 第一章 /ingest 过程中遇到的问题（预存文件漏检· Unicode 错位· 路径偏移· 并行 agent 覆盖），提炼为可重复使用的检查清单与防护措施。
+
+### 操作
+
+- **新建 SOP**：[[99_System/Ingest-SOP.md|/ingest 作业流程 SOP]]
+  - 10 个主章节：三条黄金规则 · 预检 · 概念提取 · 写作 · 源登记 · 后验 · 并行 agent 协作 · 阵阱 · 例 · 参考
+  - 主要改进：
+    1. **预检阶段给出逐项检查清单**（资料清点 · 现状调查 · 预存节点报告）
+    2. **写作阶段明确三个顺序**（MOC · Discipline README 优先 → 子节点 → 跨文件链接）
+    3. **Frontmatter 强制模板**（不多不少）
+    4. **写作安全规则表**（Unicode 转义 · 中英混排 · 同字似字 · 路径偏移 · 错位代号）
+    5. **优先纯基名引用**（避免路径跟足）
+    6. **后验流程五项必检**（路径解析 · 错别字扫描 · Frontmatter 一致性 · Source-Registry 中文验证 · Change-Log 入库）
+    7. **并行 / 多 Agent 协作模式**（主代理 · Subagent 职责划分）
+    8. **阵阱表**（以本次遇到的具体例子记录）
+
+- **修改 AGENTS.md**：§ 19 “/ingest” 末尾增加引用指向 [[99_System/Ingest-SOP.md|Ingest-SOP]]（明确“本节仅作高层概述·详细 SOP 在另一处”）
+
+### 背景：为什么需要这份 SOP？
+
+本次 /ingest 病理学 · 第一章遇到以下问题：
+
+1. **预存文件漏检**：Pathology/ 目录里有 6 个上一轮创建的节点，但主代理初次枚举只看到 README 与 MOC，使 subagent 产生了“预存文件”的错觉。
+2. **Unicode 错位**：使用 `\u82ac` 等转义时出现 东 (冬)/弎/豹 · 需 unicodedata 验证。
+3. **路径偏移**：49 个 wiki-link 用了 `../../` 但实际需 `../../../` · 后验中发现。
+4. **多 Agent 覆盖**：3 个 subagent 并行写入同一目录· Hooke 将 Pauli 刚刚创建的 6 个文件当作“预存”。
+
+### 未变更
+
+- AGENTS.md 其他节（§20-32）未变动
+- 99_System/Textbook-Import-SOP.md 未变动（都是参考资源）
+- 99_System/Templates/ 未变动
+
+### 待执行
+
+- [ ] 后续 /ingest · ···时跟 SOP 检查清单实施、主动报告
+- [ ] 同步修改 · 完善 /setup · /study /quiz /case 的类似检查清单
+- [ ] 考虑给 /connect /audit /quiz 也增加 SOP 文件
+## 2026-09-11 — 全面扫描与状态同步
+
+> 用户反馈：扫描知识库并同步状态文件。以 [[99_System/Ingest-SOP.md|Ingest-SOP]] 5.1 后验为准，重新扫描 281 个 .md 文件，重新令 Dashboard / Knowledge-Status / Change-Log 与实际一致。
+
+### 扫描结果（canonical）
+
+| 指标 | 值 |
+|------|------|
+| 活跃概念节点 | **74**（1 Disease + 16 Immunology + 7 Medical Microbiology + 17 Clinical Epidemiology + 11 Human Parasitology + 22 Pathology） |
+| 已注册学科 | **5** |
+| 活跃 Course | **5** |
+| Lecture | **8**（2 + 2 + 1 + 2 + 1） |
+| 已注册源 S-LEC-* | **11**（S-LEC-001 ~ 011） |
+| 模板 | **20** |
+| MOC（07_MOCs/） | 16 个（中 1 个为总 MOC） |
+| 练习题 | 15 活跃 + 27 退役 |
+| 闪卡 | 10 （FC-Imm-01 ~ 10） |
+| 复习会话 | 1 |
+| 错题 | 0 |
+| 退役概念 | **40** 节点（Physics/Pathophysiology 存档） |
+
+### 发现的差异（已修正）
+
+- **Dashboard “知识节点”行：**73 → 74；Pathology 21 → 22
+- **Dashboard “退役存档”：**38 → 40
+- **Dashboard “Immunology（4 节点）”：**4 → 16
+- **Dashboard “Clinical Epidemiology（0 节点，待 /ingest）”：**“0 节点” → 17 节点 + 颚额示例节点（误居在 Epidemiology 下，已移除）
+- **Dashboard “Pathology（21 节点）”：**21 → 22
+- **Dashboard “Flashcards（0）” / “Review（0）”：**0 → 10 / 0 → 1
+- **Dashboard “临床流行疵学 Course”中的错别字：**“疵学”（U+75B5 = 疵）→ “病学”（U+75C5 = 病）
+- **Knowledge-Status “活跃节点”：**5 → 74
+- **Knowledge-Status “活跃概念节点：73”：**73 → 74；Pathology 21 → 22
+- **Knowledge-Status “S-LEC-001 ~ 006”：**→ S-LEC-001 ~ 011（原描迹出 S-LEC-007 ~ 011）
+- **Knowledge-Status “全部 5 节点 source_status”：**5 → 74（所有节点 均 为 lecture-derived）
+
+### 未变更
+
+- 02_Raw/ · 03_Concepts/ · 04_Clinical/ · 05_Study/ · 06_Specialties/ · 07_MOCs/ · 08_Courses/ 原始文件未修改
+- 99_System/Source-Registry.md 未变动（仅检查中文是否受损）
+- 99_System/Ingest-SOP.md 未变动
+- AGENTS.md 未变动
+
+### 下次扫描建议
+
+本次手工扫描 + 修正，下次建议改为脚本化（`99_System/scripts/scan.py`），运行后生成同步报告。
+
 ## 2026-08-10 — V1 初始化
 
 - 创建 AGENTS.md（知识库规范 V1）

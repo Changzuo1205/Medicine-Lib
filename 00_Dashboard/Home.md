@@ -4,7 +4,7 @@ status: active
 tags:
   - system/dashboard
 created: 2026-08-10
-last_refresh: 2026-09-07
+last_refresh: 2026-09-11
 ---
 
 # 🏥 Medicine-Lib
@@ -18,9 +18,9 @@ last_refresh: 2026-09-07
 |------|------|------|
 | AGENTS.md 规范 | ✅ 已就绪 | 32 节规则完整；V2 起改用"按学科组织" |
 | 目录骨架 | ✅ 已就绪 | 00–07 + 99 + 08_Courses |
-| 已注册学科 | 4 | `[[03_Concepts/Immunology\|Immunology]]` / `[[03_Concepts/Medical Microbiology\|Medical Microbiology]]` / `[[03_Concepts/Human Parasitology\|Human Parasitology]]` / `[[03_Concepts/Clinical Epidemiology\|Clinical Epidemiology]]` |
-| 知识节点 | ✅ 已创建 | 1 Disease · 16 Immunology · 7 Medical Microbiology · 17 Clinical Epidemiology · 11 Human Parasitology = **52 节点**（active 状态） |
-| 退役存档 | 38 节点 | 见 [[99_System/Archive/Concepts-Retired/\|Concepts-Retired]]（按学科注册时可复活） |
+| 已注册学科 | 5 | `[[03_Concepts/Immunology\|Immunology]]` / `[[03_Concepts/Medical Microbiology\|Medical Microbiology]]` / `[[03_Concepts/Human Parasitology\|Human Parasitology]]` / `[[03_Concepts/Clinical Epidemiology\|Clinical Epidemiology]]` / `[[03_Concepts/Pathology\|Pathology]]` |
+| 知识节点 | ✅ 已创建 | 1 Disease · 16 Immunology · 7 Medical Microbiology · 17 Clinical Epidemiology · 11 Human Parasitology · 22 Pathology = **74 节点**（active 状态） |
+| 退役存档 | 40 节点 | 见 [[99_System/Archive/Concepts-Retired/\|Concepts-Retired]]（按学科注册时可复活） |
 | 原始资料 | ✅ 部分导入 | 11 份课程资料在 `02_Raw/Lectures/`（含免疫学抗原章节 1 讲 PDF，已 /ingest） |
 | 临床推理材料 | ⚠️ 尚未创建 | `04_Clinical/` 全部子目录空 |
 | 学习材料 | ✅ 部分创建 | 27 道题（10 CircS2 + 12 Ur + 3 Ur Review Set + 2 Quiz）；Flashcards / Wrong-Answers / Review 仍空 |
@@ -31,11 +31,13 @@ last_refresh: 2026-09-07
 
 ### 已注册学科
 
-- [[03_Concepts/Immunology/README|Immunology]] — 免疫学（4 节点）
+- [[03_Concepts/Immunology/README|Immunology]] — 免疫学（16 节点）
 - [[03_Concepts/Medical Microbiology/README|Medical Microbiology]] — 医学微生物学（7 节点；从原病原与感染性疾病 Ⅰ拆分）
 - [[03_Concepts/Human Parasitology/README|Human Parasitology]] — 人体寄生虫学（**11 节点**；从原病原与感染性疾病 Ⅰ拆分）
-- [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学（0 节点，待 /ingest）
-  - [[Immune System]] · [[Innate Immunity]] · [[Adaptive Immunity]] · [[Immune Dysregulation]]
+- [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学（17 节点：已 /ingest 完成）
+  - [[Clinical Epidemiology (concept)]] · [[Epidemiology]] · [[Distribution by Population]] · [[Distribution by Time]] · [[Distribution by Place]]
+- [[03_Concepts/Pathology/README|Pathology]] — 病理学（22 节点；首个 /ingest：第一章 组织细胞适应与损伤）
+  - [[03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury|第一章 · Cellular Adaptation and Injury]]
 
 ### 待注册的学科候选（基于已退役知识，未来按需注册）
 
@@ -71,12 +73,18 @@ last_refresh: 2026-09-07
 - [[04_Clinical/Cases/README|Cases]] — 病例（0）
 - [[04_Clinical/Clinical-Pearls/README|Clinical Pearls]] — 临床要点（0）
 
+
+
+### 课程上下文层（与各学科对应）
+
+- [[08_Courses/Medical Immunology/Course|医学免疫学 Course]] · [[08_Courses/Medical Microbiology/Course|医学微生物学 Course]] · [[08_Courses/Human Parasitology/Course|人体寄生虫学 Course]] · [[08_Courses/Clinical Epidemiology/Course|临床流行病学 Course]] · [[08_Courses/Pathology/Course|病理学 Course]]
+
 ## 学习系统入口
 
 - [[05_Study/Questions/README|Questions]] — 练习题（15 活跃；27 退役，见 `[[99_System/Archive/Questions-Retired/|Questions-Retired]]`）
 - [[05_Study/Wrong-Answers/README|Wrong Answers]] — 错题（0）
-- [[05_Study/Flashcards/README|Flashcards]] — 闪卡（0）
-- [[05_Study/Review/README|Review]] — 复习（0）
+- [[05_Study/Flashcards/README|Flashcards]] — 闪卡（10）
+- [[05_Study/Review/README|Review]] — 复习（1）
 
 ## 专科入口
 
@@ -128,4 +136,4 @@ _（尚无内容 — 复习队列见 [[05_Study/Review/README|Review]] 与 [[99_
 
 ---
 
-_Last dashboard refresh: 2026-09-07_
+_Last dashboard refresh: 2026-09-11_

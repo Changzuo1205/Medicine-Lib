@@ -237,3 +237,11 @@ Course 新建  = 0    Quiz 新建 = 0        AGENTS.md 修改 = 0
 ## 七、参考实例
 
 - 2026-08-10：《病理学（第10版）》注册 → `02_Raw/Textbooks/Pathology/README.md`（完整流程示范）
+- 2026-09-14：一次补齐 4 份教材登记（S-TXT-001 ~ 004）→
+  - `02_Raw/Textbooks/Medical Microbiology/README.md`（文本层 ✅）
+  - `02_Raw/Textbooks/Clinical Epidemiology/README.md`（**纯图像扫描版，无文本层**）
+  - `02_Raw/Textbooks/Medical Immunology/README.md`（**纯图像扫描版，无文本层**）
+  - `02_Raw/Textbooks/Pathology/README.md`（补齐版权页元信息：ISBN / 版次 / 出版年份）
+
+> **经验（2026-09-14）**：步骤 ④ 必须显式判定「是否存在文本层」。仅看"页数正常、PDF 可打开"会漏判图像扫描版；
+> 判定方法：抽样页 `page.extract_text()` 长度 ≈ 0（或仅为水印文字）⇒ 图像版，**不可用于逐句核对，需先 OCR**。

@@ -1,4 +1,4 @@
-﻿---
+---
 type: navigation
 status: active
 tags:
@@ -26,7 +26,10 @@ created: 2026-09-11
   - 适应：萎缩、肥大、增生、化生、老化
   - 可逆性损伤（变性）：细胞水肿、脂肪变、玻璃样变、淀粉样变、黏液样变、病理性色素沉着、病理性钙化
   - 不可逆性损伤（细胞死亡）：坏死（凝固性 / 液化性 / 干酪样 / 脂肪 / 纤维蛋白样 / 坏疽）+ 凋亡
-- **损伤的修复**（待 /ingest）
+- **损伤的修复**：[[Chapter 2 - Repair]]（已建 MOC）
+  - 再生：再生类型与潜能 · 干细胞 · 各组织再生机制 · ECM 与生长因子 · 抑素与接触抑制
+  - 纤维性修复：肉芽组织 → 瘢痕组织
+  - 创伤愈合：一期 / 二期愈合、骨折愈合及其影响因素
 - **局部血液循环障碍**（待 /ingest）
 - **炎症**（待 /ingest）
 - **肿瘤**（待 /ingest）
@@ -34,21 +37,38 @@ created: 2026-09-11
 ### 2. 各论（Systemic Pathology）— 不同器官特殊病变规律（待 /ingest）
 - 心血管系统 · 呼吸系统 · 消化系统 · 泌尿系统 · 生殖系统 · 神经内分泌系统 · 造血免疫系统 · 皮肤骨骼系统
 
-## 已建节点（21）
+## 已建节点（48）
 
 ### 学科基础
 - （待建）[[Pathology]] — 病理学学科定义节点
 
 ### 第一章 细胞和组织的适应与损伤（Chapter 1）
-参见 [[Chapter 1 - Cellular Adaptation and Injury]] — 21 个概念节点 + 1 个 MOC
+参见 [[Chapter 1 - Cellular Adaptation and Injury]] — 22 个概念节点 + 1 个 MOC
+
+### 第二章 损伤的修复（Chapter 2）
+参见 [[Chapter 2 - Repair]] — 26 个概念节点 + 1 个 MOC
+
+| 分组 | 节点数 | 节点 |
+|------|--------|------|
+| 总论与再生基础 | 7 | [[Repair]] · [[Regeneration]] · [[Cell Cycle]] · [[Stem Cell]] · [[Labile Cells]] · [[Stable Cells]] · [[Permanent Cells]] |
+| 组织再生机制 | 6 | [[Epithelial Regeneration]] · [[Fibrous Tissue Regeneration]] · [[Cartilage Regeneration]] · [[Angiogenesis]] · [[Muscle Regeneration]] · [[Nerve Regeneration]] |
+| 再生影响因素 | 3 | [[Extracellular Matrix]] · [[Growth Factor]] · [[Chalone and Contact Inhibition]] |
+| 纤维性修复 | 3 | [[Fibrous Repair]] · [[Granulation Tissue]] · [[Scar Tissue]] |
+| 创伤愈合 | 5 | [[Wound Healing]] · [[Healing by First Intention]] · [[Healing by Second Intention]] · [[Fracture Healing]] · [[Factors Affecting Wound Healing]] |
+| 特定病变 | 2 | [[Traumatic Neuroma]] · [[Keloid]] |
 
 ## 待建节点（Knowledge Gaps）
 
 ### 学科基础
 - Pathology（病理学定义 / 任务 / 研究方法 / 发展史）
 
+### 第二章遗留（章内已建，仍待补）
+- 肝硬化（肝细胞再生失败的终末结局）
+- 室壁瘤、缩窄性心包炎 / 缩窄性胸膜炎（瘢痕的临床后果）
+- 骨痂改建的分子调控
+- 干细胞治疗应用相关疾病（帕金森病 / 阿尔茨海默病 / 糖尿病 / 心肌梗死）
+
 ### 总论后续章节
-- 第二章 损伤的修复（细胞再生、纤维性修复、创伤愈合）
 - 第三章 局部血液循环障碍（充血、淤血、出血、血栓、栓塞、梗死、水肿）
 - 第四章 炎症（炎症的概念、原因、基本病理变化、介质、类型、结局）
 - 第五章 肿瘤（肿瘤的概念、形态、异型性、命名、生长扩散、分级分期、病因）
@@ -86,7 +106,10 @@ created: 2026-09-11
 
 - **2026-09-11**：作为第 5 个已注册学科，参见 [[Change-Log]] 2026-09-11 条目
   - 首个 /ingest：第一章 细胞和组织的适应与损伤（来源 `S-LEC-011`）
-  - 新建 1 个 MOC + 21 个概念节点
+  - 新建 1 个 MOC + 22 个概念节点
+- **2026-09-14**：第二个 /ingest：第二章 损伤的修复（来源 `S-LEC-012`）
+  - 新建 1 个 MOC（[[Chapter 2 - Repair]]）+ 26 个概念节点
+  - 同步创建课程上下文层 Lecture：[[08_Courses/Pathology/Lectures/02 损伤的修复|02 损伤的修复]]
 
 ## 相关导航
 

@@ -1,4 +1,4 @@
-﻿---
+---
 type: navigation
 status: active
 tags:

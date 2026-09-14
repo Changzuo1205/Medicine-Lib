@@ -1,4 +1,4 @@
-﻿---
+---
 type: lecture
 status: archived
 course:

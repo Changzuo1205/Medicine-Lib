@@ -20,7 +20,7 @@ last_reviewed: 2026-09-09
 决定抗原**能否诱导免疫应答**及**应答强度**的因素。包括**抗原自身性质、宿主因素、抗原进入机体的方式**三大方面。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p20-27
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p20-27
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -64,4 +64,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p20-27
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p20-27

@@ -1,4 +1,4 @@
-﻿---
+---
 type: physiology
 status: active
 specialties:

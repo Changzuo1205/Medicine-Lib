@@ -21,7 +21,7 @@ last_reviewed: 2026-09-09
 能够**非特异性刺激多克隆 T、B 淋巴细胞**发生有丝分裂的物质。属于非特异性淋巴细胞多克隆激活剂。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p44-45
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p44-45
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -56,4 +56,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p44-45
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p44-45

@@ -20,7 +20,7 @@ last_reviewed: 2026-09-09
 按抗原在 **APC（抗原递呈细胞）内**的来源进行分类的两类抗原，决定不同的 MHC 提呈途径与 T 细胞激活类型。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p34
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p34
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -51,4 +51,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p34
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p34

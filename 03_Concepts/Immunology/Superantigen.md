@@ -22,7 +22,7 @@ last_reviewed: 2026-09-09
 只需**极低浓度（1–10 ng/mL）**即可**非特异性**激活人体总 T 细胞库中 **2%–20%** T 细胞克隆、产生极强免疫应答的一类抗原物质。其效应并非针对超抗原本身，而是通过**非特异性激活免疫细胞，分泌大量炎性细胞因子**，导致**中毒性休克、多器官衰竭**。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p36-38
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p36-38
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -68,4 +68,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p36-38
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p36-38

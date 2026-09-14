@@ -21,7 +21,7 @@ last_reviewed: 2026-09-09
 抗原分子中**决定免疫应答特异性**的特殊化学基团，又称**抗原决定簇（基）**（antigenic determinant）。是抗原与 TCR/BCR 或抗体**特异性结合的最小结构与功能单位**。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p13
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p13
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -47,4 +47,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p13-16
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p13-16

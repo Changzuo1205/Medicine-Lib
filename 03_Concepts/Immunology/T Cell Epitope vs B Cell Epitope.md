@@ -21,7 +21,7 @@ last_reviewed: 2026-09-09
 抗原表位的两大类别，根据被识别的淋巴细胞类型不同而分类，对应不同的识别机制与加工要求。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p15-16
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p15-16
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -46,4 +46,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p15-16
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p15-16

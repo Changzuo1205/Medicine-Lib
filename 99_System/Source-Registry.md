@@ -1,4 +1,4 @@
-﻿---
+---
 type: system
 status: active
 tags:
@@ -11,9 +11,19 @@ tags:
 
 ## Textbooks — 教材
 
-_（暂无）_
+> 均为 **reference-only / not-ingested**（长期参考资料源，非知识提取来源）。登记详情见各教材目录 README。
 
 | 编号 | 书名 | 作者/编者 | 版本/年份 | 状态 |
+|------|------|-----------|-----------|------|
+| S-TXT-001 | 《病理学（第10版）》 | 卞修武、李一雷 | 第 10 版 / 2024 | needs_review |
+| S-TXT-002 | 《医学微生物学（第10版）》 | 郭晓奎、彭宜红 | 第 10 版 / 2024 | needs_review |
+| S-TXT-003 | 流行病学（据文件名「9版」） | 未知（PDF 无文本层） | 第 9 版? / 未知 | needs_review |
+| S-TXT-004 | 《免疫系统与疾病》 | 未知（PDF 无文本层） | 未知 | needs_review |
+
+- S-TXT-001 → `02_Raw/Textbooks/Pathology/README.md`（文本层 ✅，可用于逐句核对）
+- S-TXT-002 → `02_Raw/Textbooks/Medical Microbiology/README.md`（文本层 ✅）
+- S-TXT-003 → `02_Raw/Textbooks/Clinical Epidemiology/README.md`（**纯图像扫描版，无文本层，需 OCR**）
+- S-TXT-004 → `02_Raw/Textbooks/Medical Immunology/README.md`（**纯图像扫描版，无文本层；教材身份待人工确认**）
 
 ## Guidelines — 指南
 
@@ -41,8 +51,9 @@ _（暂无）_
 | S-LEC-008 | Clinical Epidemiology Chapter 1 — 疾病的分布（Distribution of Disease） | 栗世如 | 2026 秋 | needs_review |
 | S-LEC-009 | Human Parasitology Chapter 1 — 寄生虫学总论（申成华，2026 秋） | 申成华 | 2026 秋 | needs_review |
 | S-LEC-010 | Medical Immunology Chapter 3 — 抗原（Antigen） | 杨艳艳 | 2026 秋 | needs_review |
-
 | S-LEC-011 | Pathology Chapter 1 — Cellular Adaptation and Injury（组织细胞适应与损伤） | 优课联盟 UOOC（2026 秋） | 2026 秋 | needs_review |
+| S-LEC-012 | Pathology Chapter 2 — Repair（损伤的修复：再生 / 纤维性修复 / 创伤愈合） | 优课联盟 UOOC（2026 秋） | 2026 秋 | needs_review |
+
 ## Other Sources — 其他
 
 _（暂无）_

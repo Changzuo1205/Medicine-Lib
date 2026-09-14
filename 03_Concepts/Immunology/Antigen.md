@@ -20,7 +20,7 @@ last_reviewed: 2026-09-09
 抗原（**Antigen, Ag**）：能被 **T、B 淋巴细胞**表面**特异性抗原受体**（**TCR** 或 **BCR**）识别及结合，激活 T、B 细胞增殖、分化、产生免疫效应产物（特异性淋巴细胞或抗体），并与效应产物结合，进而发挥**适应性免疫应答**效应的物质。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf|《第三章 抗原》（杨艳艳，2026 秋）]] — p2, p6
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf|《第三章 抗原》（杨艳艳，2026 秋）]] — p2, p6
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -45,4 +45,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p2
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p2

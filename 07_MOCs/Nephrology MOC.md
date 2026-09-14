@@ -1,4 +1,4 @@
-﻿---
+---
 type: moc
 status: active
 tags:

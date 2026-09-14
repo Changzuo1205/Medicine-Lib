@@ -20,7 +20,7 @@ textbook: 人卫版《病理学》（第 9/10 版，待核对）
 
 > "As is our pathology, so is our medicine." — 病理学为医学之本。
 
-课程涻盖：
+课程覆盖：
 
 - **总论**（General Pathology）：共同病理变化规律
   - 适应与损伤 · 损伤的修复 · 局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理
@@ -34,8 +34,13 @@ textbook: 人卫版《病理学》（第 9/10 版，待核对）
   - 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]]
   - 关联 MOC：[[../../03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury]]
   - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
+- [[Lectures/02 损伤的修复|02 损伤的修复]]
+  - 来源：[[02_Raw/Lectures/Pathology/笔记—修复.docx]]
+  - 来源登记：[[99_System/Source-Registry#S-LEC-012|S-LEC-012]]
+  - 关联 MOC：[[../../03_Concepts/Pathology/Chapter 2 - Repair]]
+  - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
 
-_（后续章节待 /ingest 时补建 Lecture）_
+_（后续章节待 /ingest 时补建 Lecture：局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病）_
 
 ## Exam Topics
 
@@ -50,25 +55,32 @@ _（暂无；待 /study 时创建）_
 ## Knowledge Gaps
 
 详见 [[../../03_Concepts/Pathology/README|Pathology README]] 中“待建节点”清单：
-- 本章待建：Lipofuscin · 自由基损伤 · 钙超载 · 缺血-再活泄 · 焦亡/自喷
-- 后续章节：损伤的修复 · 局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病
+- 第一章待建：Lipofuscin · 自由基损伤 · 缺血-再灌注损伤 · 钙超载 · 焦亡 / 自噬 · 坏死形态学鉴别流程
+- 第二章待建：肝硬化机制 · 室壁瘤 · 缩窄性心包炎 · 骨痂改建分子调控 · 修复的临床算法
+- 后续章节：局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病
 
 ## Related Medical Knowledge
 
-学科目录已含 21 个概念节点，分布：
+学科目录已含 48 个概念节点（第一章 22 + 第二章 26），分布：
 
-| 类别 | 节点数 | 涻盖 |
+| 类别 | 节点数 | 覆盖 |
 |------|--------|------|
 | 适应（Adaptation） | 5 | Atrophy · Hypertrophy · Hyperplasia · Metaplasia · Cellular Aging |
 | 可逆损伤（Reversible Injury） | 8 | Cell Injury · Cellular Swelling · Fatty Change · Hyaline Degeneration · Amyloidosis · Mucoid Degeneration · Pathologic Pigmentation · Pathologic Calcification |
 | 细胞死亡（Cell Death） | 9 | Cell Death · Necrosis · 6 种坏死亚型 · Apoptosis |
+| 修复总论与再生基础 | 7 | Repair · Regeneration · Cell Cycle · Stem Cell · Labile / Stable / Permanent Cells |
+| 组织再生机制 | 6 | Epithelial · Fibrous Tissue · Cartilage · Angiogenesis · Muscle · Nerve Regeneration |
+| 再生影响因素 | 3 | Extracellular Matrix · Growth Factor · Chalone and Contact Inhibition |
+| 纤维性修复 | 3 | Fibrous Repair · Granulation Tissue · Scar Tissue |
+| 创伤愈合 | 5 | Wound Healing · 一期 / 二期愈合 · Fracture Healing · Factors Affecting Wound Healing |
+| 特定病变 | 2 | Traumatic Neuroma · Keloid |
 
-完整列表见 [[../../03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury|第一章 MOC]]。
+完整列表见 [[../../03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury|第一章 MOC]] 与 [[../../03_Concepts/Pathology/Chapter 2 - Repair|第二章 MOC]]。
 
 ## Source
 
-- 原始课件：[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx|《病理学》第一章 笔记（优课联盟 UOOC，2026 秋）]]
-- 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]]
+- 原始课件：[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx|《病理学》第一章 笔记（优课联盟 UOOC，2026 秋）]] · [[02_Raw/Lectures/Pathology/笔记—修复.docx|《病理学》第二章 笔记（优课联盟 UOOC，2026 秋）]]
+- 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]] · [[99_System/Source-Registry#S-LEC-012|S-LEC-012]]
 - evidence_level: C（医学教育资料 / 课程笔记）；source_status: needs_review
-- **待核对**：人卫版《病理学》第 9/10 版对应章节（reference textbook）
+- **待核对**：人卫版《病理学》第 9/10 版对应章节（reference textbook，文本层可用）
 - 关联学科目录：[[../../03_Concepts/Pathology/README|Pathology]]

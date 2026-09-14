@@ -22,7 +22,7 @@ last_reviewed: 2026-09-09
 - **TI-Ag（Thymus-Independent Antigen）**：无需 T 细胞辅助
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p29-30
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p29-30
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -59,4 +59,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p29-30
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p29-30

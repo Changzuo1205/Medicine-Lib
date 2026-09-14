@@ -21,7 +21,7 @@ last_reviewed: 2026-09-09
 - **半抗原（hapten）**：**仅有免疫反应性、不具备免疫原性**的小分子物质。多糖、酯类、某些药物
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p10
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p10
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -53,4 +53,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p10, p18-19
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p10, p18-19

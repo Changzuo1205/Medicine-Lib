@@ -1,4 +1,4 @@
-﻿---
+---
 type: disease
 status: active
 specialties:

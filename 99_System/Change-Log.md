@@ -9,6 +9,137 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-14 — /ingest 病理学 第二章 损伤的修复（S-LEC-012）
+
+> 用户指令：`/ingest 病理学 修复`。严格按 [[Ingest-SOP]] 执行（预检 → 概念提取 → 创建 → 来源登记 → 后验）。
+
+### 预检（Pre-flight）
+
+- 原始资料：`02_Raw/Lectures/Pathology/笔记—修复.docx`（25,044 bytes；163 段落，非空 161）
+- 枚举 `03_Concepts/Pathology/` → 22 个预存节点，**全部属第一章**，第二章无重叠 → 无覆盖风险
+- Source-Registry 最大号 `S-LEC-011` → 本次登记 `S-LEC-012`
+
+### Concept 层
+
+- **新建第二章 MOC**：`03_Concepts/Pathology/Chapter 2 - Repair.md`
+  - aliases：`第二章` / `损伤的修复` / `Chapter 2`
+  - **刻意不设 `Repair` 别名** —— `Repair` 已是同名概念节点，避免 wikilink 歧义
+- **新建 26 个概念节点**：
+
+| 分组 | 节点数 | 节点 |
+|------|--------|------|
+| 总论与再生基础 | 7 | Repair · Regeneration · Cell Cycle · Stem Cell · Labile Cells · Stable Cells · Permanent Cells |
+| 组织再生机制 | 6 | Epithelial Regeneration · Fibrous Tissue Regeneration · Cartilage Regeneration · Angiogenesis · Muscle Regeneration · Nerve Regeneration |
+| 再生影响因素 | 3 | Extracellular Matrix · Growth Factor · Chalone and Contact Inhibition |
+| 纤维性修复 | 3 | Fibrous Repair · Granulation Tissue · Scar Tissue |
+| 创伤愈合 | 5 | Wound Healing · Healing by First Intention · Healing by Second Intention · Fracture Healing · Factors Affecting Wound Healing |
+| 特定病变 | 2 | Traumatic Neuroma · Keloid |
+
+### 课程上下文层
+
+- 新建 Lecture：`08_Courses/Pathology/Lectures/02 损伤的修复.md`
+- 更新 Course：`08_Courses/Pathology/Course.md`（Lecture 清单 + 节点分布表 21 → 48）
+
+### System 层
+
+- `99_System/Source-Registry.md` — 追加 `S-LEC-012`（讲座表共 12 行）
+- `99_System/Knowledge-Status.md` — 活跃节点 74 → **100**；讲座来源 11 → 12
+- `00_Dashboard/Home.md` — 节点 74 → 100；`Pathology` 22 → 48；新增第二章 MOC 入口；Knowledge Gaps 表更新
+- `03_Concepts/Pathology/README.md` — 已建节点 22 → 48；待建清单移除第二章、新增"第二章遗留"
+
+### 并行协作（Ingest-SOP §6）
+
+- 主代理：预创 MOC、Source-Registry、Course / Lecture、README、Dashboard、Knowledge-Status，并执行 §5 后验
+- 3 个 subagent 并行写入 26 个节点（8 / 9 / 9，写集互不重叠）
+- subagent **未触碰** MOC / README / Source-Registry / Change-Log / 原始资料
+
+### 后验结果（SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 路径解析 | 28 个新文件中 408 条 wikilink；**真断链 0**（13 条未解析均为刻意保留的待建节点 + MOC 中的原始 `.docx` 附件链接） |
+| 5.1.2 变位字扫描 | **0 命中**（SOP 禁用字表 + 已知错字表双重扫描） |
+| 5.1.3 frontmatter 一致性 | 26 个节点**共用 1 种字段签名**，问题 0 |
+| 5.1.4 段落号引用 | 26 个节点全部带 `paragraphs NNN–NNN`，可回溯讲义原文 |
+| 5.1.5 Source-Registry | `S-LEC-012` 在表内；共 12 行；无乱码 / `??` |
+| 额外 | ASCII 字母与中文相邻：0；BOM：0；缺尾换行：0 |
+
+### 后验发现并修正
+
+- **`Growth Factor.md`**：subagent 曾补入 7 个因子的中文全称（如"血小板源生长因子"），但**讲义原文仅给出缩写** → 已改为只列缩写 + 加 `讲义未详述` 警示（依 AGENTS.md §32「Prefer sources over memory」）
+- **`Stem Cell.md`**：帕金森病 / 阿尔茨海默病 / 糖尿病 / 心肌梗死 原为纯文本 → 改为待建 wikilink，与 MOC 的待建清单及第一章"链接优先"惯例一致
+- **讲义结构说明**：讲义**仅"第一节 再生"有显式节标题**，"纤维性修复""创伤愈合"两部分无节标题 → MOC 与 Lecture 均显式标注划分依据为原文编号，**未伪造节标题**
+
+### 安全网
+
+- 26 个节点均 `type: pathophysiology|physiology` · `evidence_level: C` · `source_status: needs_review` · `last_reviewed: 2026-09-14`
+- 讲义未覆盖处显式标注 `讲义未详述`（如生长因子未给功能、瘢痕疙瘩未给临床处理）
+- 原始 `.docx` 未修改；第一章 22 个节点与 MOC 未修改
+
+### 待 /ingest 后续章节
+
+- 第三章 局部血液循环障碍 · 第四章 炎症 · 第五章 肿瘤 · 第六章 免疫病理 · 第七~十八章 各论
+
+## 2026-09-14 — 一致性修复（bug fix pass）：BOM / 断链 / 文档漂移 / 教材登记
+
+> 用户指令：「修复 bug」。修复 2026-09-14 工作区结构分析中确认的 5 类缺陷。**未修改任何医学事实**（定义 / 机制 / 剂量 / 数值）。
+
+### 修复 1 — UTF-8 BOM 破坏 frontmatter 解析（42 个文件）
+
+- **问题**：42 个 `.md` 文件以 UTF-8 BOM（`EF BB BF`）开头、位于 `---` 之前，使 Obsidian 属性面板与 YAML 解析器无法识别 frontmatter
+- **修复**：逐字节剥离 BOM；不触碰其他任何字节，各文件原有 CRLF/LF 行尾保持不变
+- **效果**：无 frontmatter 的 `.md` 文件 **44 → 2**（余 `AGENTS.md`、`99_System/Archive/Concepts-Retired.md`，二者本不需要）
+- **范围**：8 个活跃文件（`03_Concepts/Pathology/{README,Hyperplasia,Hypertrophy,Metaplasia}.md`、`03_Concepts/Diseases/Diabetes Insipidus.md`、`07_MOCs/Nephrology MOC.md`、`99_System/Source-Registry.md`、`02_Raw/Lectures/Pathology/README.md`）+ 34 个存档文件
+
+### 修复 2 — 断链：免疫学节点指向不存在的原始文件（27 处 / 14 文件）
+
+- **问题**：`[[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]]` —— 实际文件名为 `第三章 抗原.pdf`（PPT→PDF 转换改名遗留）
+- **修复**：27 处全部改为实际文件名，含 12 个 Immunology 概念节点 ×2（正文引用 + Sources）、`08_Courses/Medical Immunology/Lectures/03 抗原.md`、本 Change-Log
+- **效果**：含未解析链接的文件 **46 → 36**，"指向不存在文件"这一类缺陷清零
+- 另有 1 处路径笔误：本日志 2026-09-11 `/setup` 条目中 `[[02_Raw/Lectures/Pathology/Pathology|Pathology 课程]]` → 修正为 `[[08_Courses/Pathology/Course|Pathology 课程]]`
+
+### 修复 3 — AGENTS.md §4 已注册学科清单滞后
+
+- **问题**：清单只列 4 个学科，节点数陈旧（Immunology 4 / Human Parasitology 0 / Clinical Epidemiology 0，均为"待 /ingest"），且**遗漏第 5 个注册学科 Pathology**
+- **修复**：`AGENTS.md` §4 更新为 5 个学科实名 + 当前节点数（16 / 7 / 11 / 17 / 22），并注明"节点数为概念节点，不含 README 与 MOC"
+
+### 修复 4 — 文档计数与结构漂移
+
+| 文件 | 原值 | 更正 |
+|------|------|------|
+| `03_Concepts/Pathology/README.md` | 已建节点 21 · 新建 21 个概念节点 | **22**（两处） |
+| `07_MOCs/Medicine MOC.md` | Pathology 21 节点；"核心知识入口"漏列 Pathology | **22** + 补列 |
+| `00_Dashboard/Home.md` | 学习材料行仍写"27 道题…Flashcards/Wrong-Answers/Review 仍空"；原始资料"11 份"；退役存档"40 节点" | 15 题 / 10 卡 / 1 复习 / 0 错题；12 份原始课件 + 11 个讲座来源；**38 概念节点**（+2 原 README） |
+| `99_System/README.md` | Templates（15 个）；目录树缺 `08_Courses`；文件清单缺 Ingest-SOP | **20 个** + 补 `08_Courses` + 补 Ingest-SOP / Archive |
+| `99_System/Knowledge-Status.md` | "活跃概念节点 73（1 Disease · 16 · … · 22）"口径自相矛盾 | **74 = 学科节点 73 + 跨学科目录 1**；补教材登记状态；`last_updated` → 2026-09-14 |
+| `99_System/Source-Registry.md` | `S-LEC-011` 行与表体之间夹空行，脱离表格 | 并入讲座表 |
+
+### 修复 5 — 教材登记补全（`Textbook-Import-SOP` 步骤 ⑥⑦）
+
+- **问题**：`02_Raw/Textbooks/` 已有 4 份 PDF，但 Source-Registry 教材区为空；仅 Pathology 有子目录 README
+- **新建 3 份 README**：`Medical Microbiology` / `Clinical Epidemiology` / `Medical Immunology`
+- **追加登记**：`S-TXT-001` ~ `S-TXT-004`（均 `reference-only / not-ingested`）
+- **补齐 Pathology README 元信息**：原写"出版年份未知、ISBN 待补充"，实际 PDF p3 版权页**可提取** → 2024 年 7 月第 10 版、ISBN 978-7-117-36468-3、人民卫生出版社、副主编名单
+- ⚠️ **重要发现（影响 `needs_review` 核对计划）**：
+  - `流行病学9版教材.pdf`（364 页）为**纯图像扫描版** —— 全部 364 页仅含 12 字符水印「微信公众号：公卫人小分队」，**无文本层**
+  - `免疫系统与疾病.pdf`（338 页）为**纯图像扫描版** —— 全部页面文本 0 字符
+  - ⇒ 这两份教材**在 OCR 前不可用于逐句核对**
+  - `11.医学微生物学.pdf`（386 页）与 `《病理学（第10版）》.pdf`（418 页）**有文本层，可用于核对**
+
+### 安全网 / 未变更
+
+- 未修改任何医学事实；`03_Concepts/` 内的改动仅限于链接目标修正（12 个 Immunology 节点）、计数修正（Pathology README）与 frontmatter 前导 BOM 剥离
+- 未删除任何文件；未改动 `02_Raw/` 下的原始 PDF / DOCX
+- 修复脚本与扫描报告位于 `temp/`（已被 `.gitignore` 排除）：`structure_analysis.py`、`bugfix_pass1.py`、`bugfix_pass2.py`、`textbook_scan.py`、`textbook_verify.py`
+
+### 遗留（仅报告，未修复）
+
+- 5 个文件存在**行尾混用**（各含 1 处 CRLF，其余 LF）：`03_Concepts/Pathology/{Hyperplasia,Hypertrophy,Metaplasia}.md`、`05_Study/Flashcards/FC-Imm-06-Neutrophil-KeyData.md`、`FC-Imm-08-TCR-BCR-Receptors.md` —— 不影响解析，未改动以遵守 §27
+- `02_Raw/Textbooks/Human Parasitology/` 为空目录（无教材文件）
+- `.gitignore` 忽略整个 `02_Raw/`（仅 `02_Raw/Lectures/` 例外），故 4 份教材 README 与登记信息**不进版本库** —— 需人工决定是否放行 `!02_Raw/**/README.md`
+- 本日志 2026-09-08 条目中 `[[03_Concepts/Infectious Disease|Infectious Disease]]` 指向已拆分删除的学科目录；属历史记录，保留不改
+- 其余 36 个文件的未解析链接均为"先链接、后建节点"的**待建概念**（Knowledge Gaps）、SOP/模板占位符或存档内部链接，非缺陷
+
 ## 2026-09-11 — 注册新学科：病理学（Pathology）与首个 /ingest
 
 > 用户反馈：注册“病理学”作为第 5 个已注册学科，同时对第一章“组织细胞适应与损伤”执行 /ingest。
@@ -79,7 +210,7 @@ tags:
 
 ## 2026-09-11 — /setup 病理学：建立课程上下文层
 
-> 用户反馈：在完成 [[03_Concepts/Pathology|Pathology]] 学科首个 /ingest 后进行 /setup，为 [[02_Raw/Lectures/Pathology/Pathology|Pathology 课程]] 建立课程上下文层。
+> 用户反馈：在完成 [[03_Concepts/Pathology|Pathology]] 学科首个 /ingest 后进行 /setup，为 [[08_Courses/Pathology/Course|Pathology 课程]] 建立课程上下文层。
 
 ### 操作
 
@@ -758,7 +889,7 @@ tags:
 
 ## 2026-09-09 — /ingest 免疫学 抗原（Chapter 3）
 
-> 用户对 `[[03_Concepts/Immunology|Immunology]]` 学科执行第 2 次 /ingest（第 1 次为 2026-09-07 免疫学概述）。原始资料：`02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf`（56 页），讲者杨艳艳（基础医学院免疫学系）。
+> 用户对 `[[03_Concepts/Immunology|Immunology]]` 学科执行第 2 次 /ingest（第 1 次为 2026-09-07 免疫学概述）。原始资料：`02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf`（56 页），讲者杨艳艳（基础医学院免疫学系）。
 
 ### 注册讲座来源
 
@@ -794,7 +925,7 @@ tags:
 
 ### 未变更
 
-- `02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf` — 未修改
+- `02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf` — 未修改
 - AGENTS.md（已正确列出 Immunology 为注册学科 1）
 
 ### 教学要点（来自 Lecture 03）

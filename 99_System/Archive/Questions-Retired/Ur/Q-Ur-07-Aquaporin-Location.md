@@ -1,4 +1,4 @@
-﻿---
+---
 type: question
 status: active
 course:

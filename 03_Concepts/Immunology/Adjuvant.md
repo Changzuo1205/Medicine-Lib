@@ -21,7 +21,7 @@ last_reviewed: 2026-09-09
 预先或与抗原同时注入体内，可**增强机体对该抗原的免疫应答**或**改变免疫应答类型**的**非特异性免疫增强性物质**。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p39-43
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p39-43
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -64,4 +64,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p39-43
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p39-43

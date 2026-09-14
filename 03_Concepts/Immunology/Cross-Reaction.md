@@ -21,7 +21,7 @@ last_reviewed: 2026-09-09
 某些抗原诱生的特异性抗体或活化淋巴细胞，**不仅可与该抗原表位特异性结合，还可与其他抗原中相同或相似的表位反应**。基础是**共同抗原表位**的存在。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p17
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p17
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -47,4 +47,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p17
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p17

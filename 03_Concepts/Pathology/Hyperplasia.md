@@ -1,4 +1,4 @@
-﻿---
+---
 type: pathophysiology
 status: active
 specialties:

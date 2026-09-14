@@ -181,11 +181,12 @@ AI 不应随意修改原始资料。
 包括：
 
 ```text
-# 已注册学科（Disciplines）
-Immunology/             ← V2 注册学科 1（4 节点）
+# 已注册学科（Disciplines）— 节点数为概念节点，不含 README 与 MOC
+Immunology/             ← V2 注册学科 1（免疫学，16 节点）
 Medical Microbiology/   ← V2 注册学科 2（医学微生物学，7 节点；从病原与感染性疾病 Ⅰ 拆分）
-Human Parasitology/     ← V2 注册学科 3（人体寄生虫学，0 节点；从病原与感染性疾病 Ⅰ 拆分，待 /ingest）
-Clinical Epidemiology/ ← V2 注册学科 4（临床流行病学，0 节点，待 /ingest）
+Human Parasitology/     ← V2 注册学科 3（人体寄生虫学，11 节点；从病原与感染性疾病 Ⅰ 拆分）
+Clinical Epidemiology/  ← V2 注册学科 4（临床流行病学，17 节点）
+Pathology/              ← V2 注册学科 5（病理学，22 节点；2026-09-11 注册）
 
 # 跨学科"知识类型"目录（保留）
 Diseases/

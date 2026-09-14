@@ -15,7 +15,7 @@ tags:
 - [[03_Concepts/Medical Microbiology/README|Medical Microbiology]] — 医学微生物学
 - [[03_Concepts/Human Parasitology/README|Human Parasitology]] — 人体寄生虫学
 - [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学
-- [[03_Concepts/Pathology/README|Pathology]] — 病理学（2026-09-11 注册，21 节点）
+- [[03_Concepts/Pathology/README|Pathology]] — 病理学（2026-09-11 注册，22 节点）
 
 ## 专科 MOC
 
@@ -47,6 +47,7 @@ tags:
 - [[03_Concepts/Medical Microbiology/README|Medical Microbiology]]（已注册学科 — 医学微生物学）
 - [[03_Concepts/Human Parasitology/README|Human Parasitology]]（已注册学科 — 人体寄生虫学）
 - [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]]（已注册学科 — 临床流行病学）
+- [[03_Concepts/Pathology/README|Pathology]]（已注册学科 — 病理学）
 - [[99_System/Archive/Concepts-Retired/|Concepts-Retired Archive]]（V1 按知识类型节点存档）
 
 ## 临床推理入口

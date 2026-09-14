@@ -21,6 +21,7 @@ Medicine-Lib/
 ├── 05_Study/       # 主动学习
 ├── 06_Specialties/ # 专科导航
 ├── 07_MOCs/        # 知识导航页
+├── 08_Courses/     # 课程上下文层（Course / Lecture / Exam Topic / Review Session）
 ├── 99_System/      # 系统规则与日志
 └── AGENTS.md       # 知识库规范
 ```
@@ -36,7 +37,9 @@ Medicine-Lib/
 ## 本目录文件
 
 - [[Knowledge-Status]] — 知识状态跟踪（Knowledge Gaps / Needs Review / 冲突 / 无来源 / 过时）
-- [[Source-Registry]] — 来源登记表
+- [[Source-Registry]] — 来源登记表（教材 / 指南 / 文献 / 讲座）
 - [[Change-Log]] — 结构变更日志
+- [[Ingest-SOP]] — `/ingest` 详细作业流程（预检 / 概念提取 / 写作安全规则 / 后验 / 并行 agent 协作）
 - [[Textbook-Import-SOP]] — 教材导入流程（Reference Registration 标准操作流程 + 命令模板）
-- [[99_System/Templates/01_Disease|Templates]] — 知识节点模板（15 个）
+- [[99_System/Templates/01_Disease|Templates]] — 知识节点模板（20 个）
+- [[99_System/Archive/|Archive]] — 退役概念与退役题目存档（不属于活跃知识层）

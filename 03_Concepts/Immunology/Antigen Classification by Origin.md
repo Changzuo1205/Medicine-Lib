@@ -20,7 +20,7 @@ last_reviewed: 2026-09-09
 按抗原与机体的**亲缘关系**分类的 5 类抗原：**异嗜性、异种、同种异型、自身、独特型**抗原。
 
 > [!info] 来源
-> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p31-33
+> - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p31-33
 > - 来源登记：[[Source-Registry#S-LEC-010]]
 
 ## Pathological Mechanism
@@ -47,4 +47,4 @@ last_reviewed: 2026-09-09
 
 ## Sources
 
-- [[02_Raw/Lectures/Medical Immunology/第三章 抗原(1).pdf]] — p31-33
+- [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p31-33

@@ -153,16 +153,28 @@ last_reviewed: YYYY-MM-DD
 | **错位代号**：未创建 MOC 就写了 `[[第一章 MOC]]` | 先创 MOC 不设别名，子节点用完整文件名引用；后续重写 MOC 加入 alias |
 | **路径偏移**：`../../` 本意是 `课程···` 但实际需 `···` | 写入后途中必须调用 `os.path.normpath` 验证路径存在性；或使用 `[[节点名]]` 纯基名引用（优先） |
 
-### 3.4 优先纯基名引用（推荐）
+### 3.4 链接写法规范（2026-09-14 实测校准 — 强制）
 
-| 场景 | 推荐写法 |
-|------|----------|
-| 子节点 ↔ 同一学科其他节点 | `[[Atrophy]]` · `[[Hypertrophy]]` |
-| 子节点 ↔ MOC | `[[01 组织细胞适应与损伤]]` |
-| 子节点 ↔ 不同学科节点 | `[[../Immunology/Immune Dysregulation]]`（相对路径） |
-| 子节点 ↔ Source / System | `[[../../../02_Raw/Lectures/Pathology/...]]` · `[[../../../99_System/Source-Registry#S-LEC-011]]` |
+> **先量后定**：全库扫描得「概念链接 **裸基名 689 条** vs **相对路径 2 条**」；
+> 7 篇非病理学 Lecture 正文一律是 `详见 [[Node]]。` 形式的裸基名。
+> 故 **裸基名是默认写法**，路径写法只保留下表两个例外场景。
+>
+> **起因**：本节旧版把 `[[../Immunology/Immune Dysregulation]]` 列为**推荐**写法，
+> 而它恰是全库仅 2 处之一 —— 规范落后于事实，直接导致病理学两个 Lecture 正文写成
+> `[[../../../03_Concepts/Pathology/Atrophy|Atrophy]]` 这种全库绝无仅有的形式。
 
-> **优先纯基名引用** = 减少路径错误、快捷、与跨平台兼容。
+| 场景 | 写法 | 依据 |
+|------|------|------|
+| 概念节点 ↔ 概念节点（同学科 / 跨学科一律如此） | `[[Atrophy]]` · `[[Immune Dysregulation]]` | 裸基名；全库 689 条 |
+| 概念节点 ↔ 本学科 README / MOC / 章节 Lecture | `[[Atrophy]]` · `[[01 组织细胞适应与损伤]]` | 裸基名 |
+| **Lecture 正文 ↔ 概念节点** | `详见 [[Atrophy]]、[[Hypertrophy]]。` | 紧跟小节标题之后单独一行；**标题内与表格内同样用裸基名**；7/7 非病理学 Lecture 实证 |
+| Lecture / Course 的 `> - 关联学科：` 元数据 | `[[../../03_Concepts/{{学科}}/README\|{{学科}}]]` | 与 5 个 `Course.md` + `17_Lecture.md` 模板一致 |
+| 节点 ↔ 来源文件（`02_Raw/`） | `[[02_Raw/Lectures/Pathology/…docx]]`（**从 vault 根写起，不带 `../`**） | 全库来源链接实测写法 |
+| 节点 ↔ Source-Registry / System | `[[99_System/Source-Registry#S-LEC-011]]` | 从 vault 根写起 |
+
+> **反例（勿模仿）**：`[[../Immunology/Immune Dysregulation]]`、`[[../../../03_Concepts/Pathology/Atrophy|Atrophy]]`。
+> 相对路径在文件移动时**静默失效**（Obsidian 回退到 basename 匹配，看着仍能点开），
+> 本库曾因此产生 6 处逃出 vault 根的隐藏断链 —— 详见 §5.1.1。
 
 ---
 
@@ -304,6 +316,17 @@ last_reviewed: YYYY-MM-DD
       ② `03_Concepts/` 下**已注册的学科名**（基础/方法学学科，如 `Pathology`、`Immunology`）；
       ③ `03_Concepts/README` 「specialties 允许值」表中显式列出的其他应用方向（如 `Tropical Medicine`、`Public Health and Preventive Medicine`）。
       > 原因：本字段历史上混用了「学科名」与「临床专科名」两套口径，12 个取值中仅 4 个能对应到 `06_Specialties/` 目录，无法机械校验。
+- [ ] **5.1.12 链接写法符合 §3.4**（2026-09-14 新增）
+      Lecture 正文的概念链接必须是**裸基名 + `详见 [[Node]]。`** 形式；**标题内不得含 wikilink**；
+      除 §3.4 表中两个例外（`> - 关联学科：` 元数据、`02_Raw/` 来源文件）外，不得出现相对路径。
+      ```powershell
+      # 检出：Lecture / README 正文里残留的 `../` 概念链接（排除元数据与来源行）
+      Get-ChildItem 08_Courses/*/Lectures/*.md, 03_Concepts/*/README.md |
+        Select-String -Pattern '\[\[' |
+        Where-Object { $_.Line -match '\.\./' -and $_.Line -notmatch '关联学科|02_Raw|Source-Registry|Course|README\.md' }
+      ```
+      > 原因：2026-09-14 发现病理学 Lecture 正文用的是全库仅见的形式
+      > `[[../../../03_Concepts/Pathology/Atrophy|Atrophy]]`，而其他 7 个 Lecture 一律 `详见 [[Atrophy]]。`。
 
 ### 5.2 建议项（越做越好）
 
@@ -371,6 +394,7 @@ Needs Review：
 | **Lecture 漏建**（2026-09-14） | §3.1 原写"课程上下文层（若需要）"，措辞使其看起来可选 → 课件 ingest 后 `08_Courses/` 与知识层脱节，事后由用户发现 | 该"若需要"措辞**已删除**；§3.5 改为**强制**，§5.1.7 后验拦截 |
 | **章节导航放进 03_Concepts**（2026-09-14） | 概念层混入导航页：病理学曾在 `03_Concepts/Pathology/` 放 `Chapter 1/2` MOC，与其他 4 个学科结构不一致 | 章内导航 → Lecture 的 `## Related Medical Knowledge`；学科节点索引 → 学科 README；后验 §5.1.8 检查概念层不得有导航页 |
 | **Lecture 自创小节**（2026-09-14） | 病理学 Lecture 一度加了 `## 本章知识导航` / `## Knowledge Gaps` / `## 来源与摄入记录`，7 个其他学科一个都没有 | 动手前先**横向比对同类文件的实际形状**再定结构，见 §3.5.4 |
+| **Lecture 正文写相对路径链接**（2026-09-14） | 病理学两个 Lecture 正文用了全库仅见的形式 `[[../../../03_Concepts/Pathology/Atrophy\|Atrophy]]`，而其他 7 个 Lecture 一律 `详见 [[Atrophy]]。` | §3.4 已按实测重写（689 裸基名 vs 2 相对路径）；§5.1.12 后验拦截；根因是旧版 §3.4 把相对路径写成了推荐 |
 | Lecture `章节目标` 伪装成来源 | 讲义未标注掌握程度，却填了"掌握/熟悉/了解" | 必须加 `> [!info] Clinical Reasoning` 标注（AGENTS.md §26） |
 
 ---

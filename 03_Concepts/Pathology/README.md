@@ -23,13 +23,14 @@ created: 2026-09-11
 
 ### 1. 总论（General Pathology）— 共同规律与基本病理变化
 - **细胞和组织的适应与损伤**：[[01 组织细胞适应与损伤]]（Lecture；章节导航在本 Lecture 内）
-  - 适应：萎缩、肥大、增生、化生、老化
-  - 可逆性损伤（变性）：细胞水肿、脂肪变、玻璃样变、淀粉样变、黏液样变、病理性色素沉着、病理性钙化
-  - 不可逆性损伤（细胞死亡）：坏死（凝固性 / 液化性 / 干酪样 / 脂肪 / 纤维蛋白样 / 坏疽）+ 凋亡
-- **损伤的修复**：[[02 损伤的修复]]（Lecture；章节导航在本 Lecture 内）
-  - 再生：再生类型与潜能 · 干细胞 · 各组织再生机制 · ECM 与生长因子 · 抑素与接触抑制
-  - 纤维性修复：肉芽组织 → 瘢痕组织
-  - 创伤愈合：一期 / 二期愈合、骨折愈合及其影响因素
+  - 适应：[[Atrophy|萎缩]]、[[Hypertrophy|肥大]]、[[Hyperplasia|增生]]、[[Metaplasia|化生]]、[[Cellular Aging|老化]]
+  - 可逆性损伤（变性）：[[Cell Injury|细胞损伤]]（总论）、[[Cellular Swelling|细胞水肿]]、[[Fatty Change|脂肪变]]、[[Hyaline Degeneration|玻璃样变]]、[[Amyloidosis|淀粉样变]]、[[Mucoid Degeneration|黏液样变]]、[[Pathologic Pigmentation|病理性色素沉着]]、[[Pathologic Calcification|病理性钙化]]
+  - 不可逆性损伤（细胞死亡）：[[Cell Death|细胞死亡]]（总论）→ [[Necrosis|坏死]]（[[Coagulative Necrosis|凝固性]] / [[Liquefactive Necrosis|液化性]] / [[Caseous Necrosis|干酪样]] / [[Fat Necrosis|脂肪]] / [[Fibrinoid Necrosis|纤维蛋白样]] / [[Gangrene|坏疽]]）+ [[Apoptosis|凋亡]]
+- **损伤的修复**（[[Repair|总论]]）：[[02 损伤的修复]]（Lecture；章节导航在本 Lecture 内）
+  - [[Regeneration|再生]]类型与潜能 · [[Cell Cycle|细胞周期]] · [[Stem Cell|干细胞]] · 各组织再生机制（[[Epithelial Regeneration|上皮]] · [[Fibrous Tissue Regeneration|纤维]] · [[Cartilage Regeneration|软骨]] · [[Angiogenesis|血管]] · [[Muscle Regeneration|肌]] · [[Nerve Regeneration|神经]]） · [[Extracellular Matrix|ECM]] 与 [[Growth Factor|生长因子]] · [[Chalone and Contact Inhibition|抑素与接触抑制]]
+  - [[Fibrous Repair|纤维性修复]]：[[Granulation Tissue|肉芽组织]] → [[Scar Tissue|瘢痕组织]]
+  - [[Wound Healing|创伤愈合]]：[[Healing by First Intention|一期]] / [[Healing by Second Intention|二期愈合]]、[[Fracture Healing|骨折愈合]]、[[Factors Affecting Wound Healing|影响因素]]
+  - 特定病变：[[Traumatic Neuroma|创伤性神经瘤]] · [[Keloid|瘢痕疙瘩]]
 - **局部血液循环障碍**（待 /ingest）
 - **炎症**（待 /ingest）
 - **肿瘤**（待 /ingest）

@@ -24,7 +24,7 @@ related:
 2. **不隐匿不确定性** — 讲义未涉及的机制或临床意义要明确标注（例：`讲义未详述` / `evidence_level: C, source_status: needs_review`）。
 3. **不覆盖高价值内容** — 修改既有节点时保留、修补、加链接，不为"格式统一"重写。
 
-> **课件来源的完整产出清单（2026-09-14 起）**：① 概念子节点　② 跨文件双向链接　③ **课程上下文层 Course + Lecture（§3.5，强制）**　④ **Lecture 内的章节导航**（`## 章节结构` / `## 本章知识导航`；**不再单独建章节 MOC**）　⑤ Source-Registry　⑥ Change-Log　⑦ Dashboard / Knowledge-Status 回写
+> **课件来源的完整产出清单（2026-09-14 起）**：① 概念子节点　② 跨文件双向链接　③ **课程上下文层 Course + Lecture（§3.5，强制）**　④ Lecture 的 `## Related Medical Knowledge`（= 本章节点清单）　⑤ **学科 README 的节点索引**（分组 + 要点）　⑥ Source-Registry　⑦ Change-Log　⑧ Dashboard / Knowledge-Status 回写
 > **缺任何一项 = 本次 /ingest 未完成**，不得交付。
 
 ---
@@ -88,15 +88,18 @@ related:
 
 ### 3.1 顺序（关键）
 
-1. **Discipline README 与章节 Lecture 优先** — 为子节点提供入口、别名与**章节导航**
+1. **章节 Lecture 与 Discipline README 优先** — Lecture 提供章内导航（`## Related Medical Knowledge`），README 提供学科节点索引
 2. 子节点依次创建 / 更新
 3. 跨文件链接 / 双向链接
 4. **课程上下文层同步（课件来源强制）** — 见 §3.5
 
-> **章节导航的归属（2026-09-14 定案）**：**章节级导航写在 `08_Courses/<Discipline>/Lectures/<NN> <章节名>.md` 内**
-> （`## 章节结构` + `## 本章知识导航` + `## Knowledge Gaps` + `## 来源与摄入记录`），
-> **不再在 `03_Concepts/` 下另建 `Chapter N - ….md` MOC** —— `03_Concepts/<学科>/` 只放概念节点与 README。
-> **顺序不可颠倒**：先建/更新章节 Lecture（含章节导航）→ 再子节点 → 再链接。子节点要引用已存在的章节导航，否则链接悬空。
+> **章节导航的归属（2026-09-14 定案，与其余学科对齐）**：
+> - **章内导航** → 写在 `08_Courses/<Discipline>/Lectures/<NN> <章节名>.md` 的 `## Related Medical Knowledge`（**本章概念节点的扁平清单**）
+> - **学科节点索引**（分组 + 逐节点要点）→ 写在 `03_Concepts/<学科>/README.md` 的「已建节点」段
+> - **不再在 `03_Concepts/` 下另建 `Chapter N - ….md` MOC** —— `03_Concepts/<学科>/` 只放概念节点与 README
+> - **Lecture 不写** `## 本章知识导航` / `## Knowledge Gaps` / `## 来源与摄入记录`（前者的内容归 README，后两者分别归 `Course.md` 与顶部 `> [!info] 来源` callout）
+>
+> **顺序不可颠倒**：先建/更新章节 Lecture 与 README 索引 → 再子节点 → 再链接。子节点要引用已存在的位置，否则链接悬空。
 
 ### 3.2 Frontmatter 模板（强制）
 
@@ -199,21 +202,19 @@ last_reviewed: YYYY-MM-DD
 | `> [!info] 来源` callout | 原始资料 wikilink · 讲者 · `[[Source-Registry#S-LEC-NNN]]` · `source_status` · 关联学科 |
 | `## Lecture Overview` | 本讲在课程中的位置与主线 |
 | `## 章节目标` | 掌握 / 熟悉 / 了解 三层。**讲义未标注掌握程度时必须按 AGENTS.md §26 显式标注为 inference** |
-| `## 章节结构` | 本章在学科中的位置（流程 / 关系图） |
-| `## 本章知识导航` | **章节导航的唯一归属**：分组概念节点索引（每组标题含节点数）+ 逐节点「要点」 |
-| `## Knowledge Gaps` | 本章待建 / 需补充节点 + 跨学科联动项 |
+| `## 章节结构`（推荐，4/7 学科有） | 本章在学科中的位置（流程 / 关系图） |
 | 各节正文 | 与讲义结构对应；正文内**直接链接概念节点**（不再写 `> 详见 [[MOC#…]]` 指针） |
 | `## Class Notes` | `源文本特点` / `我的疑问` / `AI 补充（必须核实来源）` 三个 callout |
-| `## Related Medical Knowledge` | 指向上一章 / 下一章 Lecture、学科 README、Course 与协作学科 |
+| `## Related Medical Knowledge` | **本章概念节点的扁平清单**（与其他学科一致）；可再附 1–2 条上一章 / 下一章或协作学科链接 |
 | `## Related Questions` | 无题时写 `_（暂无；后续 /quiz 阶段生成）_` |
-| `## 来源与摄入记录` | 主来源 · 来源登记 ID · evidence_level / source_status · `/ingest` 完成状态 |
 
 #### 3.5.5 双向链接（强制）
 
-- **Lecture 自带章节导航**：`## 章节结构` + `## 本章知识导航`（分组节点索引 + 要点）+ `## Knowledge Gaps` + `## 来源与摄入记录`
-- **概念节点 → 所属章节 Lecture**（至少一次，写在 `## Related Concepts` 首行）—— 节点"我属于哪一章"的唯一回链
-- Lecture → 概念节点（`## 本章知识导航` 已全部列出）
+- **章内导航**：Lecture 的 `## Related Medical Knowledge` = 本章概念节点扁平清单
+- **学科节点索引**：`03_Concepts/<学科>/README.md`「已建节点」段 = 分组 + 逐节点要点（这是"详细知识导航"的归属）
+- **概念节点 → 所属章节 Lecture**（至少一次，写在 `## Related Concepts` 首行）—— 节点"我属于哪一章"的回链
 - **不存在独立章节 MOC**：`03_Concepts/<学科>/` 只能有概念节点与 README，不得出现 `Chapter N - ….md` 之类导航页
+- **Lecture 不重复 README 的节点索引**：`## Related Medical Knowledge` 只列节点链接，不写要点表（要点属 README）
 
 #### 3.5.6 例外
 
@@ -270,14 +271,14 @@ last_reviewed: YYYY-MM-DD
 - [ ] **5.1.4 底类型子节点的 type 与其 frontmatter 一致**（例：`Cell Death` 节点在 `Atrophy.md` 里会不会错点为另一个节点）
 - [ ] **5.1.5 Source-Registry**：新增讲座在表中，中文不为 `??` / `\ufffd` 等代字体
 - [ ] **5.1.6 Change-Log**：本次入库记录已写入 99_System/Change-Log.md
-- [ ] **5.1.7 课程上下文层已同步**（课件来源必检，见 §3.5）：`08_Courses/<Discipline>/Course.md` 存在；`Lectures/<NN> <章节名>.md` 已建或已更新；`Course.md` 的 Lectures 清单与节点计数已回写；Lecture 内含 `## 章节结构` / `## 本章知识导航` / `## Knowledge Gaps`；概念节点已回链所属章节 Lecture。
+- [ ] **5.1.7 课程上下文层已同步**（课件来源必检，见 §3.5）：`08_Courses/<Discipline>/Course.md` 存在；`Lectures/<NN> <章节名>.md` 已建或已更新；`Course.md` 的 Lectures 清单与节点计数已回写；Lecture 的 `## Related Medical Knowledge` 已列出本章全部概念节点；概念节点已回链所属章节 Lecture；`03_Concepts/<学科>/README.md` 的节点索引已同步。
       **未通过 = 不得交付**（此项为 2026-09-14 新增，源于病理学第二章 Lecture 漏建事故）
 
 - [ ] **5.1.8 导航页与目录实际一致**（2026-09-14 新增，源于「暂无」占位符腐烂事故）
       逐项核对，任一不符即修复后再交付：
-  - Discipline `README.md` 的「已建节点」段：占位符 `_（暂无）_` 是否仍在？节点是否**逐个 wikilink 列出，或经本章 Lecture 的 `## 本章知识导航` 可到达**？（两种均可）
+  - Discipline `README.md` 的「已建节点」段：占位符 `_（暂无）_` 是否仍在？节点是否**逐个 wikilink 列出，或经章节 Lecture 的 `## Related Medical Knowledge` 可到达**？（两种均可）
   - Discipline `README.md` 的「待建节点」清单：**本次已建出的节点必须从中删除**（否则会误导下一轮 /ingest 重复建节点，见 AGENTS.md §11）
-  - 章节 Lecture 内 `## 本章知识导航` 的**分组标题数字**是否等于其表格实际行数？（例：`二、可逆性损伤 — 7 个节点` 而表内 8 行 = 不通过）
+  - **学科 README 节点索引**的分组标题数字是否等于其表格实际行数？（例：`二、可逆性损伤 — 7 个节点` 而表内 8 行 = 不通过）
   - `03_Concepts/<学科>/` 下是否**混入了导航页**（`Chapter N - ….md` 之类）？→ 不通过（见 §3.5.5）
   - MOC 末的**总数算式**是否自洽？（例：`21 个（适应 5 + 可逆损伤 8 + 细胞死亡 9）` → 5+8+9=22 ≠ 21 = 不通过）
   - `AGENTS.md` §4 注册学科节点数、`07_MOCs/Medicine MOC.md`、`00_Dashboard/Home.md`、`99_System/Knowledge-Status.md` 的节点数是否同步？
@@ -364,11 +365,12 @@ Needs Review：
 | "三项6"为"三项..." | 中英文重型字符与起始中英文多字符错位 | `天冬氨酸` = 3 个字· `天ast氨酸` = 4 个字· 永远检查总长度 |
 | "节点"为"章节" | `第一芃` (·芃 = 芃 = 芃) vs `第一节` (·节 = 节 = 节) | 使用 `节` 不要使用 `芃` |
 | "查询某项"未枚举 | 子目录包含预存文件但主代理未检查 | 严格按 1.2 项完成现状调查 |
-| 章节导航未先建 | 子节点的 `[[01 组织细胞适应与损伤]]` 未解析 | 先建/更新章节 Lecture（含 `## 本章知识导航`）再写子节点；Lecture 可加 `aliases: [第一章, …]` |
+| 章节 Lecture 未先建 | 子节点的 `[[01 组织细胞适应与损伤]]` 未解析 | 先建/更新章节 Lecture 与 README 索引，再写子节点 |
 | 路径偏移一级 | `../../` 实际需 `../../../` | 5.1.1 后验中验证所有路径 |
 | 多 agent 并行覆盖 | agent 未检查预存文件，导致写入冲突 | 主代理按 6.1 完成资源预检 |
 | **Lecture 漏建**（2026-09-14） | §3.1 原写"课程上下文层（若需要）"，措辞使其看起来可选 → 课件 ingest 后 `08_Courses/` 与知识层脱节，事后由用户发现 | 该"若需要"措辞**已删除**；§3.5 改为**强制**，§5.1.7 后验拦截 |
-| **章节导航放进 03_Concepts**（2026-09-14） | 概念层混入导航页：病理学曾在 `03_Concepts/Pathology/` 放 `Chapter 1/2` MOC，与其他 4 个学科结构不一致 | 章节导航一律写在章节 Lecture 内，见 §3.5.5；后验 §5.1.8 检查概念层不得有导航页 |
+| **章节导航放进 03_Concepts**（2026-09-14） | 概念层混入导航页：病理学曾在 `03_Concepts/Pathology/` 放 `Chapter 1/2` MOC，与其他 4 个学科结构不一致 | 章内导航 → Lecture 的 `## Related Medical Knowledge`；学科节点索引 → 学科 README；后验 §5.1.8 检查概念层不得有导航页 |
+| **Lecture 自创小节**（2026-09-14） | 病理学 Lecture 一度加了 `## 本章知识导航` / `## Knowledge Gaps` / `## 来源与摄入记录`，7 个其他学科一个都没有 | 动手前先**横向比对同类文件的实际形状**再定结构，见 §3.5.4 |
 | Lecture `章节目标` 伪装成来源 | 讲义未标注掌握程度，却填了"掌握/熟悉/了解" | 必须加 `> [!info] Clinical Reasoning` 标注（AGENTS.md §26） |
 
 ---

@@ -9,6 +9,63 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-14 — 病理学 Lectures 向其他学科公约对齐
+
+> 用户要求：「类比一下其他学科的 courses 中 lectures 下的章节是怎么做的，重新整理病理学」。
+
+### 实测公约（先量后改）
+
+对 9 个 Lecture 逐项统计后得到的公约：
+
+| 小节 | 其他 7 个 Lecture | 病理学（上一轮我的改动） |
+|------|------------------|------------------------|
+| `Lecture Overview` · `章节目标` · `Class Notes` · `Related Questions` | 7/7 | ✅ |
+| `章节结构` | 4/7 | ✅ |
+| `Related Medical Knowledge` 内容 | **本章概念节点扁平清单**（CE 02 列 12 个、寄生虫 11 个、免疫 03 列 12 个…） | ❌ 被改成跨章跨学科引用，**无节点清单** |
+| `本章知识导航`（分组 + 要点） | **0/7** | ⚠️ 仅病理学有 |
+| `Knowledge Gaps` | **0/7** | ⚠️ 仅病理学有 |
+| `来源与摄入记录` | **0/7** | ⚠️ 仅病理学有 |
+| frontmatter `discipline:` | 6/7 | ❌ 缺 |
+| frontmatter `aliases:` | **0/7** | ⚠️ 仅病理学有 |
+
+**结论：上一轮我把「详细导航」理解成了自创小节，反而让病理学偏离了公约。** 其他学科的章内导航就是 `Related Medical Knowledge` 的节点清单，而「分组 + 要点」索引在任何学科的 Lecture 里都不存在。
+
+### 操作（按用户选择的方案 A）
+
+**1. 两个 Lecture 回归公约形状**
+
+- `## Related Medical Knowledge` 恢复为**本章概念节点的扁平清单**（第一章 22 行、第二章 26 行），末尾附 1–2 条下一章 / 协作学科（与 `Medical Microbiology/01 绪论` 混排姊妹学科链接的写法一致）
+- **删除** `## 本章知识导航` / `## Knowledge Gaps` / `## 来源与摄入记录` 三个自创小节
+- frontmatter：**补 `discipline: Pathology`**（6/7 学科有而病理学缺）；**删除 `aliases`**（0/7 学科有，且链接已全部改用文件名，别名已无用）
+
+行数：Lecture 01 296 → **234**；Lecture 02 354 → **277**。两个 Lecture 的小节集合现与 `Clinical Epidemiology` **完全一致**。
+
+**2. 「分组 + 要点」索引下沉到学科 README（方案 A）**
+
+`03_Concepts/Pathology/README.md` 的「已建节点」段重建为**学科节点索引**：两章共 9 个分组、48 行「概念 / type / 要点」表，保留原 MOC 的分组与要点。
+
+> 信息无损：被删的 `Knowledge Gaps` 已在 `Course.md` 与 README 待建清单；`来源与摄入记录` 已在 Lecture 顶部 `> [!info] 来源` callout 与 Source-Registry；要点索引已进 README。
+
+**3. 治理同步**
+
+- `Ingest-SOP`（12 处）：§0 产出清单改为「Lecture 节点清单 + README 节点索引」；§3.1 归属说明重写（章内导航 → Lecture 的 `Related Medical Knowledge`；学科节点索引 → 学科 README）；§3.5.4 删掉 3 个自创小节、`章节结构` 降为「推荐（4/7）」、`Related Medical Knowledge` 明确为扁平节点清单；§3.5.5 增「Lecture 不重复 README 的要点表」；§5.1.7/§5.1.8 改为查 README 索引的分组数字；陷阱表新增「Lecture 自创小节」一行
+- `Templates/17_Lecture.md` 按公约重写（补 `discipline`、去 `aliases`、去 3 个自创小节、`Related Medical Knowledge` 为节点清单、检查清单加入「先横向比对同类文件」）
+
+### 修一处自身副作用
+
+插入 README 时用了 LF 文本，而该文件原为 CRLF → 混用行尾数 5→6。已归一化为纯 LF（与 `03_Concepts/Pathology/` 目录内多数文件及 git 存储一致），混用行尾数**恢复 5（基线）**。
+
+### 验证
+
+| 指标 | 结果 |
+|------|------|
+| 病理学 Lecture 小节集合 | 与 `Clinical Epidemiology` **完全一致** |
+| Lecture 自创小节（本章知识导航 / Knowledge Gaps / 来源与摄入记录） | **3 → 0** |
+| README 节点索引 | 9 组 / **48 行**，分组数字全部 = 表内行数 |
+| 未解析链接 | 38 → **36** |
+| 真实自链接 / 陈旧 MOC 链接 / 陈旧待建标记 | 0 / 0 / 0 |
+| 混用行尾 / 缺末尾换行 / CRLF 翻倍 | 5（基线）/ 0 / 0 |
+
 ## 2026-09-14 — 病理学结构对齐：章节导航从 03_Concepts 移入 08_Courses/Lectures
 
 > 用户要求：「将每一章的详细知识导航放在 courses 的 lectures 下，而不是 concept 中，concepts 下只存放概念知识点」+「类比其他学科」。

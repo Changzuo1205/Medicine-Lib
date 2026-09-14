@@ -37,10 +37,14 @@ tags:
 |------|--------|------|
 | **临床专科**（`06_Specialties/` 目录） | Cardiology · Respiratory · Gastroenterology · Nephrology · Endocrinology · Neurology · Infectious Disease · Hematology · Oncology · Surgery · Pediatrics · Obstetrics-Gynecology · Psychiatry · Dermatology · Emergency Medicine | 建节点时优先用这些 |
 | **已注册学科**（`03_Concepts/`） | Pathology · Immunology · Medical Microbiology · Human Parasitology · Clinical Epidemiology | 基础/方法学学科，**与目录冗余但允许保留** |
-| **应用方向**（白名单，无目录） | Tropical Medicine · Public Health and Preventive Medicine · Allergy · Rheumatology · History of Medicine · Evidence-Based Medicine | 暂无 `06_Specialties/` 目录；如需导航请先建目录 |
+| **应用方向**（已建目录） | Tropical Medicine · Public Health and Preventive Medicine · Allergy · Rheumatology | 2026-09-14 补建 `06_Specialties/` 目录，现已可聚合 |
+| **非临床方向**（白名单，无目录） | History of Medicine · Evidence-Based Medicine | 学科史 / 方法学，不建临床专科目录 |
 
-> **待决策（Phase 3，未执行）**：是否把 `Pathology`/`Immunology` 这两个与目录重复的取值从 64 个节点中移除，以及是否为
-> `Tropical Medicine`（11 节点）与 `Public Health and Preventive Medicine`（17 节点）补建 `06_Specialties/` 目录 —— 属结构性选择，留待人工决定。
+> **已处理（2026-09-14）**：原 12 个取值中仅 4 个能对应 `06_Specialties/` 目录。已补建 4 个专科目录
+> （`Tropical Medicine` / `Public Health and Preventive Medicine` / `Allergy` / `Rheumatology`，共覆盖 42 个节点引用），**现 8/12 有目录**。
+> 余下 4 个：`Pathology`(48)、`Immunology`(16) 属**已注册学科名**（与目录冗余但允许保留）；
+> `History of Medicine`(2)、`Evidence-Based Medicine`(1) 属非临床方向，列白名单。
+> **仍待人工决定**：是否移除与目录冗余的 `Pathology` / `Immunology` 取值。
 
 ## 子目录
 

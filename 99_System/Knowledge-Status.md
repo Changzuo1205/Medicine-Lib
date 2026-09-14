@@ -21,7 +21,7 @@ tags:
 - **学习材料（本次 /study 后）**：
   - Questions：**15 活跃**（Q-Imm-01 ~ 15，仅 Immunology）— 详见 `[[05_Study/Questions/README|Questions]]`
   - Flashcards：**10 张**（FC-Imm-01 ~ 10）— 详见 `[[05_Study/Flashcards/README|Flashcards]]`
-  - Review Session：**1 个**（`Session-2026-09-07-Immunology-Overview`）— 详见 `[[05_Study/Review/README|Review]]`
+  - Review Session：**1 个**（`08_Courses/Medical Immunology/Reviews/Session-2026-09-07-Immunology-Overview`）— 详见 `[[05_Study/Review/README|Review]]`（调度）与 `08_Courses/<Course>/Reviews/`（记录）
   - Wrong-Answers：0（首次 /study，尚未产生错题）
 - **Source Status**：全部 100 节点 `source_status: needs_review`（lecture-derived，待与权威教材核实）
 - **退役题目**：27 道（Q-CircS2-01..10 + Q-Ur-01..15 + Quiz-GI-* x 2）— 已移至 `[[99_System/Archive/Questions-Retired/|Questions-Retired]]`，对应未注册学科（Cardiology/Nephrology/Gastroenterology）注册时可复活

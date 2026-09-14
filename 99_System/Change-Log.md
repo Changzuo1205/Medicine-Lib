@@ -9,6 +9,80 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-14 — 处理上一轮审计遗留的 7 项 Warnings
+
+> 用户要求：「处理 warnings」。逐项处理上文「本次审计未修复的项」。
+
+### W1 `.gitignore` 重构 —— 教材登记信息纳入版本控制
+
+原写法是「忽略整个 `02_Raw/`，再用 `!` 放行 `Lectures/`」。**该写法对教材从未生效**：
+gitignore 规定「父目录被排除时，无法重新包含其中的文件」，因此 `!02_Raw/Textbooks/**` 之类规则全部失效
+（连 `!02_Raw/Lectures/**` 也只是"看起来"生效，实际仅一个预先提交的 README 被跟踪）。
+
+改为只排除 `02_Raw/*`（直接子项）+ 逐级放行目录 + 最后统一忽略大体积二进制（pdf/pptx/ppt/docx/doc）。结果：
+
+- 4 份教材登记 README（`S-TXT-001~004`）**进入版本控制**
+- 另外 6 份此前不可见的登记 README 一并纳入（`02_Raw/README.md`、`Textbooks/`、`Guidelines/`、`Papers/`、`QuestionBank/`、`Lectures/Pathology/`）
+- 全部 PDF / PPT / DOCX 仍被忽略（`02_Raw/**/*.pdf` 等），未改变"原始大文件不入库"的既有策略
+
+### W2 补记 Medical Immunology 缺第二章
+
+`08_Courses/Medical Immunology/Course.md` 与 `03_Concepts/Immunology/README.md` 均补明：
+已摄入第一章（`S-LEC-004`）与第三章（`S-LEC-010`），**第二章未摄入**，因此 Lecture 编号为 01、03 而**无 02** ——
+是"待 /ingest"而非"文件丢失"。
+
+### W3 frontmatter 既有字段纳入清单
+
+`Ingest-SOP` §3.2 新增 **§3.2.1 已用 frontmatter 字段清单**：把 `aliases` / `created` / `last_updated` /
+`course` / `chapter` / `difficulty` / `related_concept` / `scope` / `method` / `registered_date` /
+`archived_from` / `archived_date` / `source_file` / `processed_date` 等**既有字段**正式登记，
+并注明 `updated` 属漂移拼写（应用 `last_updated`）。新增字段前须先查表并同步更新。
+
+### W4 复习会话归属冲突 —— 按设计执行，移动文件
+
+冲突事实：`05_Study/README`、`08_Courses/README` 与 `05_Study/Review/README` 三处口径不一致
+（前两处说会话记录放 `08_Courses/<Course>/Reviews/`，第三处说放 `05_Study/Review/`），实际文件在后者。
+
+按多数口径 + 设计意图执行：
+- **移动** `05_Study/Review/Session-2026-09-07-Immunology-Overview.md` → `08_Courses/Medical Immunology/Reviews/`（该文件全部链接为根相对式，移动无断链）
+- 重写 `05_Study/Review/README.md` 为**纯调度队列**，并加「调度 vs 记录」分层表
+- 同步更新 `08_Courses/Medical Immunology/Course.md`、`Knowledge-Status` 两处引用
+- 这是 `08_Courses/<Course>/Reviews/` 的首次启用（此前 5 门课均无该子目录）
+
+### W5 明确双向链接规则，消除"未互惠出链"的误判
+
+`AGENTS.md` §10 补入适用范围表：**同级概念节点之间应互链**；**导航页（MOC/README/Lecture）→ 概念节点天然单向**，
+不要求也不应为了"对等"而回链枢纽；概念节点至少链回所属章节 MOC 一次。
+并写明**度量口径**：统计"未互惠出链"必须排除 MOC/README/Lecture 发出的链接 ——
+否则第一章 MOC 的 23 条枢纽链接会被误判为缺陷。`Ingest-SOP` §5.2 同步加入「互惠性抽查（仅限同级节点）」。
+
+### W6 补建 4 个专科目录，打通 `specialties` 轴
+
+原 12 个 `specialties` 取值只有 4 个能对应 `06_Specialties/` 目录。新建 4 个专科导航目录：
+`Public Health and Preventive Medicine`(17 节点) · `Tropical Medicine`(11) · `Allergy`(13) · `Rheumatology`(1)，
+共覆盖 42 个节点引用。**现 8/12 有目录**。
+
+其余 4 个取值经核实**本就不应有临床专科目录**，已在 `03_Concepts/README` 白名单中分类说明：
+`Pathology`(48)、`Immunology`(16) 属**已注册学科名**；`History of Medicine`(2)、`Evidence-Based Medicine`(1) 属**非临床方向**。
+（仍待人工决定：是否移除与目录冗余的 `Pathology`/`Immunology` 取值。）
+
+### W7 行尾补换行（254 个文件）
+
+原 312 个 md 文件中 **255 个缺末尾换行**，造成 git 反复出现 `\ No newline at end of file` 噪音。已为 254 个补齐。
+
+**副作用已修复**：`AGENTS.md` 是 CRLF 文件，追加裸 `\n` 导致末尾出现一个孤立 LF（混用行尾数 5→6）；
+已改为补 `\r\n`，混用行尾数恢复 **5（基线）**。
+
+### 本次自我校验
+
+| 指标 | 结果 |
+|------|------|
+| 混用行尾文件 | **5**（与基线一致，未新增） |
+| 缺末尾换行文件 | **0** |
+| CRLF 翻倍残留 `\r\r\n` | **0** |
+| `specialties` 取值有目录者 | **4/12 → 8/12** |
+| 跟踪的 `02_Raw` 登记 README | 1 → **10** |
+
 ## 2026-09-14 — 全库隐形逻辑 bug 审计与按优先级修复（三阶段）
 
 > 用户要求：「全面搜索知识库，分析是否存在隐形逻辑bug」 → 「按优先级修复」。

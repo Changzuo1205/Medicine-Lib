@@ -107,6 +107,24 @@ type: {disease | drug | physiology | pathophysiology | symptom | sign | test | p
 > **不用连字符**。理由：`99_System/Templates/` 下既有模板已全部使用下划线，而旧版本 SOP 写的是连字符 —— 两种拼写会让筛选器漏项。
 > 本枚举已补齐此前遗漏的 `physiology`（AGENTS.md §5 允许）、`review_session`、`exam_topic`、`reference_source`、`processing_record`。
 
+#### 3.2.1 已用 frontmatter 字段清单（2026-09-14 盘点）
+
+除上面的核心字段外，各类节点还有以下**既有字段**，它们不算「额外字段」：
+
+| 字段 | 适用对象 | 说明 |
+|------|----------|------|
+| `aliases` | MOC / navigation | 别名列表；**不得与任何文件名或其他文件的别名冲突**（冲突会造成 `[[X]]` 歧义） |
+| `created` / `last_updated` / `last_refresh` | MOC / 系统页 | 日期字段**统一用 `last_updated`**（`updated` 属漂移拼写） |
+| `course` / `chapter` / `date` / `instructor` / `topics` | Lecture | `chapter` 用阿拉伯数字 |
+| `course_code` / `semester` / `discipline` / `textbook` | Course | 课程元信息 |
+| `difficulty` / `related_concept` / `source` | Question / Flashcard | 学习产物元信息 |
+| `scope` / `method` | Review Session | 复习范围与方法 |
+| `registered_date` | Reference Source | 教材登记日期 |
+| `archived_from` / `archived_date` | 归档件 | 退役来源与日期（仅 `99_System/Archive/`；该层 `status` 必须为 `archived`，见 §5.1.10） |
+| `source_file` / `processed_date` / `source_base` / `round` / `topic` / `question_type` | 归档件（V1 遗留） | 历史处理字段，冻结不动 |
+
+> 新增字段前先查本表；确有必要再扩展，并同步更新本表与 §3.2 模板。
+
 status: active | archived
 specialties:        # 仅医学节点需要；跨学科的节点列多个
   - Pathology
@@ -267,6 +285,7 @@ last_reviewed: YYYY-MM-DD
 
 - [ ] 临床重要医学事实在 concept node 中标注 `evidence_level` 与 `source_status`
 - [ ] 跨学科联动项在 Knowledge Gaps 区阶明示"待建"
+- [ ] **互惠性抽查**：本次新建的**同级概念节点之间**是否互链？（导航页 → 节点的单向链接属正常，不计入）
 - [ ] Dashboard / Knowledge-Status 更新数据及结构反映
 
 ### 5.3 最终报告模板

@@ -42,9 +42,13 @@ _（暂无；待 review 后补充）_
 
 ## Reviews
 
-- [[../../05_Study/Review/Session-2026-09-07-Immunology-Overview|/study Session — 免疫学概述（2026-09-07）]]
+- [[Reviews/Session-2026-09-07-Immunology-Overview|/study Session — 免疫学概述（2026-09-07）]]
 
 ## Knowledge Gaps
+
+**已摄入章节**：第一章（`S-LEC-004`）、第三章（`S-LEC-010`）。
+**⚠️ 缺第二章**：因此本课程 Lecture 编号为 `01`、`03`（**无 02**）—— 该章尚未 `/ingest`，
+**不是文件丢失**。补做第二章后请新增 `Lectures/02 <章节名>.md` 并回写本节。
 
 详见 [[../../03_Concepts/Immunology/README|Immunology README]] 中"待建节点"清单。
 

@@ -2,11 +2,32 @@
 # Medicine-Lib Git Sync
 # =========================
 
-# Raw source materials
-02_Raw/
+# ---------------------------------------------------------------------------
+# 原始资料 02_Raw/
+#   目标：不把大体积原始文件（PDF / PPT / DOCX）放进版本库，
+#         但**手写的登记信息 README** 属于「知识」，必须纳入版本控制。
+#
+#   注意：不能写成 `02_Raw/`（排除整个目录）后再 `!` 放行其中的文件 ——
+#   gitignore 规定「父目录被排除时，无法重新包含其中的文件」。
+#   因此这里只排除 `02_Raw/*`（直接子项），再逐级放行，最后统一忽略大文件。
+# ---------------------------------------------------------------------------
+02_Raw/*
 
+# 放行目录与各层 README
+!02_Raw/README.md
 !02_Raw/Lectures/
-!02_Raw/Lectures/**
+!02_Raw/Textbooks/
+!02_Raw/Guidelines/
+!02_Raw/Papers/
+!02_Raw/QuestionBank/
+!02_Raw/**/README.md
+
+# 大体积原始文件一律忽略
+02_Raw/**/*.pdf
+02_Raw/**/*.pptx
+02_Raw/**/*.ppt
+02_Raw/**/*.docx
+02_Raw/**/*.doc
 
 # Temporary processing files
 temp/

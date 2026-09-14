@@ -9,6 +9,59 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-14 — 规范 /ingest 流程：课件来源必须同步创建课程层 Lecture
+
+> 用户要求：「规范 ingest 流程：ingest 课件时请同步创建 08_Courses 下各科目 lecture 中的相应章节。」
+
+### 背景
+
+病理学第二章 `/ingest` 时，`Ingest-SOP` §3.1 第 4 项写作"课程上下文层（**若需要**）"。
+该措辞使 Lecture 看起来是可选项，结果 `08_Courses/Pathology/Lectures/02 损伤的修复.md` 未被创建，
+直到用户复核时才发现并单独补齐（见本日 `/ingest 病理学 第二章` 条目末的"用户复核反馈"）。
+**根因是流程措辞留了后门，不是执行疏忽** —— 因此本次直接改流程。
+
+### 变更：把"可选"改为"强制"
+
+#### `99_System/Ingest-SOP.md`（274 → 340 行）
+
+- **新增 §3.5「课程上下文层同步（强制 — 课件来源必做）」**，含 6 个子节：
+  - §3.5.1 判定表：`S-LEC-*` 强制建 Lecture；`S-TXT-*` / `S-GDL-*` / `S-PAP-*` **不建**
+  - §3.5.2 必产三件套：`Course.md`（无则新建）· `Lectures/<NN> <章节名>.md` · 回写 Course 清单与计数
+  - §3.5.3 命名规范：`<两位数章节号> <中文章节名>.md`；`chapter:` 用阿拉伯数字
+  - §3.5.4 Lecture 必含部分（8 项，缺一即后验不通过）
+  - §3.5.5 双向链接：Lecture → MOC，且 **MOC → Lecture**
+  - §3.5.6 例外：同章二次 ingest 更新不新建；无 Course 时先建 Course 避免孤儿
+- **§0** 新增"课件来源的完整产出清单"7 项，**缺一即视为本次 `/ingest` 未完成**
+- **§1.2** 现状调查新增"枚举课程上下文层 `08_Courses/<Discipline>/`"
+- **§3.1** 第 4 项由"课程上下文层（若需要）"改为"**课程上下文层同步（课件来源强制）**"，并补"顺序不可颠倒"说明
+- **§5.1** 新增必检项 **5.1.7 课程上下文层已同步**（未通过 = 不得交付）
+- **§6.1** 主代理职责新增预创课程上下文层（Course + Lecture）
+- **§7** 陷阱表新增 3 行：Lecture 漏建 · Lecture 与 MOC 命名不一致 · `章节目标` 伪装成来源
+- **§8** 使用示例 Create 步骤新增第 4 步：同步课程上下文层
+- **§9** 参考新增 Lecture 模板与 `08_Courses` 职责边界入口
+
+#### `AGENTS.md` §19
+
+- 流程图新增 `Sync Course Layer` 步骤（位于 Add Links 与 Record Sources 之间）
+- 新增"课件来源强制产出"段落：必须同批创建 Course + Lecture，缺此项视为 `/ingest` **未完成**；教材 / 指南 / 文献不建 Lecture
+- SOP 引用说明补入「课程上下文层同步 §3.5」
+
+#### `08_Courses/README.md`
+
+- 使用规则新增第 5 条：Lecture 由 `/ingest` 同步创建（2026-09-14 起强制），并记录起因
+
+#### `99_System/Templates/17_Lecture.md`
+
+- 模板重写以对齐 §3.5.4 必含部分：补 `course` / `chapter` / `topics` · 来源 callout ·
+  `## 章节目标`（含 §26 inference 标注要求）· 各节"详见 MOC"链接 · `Class Notes` 三个 callout ·
+  `Related Medical Knowledge` / `Related Questions`，文末附检查清单
+
+### 生效范围与验证
+
+- 自本次起，**所有课件来源的 `/ingest`** 都必须同批产出课程层 Lecture
+- 下一章（第三章 局部血液循环障碍）将按新流程执行，作为**首个验证案例**
+- 本次未回改历史：病理学第一章、第二章的 Lecture 均已存在，无需补建
+
 ## 2026-09-14 — /ingest 病理学 第二章 损伤的修复（S-LEC-012）
 
 > 用户指令：`/ingest 病理学 修复`。严格按 [[Ingest-SOP]] 执行（预检 → 概念提取 → 创建 → 来源登记 → 后验）。

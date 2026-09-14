@@ -46,3 +46,7 @@ tags:
 2. Lecture / Exam Topic 只通过 wikilink 引用医学节点，不复制内容
 3. 老师强调 / 考试重点只在本层标记，不写入医学节点
 4. 复习调度见 [[05_Study/README|05_Study/Review]]，复习会话记录在本层 Reviews/
+5. **Lecture 由 `/ingest` 同步创建（2026-09-14 起强制）**：课件来源（`S-LEC-NNN`）ingest 时，必须**同批**创建
+   `Course.md` 与 `Lectures/<NN> <章节名>.md`，不得事后补做。命名、必含部分与双向链接要求见
+   [[99_System/Ingest-SOP|Ingest-SOP]] §3.5；后验对应 §5.1.7。
+   > 起因：病理学第二章 ingest 时 Lecture 被当作可选项跳过，造成本层与知识层脱节。

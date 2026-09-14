@@ -960,6 +960,8 @@ Create / Update
     ↓
 Add Links
     ↓
+Sync Course Layer       ← 课件来源强制（2026-09-14 起）
+    ↓
 Record Sources
     ↓
 Audit
@@ -967,7 +969,12 @@ Audit
 
 不要直接把整个 PDF 复制成知识笔记。
 
-> **详细 SOP**：本节仅作为高层概述。可执行的详细检查清单、防护措施与后验脚本请参阅 [[99_System/Ingest-SOP.md|Ingest-SOP]]（包含：预检阶段 · 写作安全规则 · 后验流程 · 并行 agent 协作模式）。
+> **课件来源强制产出**：如果来源是**课程课件**（讲义 / 慕课笔记 / 课堂笔记，登记为 `S-LEC-NNN`），必须**在同一次作业中**同步创建或更新
+> `08_Courses/<Discipline>/Course.md` 与 `08_Courses/<Discipline>/Lectures/<NN> <章节名>.md`，
+> 并回写 Course 的 Lectures 清单与节点计数。缺此项视为本次 `/ingest` **未完成**。
+> 教材（`S-TXT-*`）、指南、文献**不建** Lecture。
+
+> **详细 SOP**：本节仅作为高层概述。可执行的详细检查清单、防护措施与后验脚本请参阅 [[99_System/Ingest-SOP.md|Ingest-SOP]]（包含：预检阶段 · 写作安全规则 · **课程上下文层同步 §3.5** · 后验流程 · 并行 agent 协作模式）。
 
 ---
 

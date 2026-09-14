@@ -24,6 +24,9 @@ related:
 2. **不隐匿不确定性** — 讲义未涉及的机制或临床意义要明确标注（例：`讲义未详述` / `evidence_level: C, source_status: needs_review`）。
 3. **不覆盖高价值内容** — 修改既有节点时保留、修补、加链接，不为"格式统一"重写。
 
+> **课件来源的完整产出清单（2026-09-14 起）**：① 章节 MOC　② 概念子节点　③ 跨文件双向链接　④ **课程上下文层 Course + Lecture（§3.5，强制）**　⑤ Source-Registry　⑥ Change-Log　⑦ Dashboard / Knowledge-Status 回写
+> **缺任何一项 = 本次 /ingest 未完成**，不得交付。
+
 ---
 
 ## 1. 预检阶段（Pre-flight）— 动手前 10 分钟
@@ -46,6 +49,8 @@ related:
   > 重点：不要只看一级目录，要枚举包含预存文件的子目录。**调查未枚举的目录 = 许多纵向冲突的根源**。
 - [ ] **检查预存节点**：如果同名文件已存在，优先"更新"而非"创建"；记入"预存节点名单"供后续对照。
 - [ ] 查阅同类子目录的先验节点（如 [[03_Concepts/Immunology/README]] / [[03_Concepts/Medical Microbiology/README]]），了解布局习惯。
+- [ ] **枚举课程上下文层** `08_Courses/<Discipline>/`：`Course.md` 是否存在？`Lectures/` 已有哪几讲？
+      → 本项直接决定 §3.5 的动作是"新建 Course + Lecture"还是"更新既有 Lecture"。
 
 ### 1.3 输出：预存节点名单 + 资源汇总
 
@@ -86,9 +91,10 @@ related:
 1. **MOC 与 Discipline README 优先** — 为子节点提供入口与别名
 2. 子节点依次创建 / 更新
 3. 跨文件链接 / 双向链接
-4. 课程上下文层（若需要）
+4. **课程上下文层同步（课件来源强制）** — 见 §3.5
 
 > 未创建 MOC 就创建子节点 = 子节点中的 `[[第一章 MOC]]` 引用会未解析，走 Obsidian "未创建"状态。
+> **顺序不可颠倒**：先 MOC → 再子节点 → 再链接 → 最后课程层。课程层要引用已存在的节点，否则链接悬空。
 
 ### 3.2 Frontmatter 模板（强制）
 
@@ -133,6 +139,60 @@ last_reviewed: YYYY-MM-DD
 
 ---
 
+### 3.5 课程上下文层同步（强制 — 课件来源必做）
+
+> **规则（2026-09-14 起）**：`/ingest` 的来源若是**课程课件**（讲义 / 慕课笔记 / 课堂笔记，登记为 `S-LEC-NNN`），
+> **必须在同一次作业中同步创建该课程的对应章节 Lecture**，不得留待事后补做。
+>
+> **起因**：病理学第二章 `/ingest` 时，§3.1 原第 4 项写作"课程上下文层（若需要）"，Lecture 被当作可选项跳过，
+> 导致 `08_Courses/Pathology/Lectures/` 与知识层脱节，事后由用户发现并要求补齐。该"若需要"的措辞已删除。
+
+#### 3.5.1 判定：什么来源要建 Lecture
+
+| 来源类型 | 编号 | 是否必须建 Lecture |
+|----------|------|-------------------|
+| 课程课件（讲义 / 慕课笔记 / 课堂笔记） | `S-LEC-NNN` | ✅ **强制** |
+| 教材（Reference Source） | `S-TXT-NNN` | ❌ 不建 —— 教材不是"讲授"，见 [[Textbook-Import-SOP]] |
+| 指南 / 文献 / 其他 | `S-GDL-*` / `S-PAP-*` | ❌ 不建（除非确为某课程的指定讲授材料） |
+
+#### 3.5.2 必产三件套
+
+1. **`08_Courses/<Discipline>/Course.md`** — 若不存在则新建（课程元信息 + Lectures 清单 + 节点分布 + Source）
+2. **`08_Courses/<Discipline>/Lectures/<NN> <中文章节名>.md`** — 本次章节的 Lecture 对象
+3. **回写 `Course.md`** — `## Lectures` 清单追加本讲；同步更新 `## Related Medical Knowledge` 的节点计数与 `## Knowledge Gaps`
+
+#### 3.5.3 命名规范（强制）
+
+- 文件名：`<两位数章节号> <中文章节名>.md`，例 `02 损伤的修复.md`、`01 组织细胞适应与损伤.md`
+- `Course.md` 中的引用必须与文件名逐字一致：`[[Lectures/02 损伤的修复|02 损伤的修复]]`
+- frontmatter `chapter:` 用**阿拉伯数字**（`chapter: 2`），不要写"第二章"
+
+#### 3.5.4 Lecture 必含部分（缺一即 §5.1.7 不通过）
+
+| 部分 | 内容要求 |
+|------|----------|
+| frontmatter | `type: lecture` · `status` · `course: "[[../Course]]"` · `chapter` · `date` · `instructor` · `topics[]` |
+| `> [!info] 来源` callout | 原始资料 wikilink · 讲者 · `[[Source-Registry#S-LEC-NNN]]` · `source_status` · 关联学科 |
+| `## Lecture Overview` | 本讲在课程中的位置与主线 |
+| `## 章节目标` | 掌握 / 熟悉 / 了解 三层。**讲义未标注掌握程度时必须按 AGENTS.md §26 显式标注为 inference** |
+| 各节正文 | 与讲义结构对应；逐节 `> 详见 [[<章节 MOC>#<小节>]]` + 概念节点链接 |
+| `## Class Notes` | `源文本特点` / `我的疑问` / `AI 补充（必须核实来源）` 三个 callout |
+| `## Related Medical Knowledge` | 指向本章 MOC 与该章全部概念节点 |
+| `## Related Questions` | 无题时写 `_（暂无；后续 /quiz 阶段生成）_` |
+
+#### 3.5.5 双向链接（强制）
+
+- Lecture → 章节 MOC；**章节 MOC → Lecture**（写在 MOC 的"相关学科 / 章节"或 `## /ingest 完成状态` 段落）
+- Lecture → 概念节点；概念节点**不必**回链 Lecture（避免噪音），但必须能从 MOC 到达 Lecture
+
+#### 3.5.6 例外
+
+- 同一章节**二次 /ingest**（补充或修订）时**更新**已有 Lecture，不新建重复文件
+- 若该学科尚无 Course，**先建 Course 再建 Lecture**，不要只建 Lecture 造成孤儿节点
+- 讲义**无显式节标题**时照实说明划分依据，**不得伪造节标题**（参见 §7 陷阱表）
+
+---
+
 ## 4. 源登记阶段（Record Sources）
 
 - [ ] **主代理**：主 agent 负责 Source-Registry，输出结构如下：
@@ -166,6 +226,8 @@ last_reviewed: YYYY-MM-DD
 - [ ] **5.1.4 底类型子节点的 type 与其 frontmatter 一致**（例：`Cell Death` 节点在 `Atrophy.md` 里会不会错点为另一个节点）
 - [ ] **5.1.5 Source-Registry**：新增讲座在表中，中文不为 `??` / `\ufffd` 等代字体
 - [ ] **5.1.6 Change-Log**：本次入库记录已写入 99_System/Change-Log.md
+- [ ] **5.1.7 课程上下文层已同步**（课件来源必检，见 §3.5）：`08_Courses/<Discipline>/Course.md` 存在；`Lectures/<NN> <章节名>.md` 已建或已更新；`Course.md` 的 Lectures 清单与节点计数已回写；Lecture ↔ 章节 MOC 双向链接可解析。
+      **未通过 = 不得交付**（此项为 2026-09-14 新增，源于病理学第二章 Lecture 漏建事故）
 
 ### 5.2 建议项（越做越好）
 
@@ -202,7 +264,7 @@ Needs Review：
 
 ### 6.1 主代理职责
 
-- [ ] 预创 MOC · Discipline README · Source-Registry · Change-Log
+- [ ] 预创 MOC · Discipline README · Source-Registry · Change-Log · **课程上下文层（Course + Lecture，见 §3.5）**
 - [ ] 拆分任务为互不重叠的写入集（例：按"适应 / 可逆伤害 / 细胞死亡" 三组）
 - [ ] 为每个 subagent 明确文件名列表 + 模板 + 内容范围
 - [ ] **提醒 subagent 创建前先检查预存文件**（防止覆盖）
@@ -229,6 +291,9 @@ Needs Review：
 | MOC 别名未设 | 子节点 `[[第一章 MOC]]` 未解析 | MOC 创建后须加入 `aliases: [Cellular Adaptation and Injury, 第一章]` |
 | 路径偏移一级 | `../../` 实际需 `../../../` | 5.1.1 后验中验证所有路径 |
 | 多 agent 并行覆盖 | agent 未检查预存文件，导致写入冲突 | 主代理按 6.1 完成资源预检 |
+| **Lecture 漏建**（2026-09-14） | §3.1 原写"课程上下文层（若需要）"，措辞使其看起来可选 → 课件 ingest 后 `08_Courses/` 与知识层脱节，事后由用户发现 | 该"若需要"措辞**已删除**；§3.5 改为**强制**，§5.1.7 后验拦截 |
+| Lecture 与 MOC 命名不一致 | Lecture 叫 `02 损伤的修复`，MOC 叫 `Chapter 2 - Repair`，双向链接易漏一边 | 双向链接写在固定位置，见 §3.5.5；后验 5.1.1 验证可解析 |
+| Lecture `章节目标` 伪装成来源 | 讲义未标注掌握程度，却填了"掌握/熟悉/了解" | 必须加 `> [!info] Clinical Reasoning` 标注（AGENTS.md §26） |
 
 ---
 
@@ -251,6 +316,7 @@ Create：
   1. 主代理预创 README + MOC（含 alias）
   2. 启动 3 个 subagent 并行写入 21 个节点（互不重叠列表）
   3. 主代理更新 Source-Registry + Change-Log + Dashboard + Knowledge-Status
+  4. 主代理同步课程上下文层（§3.5 强制）：Course.md + Lectures/01 组织细胞适应与损伤.md
 
 Post-write：
   1. 路径解析：21 个 wiki-link · 发现 49 个路径偏移 → 主代理修复
@@ -270,5 +336,7 @@ Report：
 - [[AGENTS.md]] § 21 "/audit"（完整 audit 流程）
 - [[99_System/Textbook-Import-SOP.md]] （Reference Source 注册流程）
 - [[99_System/Templates/|Templates/]] （节点模板）
+- [[99_System/Templates/17_Lecture|17_Lecture]] （Lecture 模板 —— §3.5.4 必含部分的对应模板）
+- [[08_Courses/README|08_Courses]] （课程上下文层职责边界）
 - [[Source-Registry]] （讲座 / 文献汇总）
 - [[Change-Log]] （资料库结构变化日志）

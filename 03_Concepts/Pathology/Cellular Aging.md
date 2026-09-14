@@ -63,7 +63,7 @@ last_reviewed: 2026-09-11
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC — Cellular Adaptation and Injury]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Atrophy]] · [[Hypertrophy]] · [[Hyperplasia]] · [[Metaplasia]] — 同组其他适应类型
 - [[Atrophy]] — 老化结局与生理性萎缩形态相似
 - [[Apoptosis]] — 老化的细胞可经凋亡清除（讲义第二、三节将进一步展开）

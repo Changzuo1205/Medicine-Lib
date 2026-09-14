@@ -70,7 +70,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Repair]] — 再生是修复的第一种形式
 - [[Fibrous Repair]] — 修复的第二种形式（纤维结缔组织修复 → 瘢痕修复）
 - [[Cell Cycle]] — 静止细胞受刺激后进入周期

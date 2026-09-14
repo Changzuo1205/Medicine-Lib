@@ -37,8 +37,8 @@ last_refresh: 2026-09-14
 - [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学（17 节点：已 /ingest 完成）
   - [[Clinical Epidemiology (concept)]] · [[Epidemiology]] · [[Distribution by Population]] · [[Distribution by Time]] · [[Distribution by Place]]
 - [[03_Concepts/Pathology/README|Pathology]] — 病理学（**48 节点**；已 /ingest 第一章 + 第二章）
-  - [[03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury|第一章 · Cellular Adaptation and Injury]]
-  - [[03_Concepts/Pathology/Chapter 2 - Repair|第二章 · Repair（损伤的修复）]]
+  - [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
+  - [[02 损伤的修复|第二章 · 损伤的修复]]
 
 ### 待注册的学科候选（基于已退役知识，未来按需注册）
 

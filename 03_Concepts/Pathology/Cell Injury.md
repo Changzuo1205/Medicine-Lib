@@ -23,7 +23,7 @@ last_reviewed: 2026-09-11
 
 **Cell Injury（细胞和组织损伤）**：当内外环境的病理性刺激**超出细胞、组织的适应能力**时，受损细胞和细胞间质出现的**异常变化**（代谢、结构和功能）。
 
-是介于 [[Cellular Adaptation and Injury|第一章 MOC]]（适应 → 可逆 → 代偿） 与 [[Cell Death]] 之间的关键阶段。
+是介于 [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]（适应 → 可逆 → 代偿） 与 [[Cell Death]] 之间的关键阶段。
 
 ## Etiology / Causes
 
@@ -65,7 +65,7 @@ last_reviewed: 2026-09-11
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Cellular Swelling]]
 - [[Fatty Change]]
 - [[Cell Death]]

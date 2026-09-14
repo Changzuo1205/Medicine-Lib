@@ -52,7 +52,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Growth Factor]] — 同属"细胞再生的影响因素"
 - [[Chalone and Contact Inhibition]] — 同属"细胞再生的影响因素"
 - [[Regeneration]] — 细胞外基质调控再生细胞的生物学行为

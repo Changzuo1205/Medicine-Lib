@@ -9,6 +9,73 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-14 — 病理学结构对齐：章节导航从 03_Concepts 移入 08_Courses/Lectures
+
+> 用户要求：「将每一章的详细知识导航放在 courses 的 lectures 下，而不是 concept 中，concepts 下只存放概念知识点」+「类比其他学科」。
+
+### 现状诊断
+
+盘点后确认 **Pathology 是唯一把章节导航页放在概念层的学科**：
+
+| 学科 | `03_Concepts/<学科>/` | `08_Courses/<学科>/Lectures/` |
+|------|----------------------|------------------------------|
+| Immunology · Medical Microbiology · Human Parasitology · Clinical Epidemiology | 节点 + README | 章节内容 |
+| **Pathology** | 节点 + README + **`Chapter 1 - ….md` / `Chapter 2 - Repair.md`** | 章节内容 |
+
+另有 **54 个文件、约 79 处 wikilink** 指向这两个导航页（其中 22 条来自第一章的 22 个节点、26 条来自第二章的 26 个节点）。
+
+### 操作
+
+**1. 章节导航写入 Lecture（导航的唯一归属）**
+
+两个 Lecture 各新增 4 个小节，内容取自原 MOC：
+
+- `## 章节结构` — 本章在学科中的位置流程图
+- `## 本章知识导航（22 / 26 个概念节点）` — 分组节点索引表（每组标题含节点数 + 逐节点「要点」）
+- `## Knowledge Gaps（待建 / 需扩展）` — 本章待建 + 跨学科联动
+- `## 来源与摄入记录` — 主来源 / 来源登记 / evidence_level / `/ingest` 完成状态
+
+同时：
+- 删除正文中 4 处 `> 详见 [[MOC#…]]` 指针（导航已在同一文件内，无需外跳）
+- `## Related Medical Knowledge` 由「22 节点扁平清单」改为跨章跨学科导航（上一章 / 下一章 / 学科目录 / Course / 协作学科 / 原始课件）
+- frontmatter 增加 `aliases`（`第一章` / `组织细胞适应与损伤` / `Cellular Adaptation and Injury`；`第二章` / `损伤的修复` / `Chapter 2`）—— **刻意不含 `Repair`**（`Repair.md` 为同名概念节点，避免歧义）
+
+Lecture 01：205 → **296 行**；Lecture 02：245 → **354 行**
+
+**2. 删除概念层的两个导航页**
+
+`Chapter 1 - Cellular Adaptation and Injury.md`、`Chapter 2 - Repair.md` 已从 `03_Concepts/Pathology/` 删除。
+该目录现为 **48 个概念节点 + README**，与其余 10 个目录结构一致。
+
+**3. 重定向 64 处 wikilink（55 个文件）**
+
+统一改为指向对应 Lecture，显示文本规范为 `第一章 · 组织细胞适应与损伤` / `第二章 · 损伤的修复`。
+**特别注意**：裸 `[[Repair]]` 指向**概念节点** `Repair.md`，全程未被触碰。
+
+**4. 治理同步**
+
+- `Ingest-SOP`：§0 产出清单（不再有「章节 MOC」项）、§3.1 顺序与归属说明、§3.5.4 必含部分（新增 `## 章节结构` / `## 本章知识导航` / `## Knowledge Gaps` / `## 来源与摄入记录` 四行）、§3.5.5 双向链接（改为「概念节点 → 所属章节 Lecture」）、§5.1.7、§5.1.8（新增「概念层不得有导航页」检查）、2 条陷阱行
+- `AGENTS.md`：§4 学科块说明、§10 双向链接表（`所属章节 MOC` → `所属章节 Lecture`）
+- `03_Concepts/Pathology/README.md`：6 处「+ 1 个 MOC」改为「章节导航见该 Lecture」
+- `Templates/17_Lecture.md`：按新结构重写模板（含 4 个新小节占位与更新后的检查清单）
+
+### 本次操作中自捉并修复的 2 个缺陷
+
+- **`Course.md` 自链接**：重定向把 `- 关联 MOC：[[第一章 MOC]]` 变成指向本 Lecture 自己的自链接 → 改为 `- 章节导航：本 Lecture 内（…）`
+- **6 处相对路径多一级 `../`**：`03_Concepts/<学科>/README.md` 中的 `[[../../../08_Courses/…]]`、`[[../../../02_Raw/…]]` 实际已指到 **vault 的父目录**，因 Obsidian 相对路径失败时会回退到 basename 匹配，这些链接一直"看起来正常"、历次检查都没抓到 → 已修为 `../../`；`08_Courses/Medical Microbiology/Lectures/01 绪论.md` 的 `[[../Human Parasitology/Course]]` 修为 `../../`。
+  → 已把「相对路径必须单独查层级、并断言不逃出 vault」写入 SOP §5.1.1。
+
+### 验证
+
+| 指标 | 结果 |
+|------|------|
+| `03_Concepts/<学科>/` 含导航页的目录数 | **7 → 0**（11 个目录全部只有节点 + README） |
+| 指向已删章节 MOC 的残留链接 | **0** |
+| 真实自链接 | **0** |
+| 未解析链接 | 38（与改动前一致，均为刻意待建） |
+| 相对路径逃出 vault | **12 → 0**（余下 8 处为 `Templates/17_Lecture.md` 占位符，按实例化位置设计） |
+| 混用行尾 / 缺末尾换行 / CRLF 翻倍 | 5（基线）/ 0 / 0 |
+
 ## 2026-09-14 — 处理上一轮审计遗留的 7 项 Warnings
 
 > 用户要求：「处理 warnings」。逐项处理上文「本次审计未修复的项」。

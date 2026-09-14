@@ -51,7 +51,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Permanent Cells]] — 骨骼肌与心肌属永久性细胞
 - [[Stable Cells]] — 平滑肌（分化平滑肌细胞）属稳定细胞
 - [[Fibrous Tissue Regeneration]] — 纤维瘢痕修复的细胞学基础

@@ -38,7 +38,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Nerve Regeneration]] — 神经组织再生；轴突延伸至远端方可完全再生
 - [[Scar Tissue]] — 瘢痕阻隔是形成条件之一
 - [[Regeneration]] — 再生总论

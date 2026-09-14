@@ -52,7 +52,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Fibrous Repair]] — 纤维性修复是本章的修复形式之一
 - [[Granulation Tissue]] — 肉芽组织中的成纤维细胞增生与此再生过程衔接
 - [[Scar Tissue]] — 纤维瘢痕进一步改建成熟为瘢痕组织

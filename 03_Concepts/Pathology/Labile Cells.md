@@ -56,7 +56,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Regeneration]] — 不稳定细胞所在的再生潜能分类框架
 - [[Stable Cells]] · [[Permanent Cells]] — 另两类细胞
 - [[Stem Cell]] — 不稳定细胞持续更新的必要条件

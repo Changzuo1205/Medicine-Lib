@@ -53,7 +53,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Regeneration]] · [[Fibrous Repair]] — 修复的两种形式
 - [[Granulation Tissue]] · [[Scar Tissue]] — 纤维性修复的两个组成部分
 - [[Extracellular Matrix]] — 修复的成分之一

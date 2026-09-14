@@ -43,7 +43,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Wound Healing]] — 创伤愈合总论与分型
 - [[Healing by Second Intention]] — 对照类型
 - [[Granulation Tissue]] — 第 3 天填满伤口的组织

@@ -60,7 +60,7 @@ ATP 生成减少
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Cell Injury]]
 - [[Fatty Change]]
 - [[Hyaline Degeneration]]

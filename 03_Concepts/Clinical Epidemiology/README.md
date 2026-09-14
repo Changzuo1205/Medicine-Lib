@@ -16,7 +16,7 @@ tags:
 > **关联导航**：
 > - 专科导航：[[06_Specialties/Public Health and Preventive Medicine|公共与预防医学]]（待建）
 > - MOC：[[Clinical Epidemiology MOC]]（待建）
-> - 课程：[[../../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（已建）
+> - 课程：[[../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（已建）
 > - 已注册学科：[[../Immunology\|Immunology]] · [[../Medical Microbiology\|Medical Microbiology]] · [[../Human Parasitology\|Human Parasitology]] · [[../Pathology\|Pathology]] · **本学科**
 
 ## 学科范围
@@ -213,7 +213,7 @@ tags:
 - **注册日期**：2026-09-09
 - **注册原因**：用户要求注册"临床流行病学"作为新学科
 - **素材位置**：`02_Raw/Lectures/Clinical Epidemiology/流行病学绪论.pdf` + `02_Raw/Lectures/Clinical Epidemiology/疾病的分布.pdf`
-- **关联课程**：[[../../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（已建，2026-09-09）
+- **关联课程**：[[../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（已建，2026-09-09）
 - **状态**：active（**已建 17 个 Concept 节点**，见上「已建节点」）
 
 ## 相关导航

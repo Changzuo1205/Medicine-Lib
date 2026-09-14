@@ -15,7 +15,7 @@ tags:
 > - 姊妹学科：[[../Medical Microbiology/README|Medical Microbiology]]（医学微生物学，同源拆分）
 > - 专科导航：[[06_Specialties/Infectious Disease/README|06_Specialties/Infectious Disease]]
 > - MOC：[[Infectious Disease MOC]]
-> - 课程：[[../../../08_Courses/Human Parasitology/Course|Human Parasitology Course]]
+> - 课程：[[../../08_Courses/Human Parasitology/Course|Human Parasitology Course]]
 
 ## 学科范围
 

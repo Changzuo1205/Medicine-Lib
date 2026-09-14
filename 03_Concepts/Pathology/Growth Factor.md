@@ -51,7 +51,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Extracellular Matrix]] — 同属"细胞再生的影响因素"
 - [[Chalone and Contact Inhibition]] — 抑素代表"抑制"一侧，与生长因子共同构成增生调控的平衡
 - [[Regeneration]] — 生长因子调控再生的速度与程度

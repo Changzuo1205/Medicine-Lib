@@ -56,7 +56,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Growth Factor]] — VEGF 等多种生长因子参与血管生成（讲义仅列名称）
 - [[Granulation Tissue]] — 新生薄壁毛细血管来自血管再生
 - [[Extracellular Matrix]] — 血管基底膜与基质参与血管生成调控

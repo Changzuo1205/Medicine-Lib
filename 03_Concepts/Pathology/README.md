@@ -13,7 +13,7 @@ created: 2026-09-11
 > **注册日期**：2026-09-11（首个 /ingest：第一章 细胞和组织的适应与损伤）
 > **学科层次**：基础医学 + 临床医学桥梁
 > **关联导航**：
-> - 课程入口：[[../../../02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology（原始课件）]]
+> - 课程入口：[[../../02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology（原始课件）]]
 > - 关联 MOC：[[../../07_MOCs/Medicine MOC|Medicine MOC]]
 > - 同级学科：[[../Immunology/README|Immunology]] · [[../Medical Microbiology/README|Medical Microbiology]] · [[../Human Parasitology/README|Human Parasitology]] · [[../Clinical Epidemiology/README|Clinical Epidemiology]]
 
@@ -22,11 +22,11 @@ created: 2026-09-11
 病理学研究**疾病的病因、发病机制、病理变化、结局和转归**，是基础医学与临床医学的桥梁学科，是临床诊断的最后定论依据（"As is our pathology, so is our medicine"）。
 
 ### 1. 总论（General Pathology）— 共同规律与基本病理变化
-- **细胞和组织的适应与损伤**：[[Chapter 1 - Cellular Adaptation and Injury]]（已建 MOC）
+- **细胞和组织的适应与损伤**：[[01 组织细胞适应与损伤]]（Lecture；章节导航在本 Lecture 内）
   - 适应：萎缩、肥大、增生、化生、老化
   - 可逆性损伤（变性）：细胞水肿、脂肪变、玻璃样变、淀粉样变、黏液样变、病理性色素沉着、病理性钙化
   - 不可逆性损伤（细胞死亡）：坏死（凝固性 / 液化性 / 干酪样 / 脂肪 / 纤维蛋白样 / 坏疽）+ 凋亡
-- **损伤的修复**：[[Chapter 2 - Repair]]（已建 MOC）
+- **损伤的修复**：[[02 损伤的修复]]（Lecture；章节导航在本 Lecture 内）
   - 再生：再生类型与潜能 · 干细胞 · 各组织再生机制 · ECM 与生长因子 · 抑素与接触抑制
   - 纤维性修复：肉芽组织 → 瘢痕组织
   - 创伤愈合：一期 / 二期愈合、骨折愈合及其影响因素
@@ -40,10 +40,10 @@ created: 2026-09-11
 ## 已建节点（48）
 
 ### 第一章 细胞和组织的适应与损伤（Chapter 1）
-参见 [[Chapter 1 - Cellular Adaptation and Injury]] — 22 个概念节点 + 1 个 MOC
+章节导航与节点索引见 [[01 组织细胞适应与损伤]]（Lecture）— 22 个概念节点
 
 ### 第二章 损伤的修复（Chapter 2）
-参见 [[Chapter 2 - Repair]] — 26 个概念节点 + 1 个 MOC
+章节导航与节点索引见 [[02 损伤的修复]]（Lecture）— 26 个概念节点
 
 | 分组 | 节点数 | 节点 |
 |------|--------|------|
@@ -103,14 +103,14 @@ created: 2026-09-11
 
 - **2026-09-11**：作为第 5 个已注册学科，参见 [[Change-Log]] 2026-09-11 条目
   - 首个 /ingest：第一章 细胞和组织的适应与损伤（来源 `S-LEC-011`）
-  - 新建 1 个 MOC + 22 个概念节点
+  - 新建 1 个章节 Lecture + 22 个概念节点
 - **2026-09-14**：第二个 /ingest：第二章 损伤的修复（来源 `S-LEC-012`）
-  - 新建 1 个 MOC（[[Chapter 2 - Repair]]）+ 26 个概念节点
+  - 新建 1 个章节 Lecture（[[02 损伤的修复]]）+ 26 个概念节点
   - 同步创建课程上下文层 Lecture：[[08_Courses/Pathology/Lectures/02 损伤的修复|02 损伤的修复]]
 
 ## 相关导航
 
-- [[../../../02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology]]
+- [[../../02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology]]
 - [[../Immunology/README|Immunology 学科目录]]
 - [[../Medical Microbiology/README|Medical Microbiology 学科目录]]
 - [[../../07_MOCs/Medicine MOC|Medicine MOC]]

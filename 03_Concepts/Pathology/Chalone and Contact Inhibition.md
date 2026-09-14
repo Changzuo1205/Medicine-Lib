@@ -54,7 +54,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Growth Factor]] — "刺激"一侧；与抑素、接触抑制共同维持动态平衡
 - [[Extracellular Matrix]] — 同属"细胞再生的影响因素"
 - [[Epithelial Regeneration]] — 皮肤上皮与肝细胞是接触抑制的两个实例所在组织

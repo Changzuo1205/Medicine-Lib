@@ -57,7 +57,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Fibrous Repair]] — 肉芽组织增生是纤维性修复的核心环节
 - [[Scar Tissue]] — 肉芽组织改建成熟的最终产物
 - [[Angiogenesis]] — 新生薄壁毛细血管的来源

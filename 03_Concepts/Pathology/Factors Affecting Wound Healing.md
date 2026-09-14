@@ -57,7 +57,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Wound Healing]] — 创伤愈合总论
 - [[Healing by Second Intention]] — 感染与异物可致二期愈合
 - [[Healing by First Intention]] — 清创缝合后可由二期转为一期

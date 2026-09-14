@@ -41,7 +41,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Granulation Tissue]] — 瘢痕组织的来源
 - [[Fibrous Repair]] — 瘢痕修复即纤维性修复的结局
 - [[Keloid]] — 瘢痕过度增生的特殊类型

@@ -59,7 +59,7 @@ last_reviewed: 2026-09-11
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Cell Death]]
 - [[Necrosis]]
 - [[Liquefactive Necrosis]]

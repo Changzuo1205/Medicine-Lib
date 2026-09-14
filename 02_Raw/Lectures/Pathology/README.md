@@ -18,7 +18,7 @@ tags:
 
 - 来源登记：`S-LEC-011`
 - 关联学科：`[[03_Concepts/Pathology|Pathology]]`
-- 关联 MOC：`[[03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury]]`
+- 关联 MOC：`[[01 组织细胞适应与损伤]]`
 
 ## 文件整理历史
 

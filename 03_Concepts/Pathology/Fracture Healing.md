@@ -43,7 +43,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Wound Healing]] — 创伤愈合总论
 - [[Factors Affecting Wound Healing]] — 复位、固定、功能锻炼等影响骨折愈合的因素
 - [[Granulation Tissue]] — 纤维性骨痂形成阶段的肉芽组织

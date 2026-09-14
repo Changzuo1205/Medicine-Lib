@@ -64,7 +64,7 @@ last_reviewed: 2026-09-11
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC — Cellular Adaptation and Injury]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Atrophy]] · [[Hypertrophy]] · [[Hyperplasia]] · [[Cellular Aging]] — 同组其他适应类型
 - [[Cell Injury]] — 慢性持续刺激可由适应进展为损伤
 - [[Tumor]] · [[Squamous Cell Carcinoma]] · [[Adenocarcinoma]] — 持续化生的恶变终点（待建）

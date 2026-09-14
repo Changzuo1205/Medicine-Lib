@@ -75,7 +75,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Traumatic Neuroma]] — 神经再生受阻的典型病变
 - [[Permanent Cells]] — 中枢神经细胞、周围神经的神经节细胞属永久性细胞
 - [[Scar Tissue]] — 瘢痕阻隔是神经再生失败的原因之一

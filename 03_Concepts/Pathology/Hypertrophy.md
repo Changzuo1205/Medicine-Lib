@@ -56,7 +56,7 @@ last_reviewed: 2026-09-11
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC — Cellular Adaptation and Injury]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Atrophy]] · [[Hyperplasia]] · [[Metaplasia]] · [[Cellular Aging]] — 同组其他适应类型
 - [[Hypertension]] — 左心室肥大的最常见病因
 - [[Heart Failure]] — 心肌过度肥大的失代偿结局

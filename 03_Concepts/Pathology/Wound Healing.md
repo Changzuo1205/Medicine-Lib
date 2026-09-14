@@ -42,7 +42,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Healing by First Intention]] — 一期愈合
 - [[Healing by Second Intention]] — 二期愈合
 - [[Fracture Healing]] — 骨折愈合

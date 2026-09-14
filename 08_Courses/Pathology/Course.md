@@ -32,12 +32,12 @@ textbook: 人卫版《病理学》（第 9/10 版，待核对）
 - [[Lectures/01 组织细胞适应与损伤|01 组织细胞适应与损伤]]
   - 来源：[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx]]
   - 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]]
-  - 关联 MOC：[[../../03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury]]
+  - 章节导航：本 Lecture 内（`## 章节结构` / `## 本章知识导航`）
   - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
 - [[Lectures/02 损伤的修复|02 损伤的修复]]
   - 来源：[[02_Raw/Lectures/Pathology/笔记—修复.docx]]
   - 来源登记：[[99_System/Source-Registry#S-LEC-012|S-LEC-012]]
-  - 关联 MOC：[[../../03_Concepts/Pathology/Chapter 2 - Repair]]
+  - 章节导航：本 Lecture 内（`## 章节结构` / `## 本章知识导航`）
   - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
 
 _（后续章节待 /ingest 时补建 Lecture：局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病）_
@@ -75,7 +75,7 @@ _（暂无；待 /study 时创建）_
 | 创伤愈合 | 5 | Wound Healing · 一期 / 二期愈合 · Fracture Healing · Factors Affecting Wound Healing |
 | 特定病变 | 2 | Traumatic Neuroma · Keloid |
 
-完整列表见 [[../../03_Concepts/Pathology/Chapter 1 - Cellular Adaptation and Injury|第一章 MOC]] 与 [[../../03_Concepts/Pathology/Chapter 2 - Repair|第二章 MOC]]。
+完整列表见 [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]] 与 [[02 损伤的修复|第二章 · 损伤的修复]]。
 
 ## Source
 

@@ -74,7 +74,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Regeneration]] — 干细胞是再生与更新的细胞来源
 - [[Labile Cells]] — 干细胞是其不断更新的必要条件
 - [[Cell Cycle]] — 干细胞增殖分裂的周期基础

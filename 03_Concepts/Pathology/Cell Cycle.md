@@ -41,7 +41,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Regeneration]] — 细胞周期的启动是再生过程的基础
 - [[Labile Cells]] · [[Stable Cells]] · [[Permanent Cells]] — 按再生能力强弱划分的三类细胞
 - [[Stem Cell]] — 持续更新的细胞来源

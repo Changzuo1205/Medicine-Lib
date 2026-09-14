@@ -61,7 +61,7 @@ last_reviewed: 2026-09-11
 
 ## Related Concepts
 
-- [[Cellular Adaptation and Injury|第一章 MOC — Cellular Adaptation and Injury]]
+- [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
 - [[Atrophy]] · [[Hypertrophy]] · [[Metaplasia]] · [[Cellular Aging]] — 同组其他适应类型
 - [[Hypertrophy]] — 增生常合并肥大
 - [[Tumor]] — 持续刺激下增生失控的终末阶段（讲义明确指出的结局）

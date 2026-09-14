@@ -58,7 +58,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Regeneration]] — 再生的总论与分类
 - [[Stem Cell]] — 被覆上皮再生依赖组织干细胞
 - [[Stable Cells]] — 肝细胞属稳定细胞，具复制潜能

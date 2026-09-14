@@ -48,7 +48,7 @@ last_reviewed: 2026-09-14
 
 ## Related Concepts
 
-- [[Chapter 2 - Repair|第二章 MOC — 损伤的修复]]
+- [[02 损伤的修复|第二章 · 损伤的修复]]
 - [[Regeneration]] — 组织再生的总体规律
 - [[Fibrous Tissue Regeneration]] — 缺损较大时由纤维组织修复
 - [[Fibrous Repair]] — 纤维性修复作为补充修复形式

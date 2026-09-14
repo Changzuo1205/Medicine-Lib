@@ -1,6 +1,6 @@
 ---
 type: physiology
-status: active
+status: archived
 specialties:
   - Nephrology
   - Endocrinology

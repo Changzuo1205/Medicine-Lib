@@ -1,6 +1,6 @@
 ---
 type: question
-status: active
+status: archived
 course:
 difficulty: easy
 source: PPT p39-40

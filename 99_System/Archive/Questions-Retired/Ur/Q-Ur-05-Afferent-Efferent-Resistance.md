@@ -1,6 +1,6 @@
 ---
 type: question
-status: active
+status: archived
 course:
 difficulty: intermediate
 source: PPT p32, p85, p102-103

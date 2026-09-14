@@ -74,10 +74,10 @@ _（暂无；待 review 后补充）_
 
 ## Related Medical Knowledge
 
-- [[Immune System]] — 免疫系统组成与基本功能
-- [[Innate Immunity]] — 固有免疫
-- [[Adaptive Immunity]] — 适应性免疫
-- [[Immune Dysregulation]] — 免疫异常与疾病
+学科目录已含 **16 个概念节点**（第一章 4 + 第三章 抗原 12）。
+
+- 第一章：[[Immune System]] · [[Innate Immunity]] · [[Adaptive Immunity]] · [[Immune Dysregulation]]
+- 第三章：[[Antigen]] · [[Complete Antigen vs Hapten]] · [[Epitope]] · [[T Cell Epitope vs B Cell Epitope]] · [[Cross-Reaction]] · [[Immunogenicity Factors]] · [[TD-Ag vs TI-Ag]] · [[Antigen Classification by Origin]] · [[Endogenous vs Exogenous Antigen]] · [[Superantigen]] · [[Adjuvant]] · [[Mitogen]]
 
 ## Source
 

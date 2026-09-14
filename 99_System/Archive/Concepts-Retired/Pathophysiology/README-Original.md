@@ -1,6 +1,6 @@
 ---
 type: navigation
-status: active
+status: archived
 tags:
   - system/navigation
 ---

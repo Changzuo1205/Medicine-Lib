@@ -26,7 +26,7 @@ tags:
 - [[18_Exam-Topic|Exam Topic]] — 一个考点（考试重点标记）
 - [[19_Review-Session|Review Session]] — 一次复习会话记录
 
-## 目录结构（示例，待真实课程表后创建）
+## 目录结构
 
 ```
 08_Courses/
@@ -34,11 +34,21 @@ tags:
 └── <CourseName>/          # 每门课一个目录（英文 slug）
     ├── Course.md          # Course 对象
     ├── Lectures/          # Lecture 对象
-    ├── Exams/             # Exam Topic 对象
-    └── Reviews/           # Review Session 对象
+    ├── Exams/             # Exam Topic 对象（尚未创建）
+    └── Reviews/           # Review Session 对象（尚未创建）
 ```
 
-> 注意：当前尚未提供真实课程表，暂不创建任何具体课程目录。
+### 已建课程（5 门，截至 2026-09-14）
+
+| 课程 | Course | Lectures | 对应学科 |
+|------|--------|----------|----------|
+| Medical Immunology | [[Medical Immunology/Course\|Course]] | 01 免疫学概述 · 03 抗原 | [[03_Concepts/Immunology/README\|Immunology]] |
+| Medical Microbiology | [[Medical Microbiology/Course\|Course]] | 01 绪论 · 02 细菌的形态与结构 | [[03_Concepts/Medical Microbiology/README\|Medical Microbiology]] |
+| Human Parasitology | [[Human Parasitology/Course\|Course]] | 01 寄生虫学总论 | [[03_Concepts/Human Parasitology/README\|Human Parasitology]] |
+| Clinical Epidemiology | [[Clinical Epidemiology/Course\|Course]] | 01 流行病学绪论 · 02 疾病的分布 | [[03_Concepts/Clinical Epidemiology/README\|Clinical Epidemiology]] |
+| Pathology | [[Pathology/Course\|Course]] | 01 组织细胞适应与损伤 · 02 损伤的修复 | [[03_Concepts/Pathology/README\|Pathology]] |
+
+> **已知缺口**：5 门课均未创建 `Exams/` 与 `Reviews/` 子目录；`Medical Immunology` 的 Lecture 编号为 01、03（**缺 02**，该章尚未 /ingest）。
 
 ## 使用规则
 

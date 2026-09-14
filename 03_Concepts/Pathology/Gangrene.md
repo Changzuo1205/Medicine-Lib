@@ -78,7 +78,7 @@ last_reviewed: 2026-09-11
 - [[Caseous Necrosis]]
 - [[Fat Necrosis]]
 - [[Fibrinoid Necrosis]]
-- [[Cell Injury]]（待建，缺血性损伤的病理基础）
+- [[Cell Injury]]（缺血性损伤的病理基础）
 
 ## Sources
 

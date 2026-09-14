@@ -1,6 +1,6 @@
 ---
 type: question
-status: active
+status: archived
 course:
 difficulty: medium
 source: PPT p27-31

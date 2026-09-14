@@ -64,7 +64,7 @@ last_reviewed: 2026-09-11
 
 - [[Cellular Adaptation and Injury|第一章 MOC]]
 - [[Necrosis]]（营养不良性钙化常继发于坏死组织）
-- [[Coagulative Necrosis]]（结核 → [[Caseous Necrosis|干酪样坏死]] → 钙化）
+- [[Caseous Necrosis]]（结核 → 干酪样坏死 → 钙化）
 - [[Amyloidosis]]（间质沉积 — 对比）
 - [[Cell Injury]]
 

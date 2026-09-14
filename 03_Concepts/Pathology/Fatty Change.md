@@ -80,7 +80,7 @@ last_reviewed: 2026-09-11
 ## Clinical Consequences / Outcomes
 
 - **可逆性**：去除病因后脂滴可被代谢清除
-- **持续 / 重度脂肪肝** → 肝坏死 → [[Necrosis|肝硬化]]
+- **持续 / 重度脂肪肝** → 肝坏死 → [[Cirrhosis|肝硬化]]（待建；[[Necrosis]] 节点不含肝硬化内容）
 - 心肌脂肪变（特别是脂肪心）可影响心功能
 
 ## Related Concepts

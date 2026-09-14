@@ -66,7 +66,7 @@ last_reviewed: 2026-09-11
 - [[Fat Necrosis]]
 - [[Fibrinoid Necrosis]]
 - [[Gangrene]]
-- [[Cellular Swelling]]（待建，细胞水肿 → 气球样变 → 溶解坏死）
+- [[Cellular Swelling]]（细胞水肿 → 气球样变 → 溶解坏死）
 
 ## Sources
 

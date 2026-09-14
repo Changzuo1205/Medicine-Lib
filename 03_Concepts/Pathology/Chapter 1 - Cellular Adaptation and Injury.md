@@ -41,7 +41,9 @@ aliases:
 | [[Metaplasia]] 化生 | pathophysiology | 上皮与间叶；持续化生 → 恶变（鳞癌、腺癌） |
 | [[Cellular Aging]] 细胞老化 | pathophysiology | 不可逆、普遍性；脂褐素沉着 |
 
-## 二、可逆性损伤（变性） — 7 个节点
+## 二、可逆性损伤（变性） — 8 个节点
+
+> 含 **Cell Injury 总论**一行（该节点同时覆盖可逆与不可逆损伤的机制，置于本组作为总论）。
 
 | 概念 | type | 要点 |
 |------|------|------|
@@ -50,7 +52,7 @@ aliases:
 | [[Fatty Change]] 脂肪变 | pathophysiology | "来多去少"；虎斑心、脂肪心；Sudan III/IV 橘红 |
 | [[Hyaline Degeneration]] 玻璃样变 | pathophysiology | 3 型：细胞内（玻璃小滴 / Rusell / Mallory）、结缔组织、细动脉壁 |
 | [[Amyloidosis]] 淀粉样变 | pathophysiology | 刚果红橙红 → 苹果绿（偏振光）；局部 + 全身型 |
-| [[Mucoid Degeneration]] 黏液样变 | pathophysiology | 间质内黏多糖（玻璃质酸）和蛋白质的蓄积 |
+| [[Mucoid Degeneration]] 黏液样变 | pathophysiology | 间质内黏多糖（透明质酸）和蛋白质的蓄积 |
 | [[Pathologic Pigmentation]] 病理性色素沉着 | pathophysiology | 4 种：Hemosiderin / Lipofuscin / Melanin / Bilirubin |
 | [[Pathologic Calcification]] 病理性钙化 | pathophysiology | 营养不良性（局部）vs 转移性（高血钙） |
 
@@ -84,7 +86,7 @@ aliases:
 - [ ] 自由基损伤机制详细节点（活性氧类 O₂⁻·、·OH、H₂O₂、NO·）
 - [ ] 缺血-再灌注损伤
 - [ ] 钙超载机制（胞质游离 Ca²⁺ 损伤）
-- [ ] **程序性死亡现代分类**：凋亡 vs 坏死 vs 焦亡（pyroptosis）vs 脑梗塞式自噬（autophagy）
+- [ ] **程序性死亡现代分类**：凋亡 vs 坏死 vs 焦亡（pyroptosis）vs 自噬（autophagy）
 - [ ] 细胞死亡的形态学鉴别流程（Algorithm）
 - [ ] [[Approach to Elevated Liver Enzymes]] — 肝酶升高的病理诊断思路
 - [ ] [[Differential Diagnosis of Necrosis]] — 坏死类型鉴别
@@ -99,7 +101,7 @@ aliases:
 
 - [[../Immunology/README|Immunology]] — 第六章 免疫病理（超敏反应 → 纤维蛋白样坏死）
 - [[../Medical Microbiology/README|Medical Microbiology]] — 传染病（结核 → 干酪样坏死）
-- [[02_Raw/lectures/Pathology/README|02_Raw/Lectures/Pathology]] — 原始课件
+- [[02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology]] — 原始课件
 - [[笔记—组织细胞适应与损伤|笔记：组织细胞适应与损伤]] — 第一手来源
 
 ## Sources
@@ -111,7 +113,7 @@ aliases:
 
 ## /ingest 完成状态（2026-09-11）
 
-- **已建概念节点**：21 个（适应 5 + 可逆损伤 8 + 细胞死亡 9，含 Cell Injury 总论）
+- **已建概念节点**：22 个（适应 5 + 可逆损伤 8 + 细胞死亡 9，含 Cell Injury 总论）
 - **本 MOC**：已被主 agent 补充完整节点清单与别名
 - **别名（frontmatter）**：`Cellular Adaptation and Injury` / `第一章` / `组织细胞适应与损伤`
-  → 所有 21 个节点中的 `[[Cellular Adaptation and Injury]]` 引用均可解析
+  → 所有 22 个节点中的 `[[Cellular Adaptation and Injury]]` 引用均可解析

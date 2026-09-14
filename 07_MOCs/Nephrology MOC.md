@@ -13,9 +13,9 @@ last_reviewed: 2026-08-16
 
 ## 课程来源
 
-- [[Lecture-Urine-Formation-2026-Spring]] — 石丽敏《Formation and Excretion of Urine》课程（2026 春）
+- [[2026-春-Lecture-Urine-Formation-2026-Spring]] — 石丽敏《Formation and Excretion of Urine》课程（2026 春）
   - 6 Section（p3-116）+ 复习题（p117-119）
-  - Processing 记录：[[Processing-Urine-Formation]]
+  - Processing 记录：[[2026-08-16-Processing-Urine-Formation]]
 
 ## Core Diseases
 

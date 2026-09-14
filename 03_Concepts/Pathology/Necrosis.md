@@ -103,7 +103,7 @@ last_reviewed: 2026-09-11
 
 ### ④ 钙化
 
-坏死 + 钙盐沉积 → **营养不良性钙化**（参见 [[Pathologic Calcification]]，待建）
+坏死 + 钙盐沉积 → **营养不良性钙化**（参见 [[Pathologic Calcification]]）
 
 ## Subtypes（坏死类型）
 
@@ -120,15 +120,15 @@ last_reviewed: 2026-09-11
 
 - [[Cellular Adaptation and Injury|第一章 MOC]]
 - [[Cell Death]]
-- [[Cell Injury]]（待建）
-- [[Cellular Swelling]]（待建，可逆损伤）
+- [[Cell Injury]]
+- [[Cellular Swelling]]（可逆损伤）
 - [[Coagulative Necrosis]]
 - [[Liquefactive Necrosis]]
 - [[Caseous Necrosis]]
 - [[Fat Necrosis]]
 - [[Fibrinoid Necrosis]]
 - [[Gangrene]]
-- [[Pathologic Calcification]]（待建，营养不良性钙化）
+- [[Pathologic Calcification]]（营养不良性钙化）
 
 ## Sources
 

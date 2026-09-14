@@ -102,7 +102,11 @@ related:
 
 ```yaml
 ---
-type: {disease | drug | pathophysiology | symptom | sign | test | procedure | differential | algorithm | case | wrong-answer | flashcard | question | clinical-pearl | moc | course | lecture | navigation}
+type: {disease | drug | physiology | pathophysiology | symptom | sign | test | procedure | differential | algorithm | case | question | flashcard | wrong_answer | clinical_pearl | moc | course | lecture | exam_topic | review_session | reference_source | processing_record | navigation | system | sop | dashboard}
+> **类型名拼写规则（2026-09-14 定案）**：`type` 一律用**下划线**（`wrong_answer`、`clinical_pearl`、`exam_topic`、`review_session`），
+> **不用连字符**。理由：`99_System/Templates/` 下既有模板已全部使用下划线，而旧版本 SOP 写的是连字符 —— 两种拼写会让筛选器漏项。
+> 本枚举已补齐此前遗漏的 `physiology`（AGENTS.md §5 允许）、`review_session`、`exam_topic`、`reference_source`、`processing_record`。
+
 status: active | archived
 specialties:        # 仅医学节点需要；跨学科的节点列多个
   - Pathology
@@ -229,6 +233,36 @@ last_reviewed: YYYY-MM-DD
 - [ ] **5.1.7 课程上下文层已同步**（课件来源必检，见 §3.5）：`08_Courses/<Discipline>/Course.md` 存在；`Lectures/<NN> <章节名>.md` 已建或已更新；`Course.md` 的 Lectures 清单与节点计数已回写；Lecture ↔ 章节 MOC 双向链接可解析。
       **未通过 = 不得交付**（此项为 2026-09-14 新增，源于病理学第二章 Lecture 漏建事故）
 
+- [ ] **5.1.8 导航页与目录实际一致**（2026-09-14 新增，源于「暂无」占位符腐烂事故）
+      逐项核对，任一不符即修复后再交付：
+  - Discipline `README.md` 的「已建节点」段：占位符 `_（暂无）_` 是否仍在？节点是否**逐个 wikilink 列出，或经章节 MOC 可到达**？（两种均可）
+  - Discipline `README.md` 的「待建节点」清单：**本次已建出的节点必须从中删除**（否则会误导下一轮 /ingest 重复建节点，见 AGENTS.md §11）
+  - 各章节 MOC 的**分组标题数字**是否等于其表格实际行数？（例：`二、可逆性损伤 — 7 个节点` 而表内 8 行 = 不通过）
+  - MOC 末的**总数算式**是否自洽？（例：`21 个（适应 5 + 可逆损伤 8 + 细胞死亡 9）` → 5+8+9=22 ≠ 21 = 不通过）
+  - `AGENTS.md` §4 注册学科节点数、`07_MOCs/Medicine MOC.md`、`00_Dashboard/Home.md`、`99_System/Knowledge-Status.md` 的节点数是否同步？
+  - 布局类 README（`08_Courses/README.md`、`03_Concepts/Diseases/README.md` 等）中「暂不创建 / 暂无」一类陈述是否已被事实推翻？
+- [ ] **5.1.9 陈旧「（待建）」标记扫描**（2026-09-14 新增）
+      扫描本次涉及的学科目录与 MOC，凡形如 `[[X]]（待建）` 而 `X.md` **已存在**者，一律删除该标记。
+      > 原因：同批 /ingest 内节点互相标注「待建」，批次结束后不会自动失效，连续多批后成片失真。
+      ```python
+      # 检出：wikilink 后 12 字符内出现「（待建」但目标文件存在
+      LINK = re.compile(r'\[\[([^\]|#]+)(?:\|[^\]]*)?\]\][^\n\[]{0,12}?（待建')
+      ```
+- [ ] **5.1.10 归档层 status 一致性**（2026-09-14 新增）
+      `99_System/Archive/` 下的文件 `status` 必须是 `archived`，**不得为 `active`**；
+      活跃层文件不得为 `archived`。移入 Archive 时必须同批改 `status`。
+      ```powershell
+      # 检出：归档目录下仍标 active 的文件
+      Get-ChildItem 99_System/Archive -Recurse -Filter *.md |
+        Select-String -Pattern '^status:\s*active' -List
+      ```
+- [ ] **5.1.11 `specialties` 取值合法**（2026-09-14 新增）
+      每个取值必须是下列之一，否则视为拼写漂移：
+      ① `06_Specialties/` 下**已存在**的目录名（临床专科）；
+      ② `03_Concepts/` 下**已注册的学科名**（基础/方法学学科，如 `Pathology`、`Immunology`）；
+      ③ `03_Concepts/README` 「specialties 允许值」表中显式列出的其他应用方向（如 `Tropical Medicine`、`Public Health and Preventive Medicine`）。
+      > 原因：本字段历史上混用了「学科名」与「临床专科名」两套口径，12 个取值中仅 4 个能对应到 `06_Specialties/` 目录，无法机械校验。
+
 ### 5.2 建议项（越做越好）
 
 - [ ] 临床重要医学事实在 concept node 中标注 `evidence_level` 与 `source_status`
@@ -304,7 +338,7 @@ Needs Review：
 ```
 Pre-flight（10 分钟）：
   ✓ 提取 docx → 357 段落
-  ✓ 枚举 02_Raw/lectures/Pathology/ → 发现 .docx 已在
+  ✓ 枚举 02_Raw/Lectures/Pathology/ → 发现 .docx 已在
   ✓ 枚举 03_Concepts/Pathology/ → 发现 6 个预存节点
   ✓ S-LEC-010 + 1 = S-LEC-011
 

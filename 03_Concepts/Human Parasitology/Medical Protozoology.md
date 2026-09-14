@@ -40,7 +40,7 @@ last_reviewed: 2026-09-09
 
 ### 机会致病原虫
 
-详见 [[Opportunistic Parasite]]。
+详见 [[Parasite-Host Classification]]。
 
 - 在免疫功能正常宿主体内通常处于**隐性感染**
 - 宿主免疫功能受累（如 **AIDS**）时 → 异常增殖、致病力增强

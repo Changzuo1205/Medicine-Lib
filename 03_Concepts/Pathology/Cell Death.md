@@ -47,8 +47,8 @@ last_reviewed: 2026-09-11
 ## Related Concepts
 
 - [[Cellular Adaptation and Injury|第一章 MOC]]
-- [[Cell Injury]]（待建）
-- [[Cellular Swelling]]（待建，细胞水肿 — 可逆损伤最早表现）
+- [[Cell Injury]]
+- [[Cellular Swelling]]（细胞水肿 — 可逆损伤最早表现）
 - [[Necrosis]]
 - [[Apoptosis]]
 - [[Coagulative Necrosis]]
@@ -60,5 +60,5 @@ last_reviewed: 2026-09-11
 
 ## Sources
 
-- [[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx|《病理学》第一章 笔记]] — PARA 228–230
+- [[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx|《病理学》第一章 笔记]] — PARA 228–230（概念与分型）、PARA 243–248（早期诊断酶学线索）
 - [[99_System/Source-Registry#S-LEC-011|S-LEC-011]]

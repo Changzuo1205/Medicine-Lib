@@ -13,7 +13,7 @@ created: 2026-09-11
 > **注册日期**：2026-09-11（首个 /ingest：第一章 细胞和组织的适应与损伤）
 > **学科层次**：基础医学 + 临床医学桥梁
 > **关联导航**：
-> - 课程入口：[[../../../02_Raw/lectures/Pathology/README|02_Raw/Lectures/Pathology（原始课件）]]
+> - 课程入口：[[../../../02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology（原始课件）]]
 > - 关联 MOC：[[../../07_MOCs/Medicine MOC|Medicine MOC]]
 > - 同级学科：[[../Immunology/README|Immunology]] · [[../Medical Microbiology/README|Medical Microbiology]] · [[../Human Parasitology/README|Human Parasitology]] · [[../Clinical Epidemiology/README|Clinical Epidemiology]]
 
@@ -39,9 +39,6 @@ created: 2026-09-11
 
 ## 已建节点（48）
 
-### 学科基础
-- （待建）[[Pathology]] — 病理学学科定义节点
-
 ### 第一章 细胞和组织的适应与损伤（Chapter 1）
 参见 [[Chapter 1 - Cellular Adaptation and Injury]] — 22 个概念节点 + 1 个 MOC
 
@@ -60,7 +57,7 @@ created: 2026-09-11
 ## 待建节点（Knowledge Gaps）
 
 ### 学科基础
-- Pathology（病理学定义 / 任务 / 研究方法 / 发展史）
+- [[Pathology]]（病理学定义 / 任务 / 研究方法 / 发展史）
 
 ### 第二章遗留（章内已建，仍待补）
 - 肝硬化（肝细胞再生失败的终末结局）
@@ -113,7 +110,7 @@ created: 2026-09-11
 
 ## 相关导航
 
-- [[../../../02_Raw/lectures/Pathology/README|02_Raw/Lectures/Pathology]]
+- [[../../../02_Raw/Lectures/Pathology/README|02_Raw/Lectures/Pathology]]
 - [[../Immunology/README|Immunology 学科目录]]
 - [[../Medical Microbiology/README|Medical Microbiology 学科目录]]
 - [[../../07_MOCs/Medicine MOC|Medicine MOC]]

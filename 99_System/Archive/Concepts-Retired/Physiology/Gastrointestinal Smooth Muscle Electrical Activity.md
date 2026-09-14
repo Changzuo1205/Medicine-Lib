@@ -1,6 +1,6 @@
 ---
 type: physiology
-status: active
+status: archived
 tags:
   - medicine/physiology
   - physiology/gi

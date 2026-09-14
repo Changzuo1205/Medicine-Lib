@@ -23,10 +23,24 @@ tags:
 |------|------|------|
 | **学科归属** | 文件所在目录 | `[[03_Concepts/Immunology/README\|Immunology]]`、`[[03_Concepts/Cardiology/README\|Cardiology]]` … |
 | **知识类型** | `frontmatter.type` | `physiology` / `pathophysiology` / `disease` / `drug` …（决定使用哪个模板） |
-| **临床专科** | `frontmatter.specialties` | 涉及的具体临床方向（可多个） |
+| **临床专科 / 应用方向** | `frontmatter.specialties` | 涉及的具体临床方向或应用领域（可多个）——取值白名单见下 |
 | **学科标签** | `frontmatter.tags` | 如 `medicine/immunology`（便于查询聚合） |
 
 学科目录下允许混合 `type`（如 Immunology 同时有 `physiology` 与 `pathophysiology` 节点），不再分子目录。
+
+### `specialties` 允许值（2026-09-14 明确）
+
+历史上本字段**混用了两套口径**：基础/方法学学科名（`Pathology`、`Immunology`）与临床专科名（`Nephrology`、`Infectious Disease`）。
+12 个取值中只有 4 个能对应到 `06_Specialties/` 下的目录，因此无法机械校验。现明确取值必须是下列之一：
+
+| 类别 | 允许值 | 说明 |
+|------|--------|------|
+| **临床专科**（`06_Specialties/` 目录） | Cardiology · Respiratory · Gastroenterology · Nephrology · Endocrinology · Neurology · Infectious Disease · Hematology · Oncology · Surgery · Pediatrics · Obstetrics-Gynecology · Psychiatry · Dermatology · Emergency Medicine | 建节点时优先用这些 |
+| **已注册学科**（`03_Concepts/`） | Pathology · Immunology · Medical Microbiology · Human Parasitology · Clinical Epidemiology | 基础/方法学学科，**与目录冗余但允许保留** |
+| **应用方向**（白名单，无目录） | Tropical Medicine · Public Health and Preventive Medicine · Allergy · Rheumatology · History of Medicine · Evidence-Based Medicine | 暂无 `06_Specialties/` 目录；如需导航请先建目录 |
+
+> **待决策（Phase 3，未执行）**：是否把 `Pathology`/`Immunology` 这两个与目录重复的取值从 64 个节点中移除，以及是否为
+> `Tropical Medicine`（11 节点）与 `Public Health and Preventive Medicine`（17 节点）补建 `06_Specialties/` 目录 —— 属结构性选择，留待人工决定。
 
 ## 子目录
 

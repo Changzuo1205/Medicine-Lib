@@ -1,6 +1,6 @@
 ---
 type: question
-status: active
+status: archived
 course:
 difficulty: advanced
 source: PPT p119

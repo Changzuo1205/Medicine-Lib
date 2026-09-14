@@ -152,7 +152,7 @@ last_reviewed: 2026-09-07
 - [[Memory Cell]]（待建）
 - [[T Cell Receptor]]（待建）
 - [[B Cell Receptor]]（待建）
-- [[Antigen]]（待建）
+- [[Antigen]]
 - [[Antigen-Presenting Cell]]（待建）
 - [[Cytokine]]（待建）
 - [[Antibody]]（待建）

@@ -12,10 +12,29 @@ tags:
 
 ## 节点清单
 
+已建 **16 个节点**（第一章 4 + 第三章 抗原 12）。
+
+### 第一章 · 免疫学概述（`S-LEC-004`）
+
 - [[Immune System]] — 免疫系统组成与基本功能（type: physiology）
 - [[Innate Immunity]] — 固有免疫（type: physiology）
 - [[Adaptive Immunity]] — 适应性免疫（type: physiology）
 - [[Immune Dysregulation]] — 免疫异常与疾病（type: pathophysiology）
+
+### 第三章 · 抗原（`S-LEC-010`）
+
+- [[Antigen]] — 抗原（type: pathophysiology）
+- [[Complete Antigen vs Hapten]] — 完全抗原与半抗原
+- [[Epitope]] — 抗原表位
+- [[T Cell Epitope vs B Cell Epitope]] — T 细胞表位与 B 细胞表位
+- [[Cross-Reaction]] — 交叉反应
+- [[Immunogenicity Factors]] — 免疫原性影响因素
+- [[TD-Ag vs TI-Ag]] — 胸腺依赖性与非胸腺依赖性抗原
+- [[Antigen Classification by Origin]] — 抗原按来源分类
+- [[Endogenous vs Exogenous Antigen]] — 内源性抗原与外源性抗原
+- [[Superantigen]] — 超抗原
+- [[Adjuvant]] — 佐剂
+- [[Mitogen]] — 促有丝分裂原
 
 ## 待建节点（Knowledge Gaps）
 
@@ -23,7 +42,6 @@ tags:
 
 ### 细胞与分子
 
-- Antigen（抗原）
 - Antibody / Immunoglobulin（抗体 / 免疫球蛋白）
 - Complement（补体）
 - Cytokine（细胞因子）

@@ -1,6 +1,6 @@
 ---
 type: quiz
-status: active
+status: archived
 course:
 date: 2026-08-10
 topic: 消化和吸收（Gastrointestinal Function: Digestion and Absorption）

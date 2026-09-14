@@ -46,7 +46,12 @@ _（暂无）_
 
 ## Related Medical Knowledge
 
-_（暂无 — 待 /ingest 后补充；将涵盖蠕虫、原虫、节肢动物等核心节点）_
+学科目录已含 **11 个概念节点**（2026-09-09 /ingest，来源 `S-LEC-009`）：
+
+- 学科本体：[[../../03_Concepts/Human Parasitology/Parasitology|Parasitology]]
+- 分类与宿主关系：[[../../03_Concepts/Human Parasitology/Symbiosis Types|Symbiosis Types]] · [[../../03_Concepts/Human Parasitology/Parasite-Host Classification|Parasite-Host Classification]] · [[../../03_Concepts/Human Parasitology/Medical Helminthology|Medical Helminthology]] · [[../../03_Concepts/Human Parasitology/Medical Protozoology|Medical Protozoology]] · [[../../03_Concepts/Human Parasitology/Medical Arthropodology|Medical Arthropodology]]
+- 生活史与致病：[[../../03_Concepts/Human Parasitology/Parasite Life Cycle|Parasite Life Cycle]] · [[../../03_Concepts/Human Parasitology/Parasitic Infection Characteristics|Parasitic Infection Characteristics]]
+- 流行病与防控：[[../../03_Concepts/Human Parasitology/Parasitic Disease Epidemiology|Parasitic Disease Epidemiology]] · [[../../03_Concepts/Human Parasitology/Parasitic Zoonoses|Parasitic Zoonoses]] · [[../../03_Concepts/Human Parasitology/Parasitic Disease Prevention|Parasitic Disease Prevention]]
 
 ## Source
 

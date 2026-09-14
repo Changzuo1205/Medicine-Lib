@@ -64,9 +64,16 @@ tags:
 
 ---
 
-## 已建节点
+## 已建节点（11）
 
-_（暂无 — 注册完成，等待 /ingest 寄生虫章节后建立具体节点）_
+> 2026-09-09 /ingest（来源 `S-LEC-009` 寄生虫学总论）。全部 `source_status: needs_review`。
+
+| 分组 | 节点 |
+|------|------|
+| 学科本体 | [[Parasitology]] |
+| 分类与宿主关系 | [[Symbiosis Types]] · [[Parasite-Host Classification]] · [[Medical Helminthology]] · [[Medical Protozoology]] · [[Medical Arthropodology]] |
+| 生活史与致病 | [[Parasite Life Cycle]] · [[Parasitic Infection Characteristics]] |
+| 流行病与防控 | [[Parasitic Disease Epidemiology]] · [[Parasitic Zoonoses]] · [[Parasitic Disease Prevention]] |
 
 ## 待建节点（Knowledge Gaps）
 
@@ -90,7 +97,6 @@ _（暂无 — 注册完成，等待 /ingest 寄生虫章节后建立具体节�
 
 ### 机制（Pathophysiology）
 
-- 寄生虫生活史（life cycle）
 - 寄生虫致病机制（掠夺、损伤、毒性、免疫病理）
 - 寄生虫与宿主免疫的相互作用（与 [[03_Concepts/Immunology|Immunology]] 交叉）
 

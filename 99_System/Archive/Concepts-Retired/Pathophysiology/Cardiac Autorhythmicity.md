@@ -1,6 +1,6 @@
 ---
 type: pathophysiology
-status: active
+status: archived
 tags:
   - medicine/pathophysiology
   - physiology/cardiac

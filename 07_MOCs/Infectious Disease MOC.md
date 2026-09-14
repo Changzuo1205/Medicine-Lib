@@ -4,7 +4,7 @@ status: active
 tags:
   - system/moc
   - specialty/infectious-disease
-updated: 2026-09-08
+last_updated: 2026-09-08
 ---
 
 # Infectious Disease MOC

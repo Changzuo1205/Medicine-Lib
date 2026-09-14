@@ -16,8 +16,8 @@ tags:
 > **关联导航**：
 > - 专科导航：[[06_Specialties/Public Health and Preventive Medicine|公共与预防医学]]（待建）
 > - MOC：[[Clinical Epidemiology MOC]]（待建）
-> - 课程：[[../../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（待建）
-> - 已注册学科：[[../Immunology\|Immunology]] · [[../Medical Microbiology\|Medical Microbiology]] · [[../Human Parasitology\|Human Parasitology]]
+> - 课程：[[../../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（已建）
+> - 已注册学科：[[../Immunology\|Immunology]] · [[../Medical Microbiology\|Medical Microbiology]] · [[../Human Parasitology\|Human Parasitology]] · [[../Pathology\|Pathology]] · **本学科**
 
 ## 学科范围
 
@@ -38,7 +38,7 @@ tags:
 ### 2. 病因与因果推断（Causation & Causal Inference）
 
 - **病因模型**：流行病学三角（宿主-病原-环境）、轮状模型、疾病因素网络
-- **因果关系判定**：Hill 标准（强度、一致性、特异性、时序性、生物梯度、生物学合理性、一致性、实验证据、类比）
+- **因果关系判定**：Hill 标准（强度、一致性、特异性、时序性、生物梯度、生物学合理性、连贯性、实验证据、类比）
 - **充分病因 vs 必要病因**
 
 ### 3. 研究设计（Study Design）
@@ -114,9 +114,17 @@ tags:
 
 ---
 
-## 已建节点
+## 已建节点（17）
 
-_（暂无 — 注册完成，等待 /ingest 临床流行病学章节后建立具体 Concept 节点）_
+> 2026-09-09 首次 /ingest（来源 `S-LEC-007` 流行病学绪论 + `S-LEC-008` 疾病的分布）。
+> 全部 17 个节点 `source_status: needs_review`，待与教材逐句核对。
+
+| 分组 | 节点 |
+|------|------|
+| 学科本体 | [[Epidemiology]] · [[Clinical Epidemiology (concept)]] · [[History of Epidemiology]] · [[Evidence-Based Medicine]] |
+| 疾病分布 | [[Disease Distribution]] · [[Distribution by Population]] · [[Distribution by Time]] · [[Distribution by Place]] · [[Migration Epidemiology]] · [[Epidemic Intensity]] |
+| 频率测量 | [[Disease Frequency Measures]] · [[Incidence Rate]] · [[Prevalence]] · [[Mortality Rate]] · [[Case Fatality Rate]] · [[Survival Rate]] |
+| 研究方法 | [[Meta-Analysis]] |
 
 ## 待建节点（Knowledge Gaps）
 
@@ -127,14 +135,16 @@ _（暂无 — 注册完成，等待 /ingest 临床流行病学章节后建立�
 - Cohort Study（队列研究）
 - Randomized Controlled Trial（随机对照试验）
 - Systematic Review（系统综述）
-- Meta-Analysis
 
-### 疾病测量指标（Measures）
+### 效应指标（Effect Measures）
 
-- Incidence Rate / Prevalence（发病率 / 患病率）
-- Mortality Rate / Case Fatality Rate（死亡率 / 病死率）
-- Relative Risk · Odds Ratio · Absolute Risk Reduction · NNT · NNH
-- Sensitivity · Specificity · PPV · NPV · Likelihood Ratio
+- Relative Risk（相对风险）· Odds Ratio（比值比）
+- Absolute Risk Reduction（绝对风险降低）· NNT · NNH
+
+### 诊断试验（Diagnostic Test）
+
+- Sensitivity（灵敏度）· Specificity（特异度）· PPV · NPV
+- Likelihood Ratio（似然比）· ROC 曲线与 AUC
 
 ### 偏倚（Bias）
 
@@ -146,27 +156,21 @@ _（暂无 — 注册完成，等待 /ingest 临床流行病学章节后建立�
 - Hill Criteria
 - 流行病学三角 · 轮状模型 · 病因网络
 
-### 循证医学
+### 循证医学工具
 
-- Evidence Pyramid（证据金字塔）
-- GRADE System
-- PICO Framework
+- Evidence Pyramid（证据金字塔）· GRADE System · PICO Framework
+- PRISMA / CONSORT / STROBE 报告规范
 
 ### 算法（Clinical Algorithm）
 
 - 诊断概率计算（贝叶斯更新）
-- 治疗决策中的获益/风险评估（NNT / NNH）
-
-### 检查（Test）
-
-- ROC 曲线与 AUC 解读
-- 诊断试验性能评估
+- 治疗决策中的获益 / 风险评估（NNT / NNH）
 
 ### 病例（Case）
 
-- 待 /case 生成（侧重"如何读论文 / 评证据"）
+- 待 /case 生成（侧重「如何读论文 / 评证据」）
 
----
+> **注**：`[[Clinical Epidemiology MOC]]` 与 `06_Specialties/Public Health and Preventive Medicine` **均未创建** —— 前者为本章导航页缺口，后者为专科目录缺口。
 
 ## 学科关系图
 
@@ -209,8 +213,8 @@ _（暂无 — 注册完成，等待 /ingest 临床流行病学章节后建立�
 - **注册日期**：2026-09-09
 - **注册原因**：用户要求注册"临床流行病学"作为新学科
 - **素材位置**：`02_Raw/Lectures/Clinical Epidemiology/流行病学绪论.pdf` + `02_Raw/Lectures/Clinical Epidemiology/疾病的分布.pdf`
-- **关联课程**：待 08_Courses 创建 `Clinical Epidemiology/` 目录与 Course 节点
-- **状态**：active（无 Concept 节点，待 /ingest）
+- **关联课程**：[[../../../08_Courses/Clinical Epidemiology/Course|Clinical Epidemiology Course]]（已建，2026-09-09）
+- **状态**：active（**已建 17 个 Concept 节点**，见上「已建节点」）
 
 ## 相关导航
 

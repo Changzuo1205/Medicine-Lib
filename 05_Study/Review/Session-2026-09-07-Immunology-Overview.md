@@ -41,10 +41,10 @@ source: "[[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|S-LE
 
 | 类型 | 用途 | 数量（计划） |
 |------|------|--------------|
-| Recall | 知识点记忆 | ~4 |
-| Interpretation | 数据 / 比例 / 表格识别 | ~5 |
-| Differential Diagnosis | 鉴别 / 对比（固有 vs 适应性） | ~3 |
-| Clinical Reasoning | 临床应用推理 | ~3 |
+| Recall | 知识点记忆 | 2 |
+| Interpretation | 数据 / 比例 / 表格识别 | 2 |
+| Differential Diagnosis | 鉴别 / 对比（固有 vs 适应性） | 2 |
+| Clinical Reasoning | 临床应用推理 | 4 |
 
 ## 生成的学习材料
 
@@ -65,7 +65,7 @@ _（本次为首次 /study，尚未产生错题）_
 
 ## 知识缺口（Knowledge Gaps）
 
-详见 [[Immune Dysregulation#待建节点]] 与 [[03_Concepts/Immunology/README|Immunology README]] 中的"待建节点"清单。本次 /study 仅覆盖绪论范围，未触及：
+详见 [[03_Concepts/Immunology/README|Immunology README]] 中的"待建节点"清单。本次 /study 仅覆盖绪论范围，未触及：
 
 - 抗体（Antibody / Immunoglobulin）— 详见后续章节
 - 补体系统（Complement）

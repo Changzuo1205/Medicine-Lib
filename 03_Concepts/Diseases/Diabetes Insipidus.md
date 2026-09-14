@@ -8,7 +8,7 @@ tags:
   - medicine/disease
   - system/renal
 evidence_level: C
-source_status: needs_review
+source_status: unsourced
 last_reviewed: 2026-08-16
 ---
 
@@ -80,3 +80,8 @@ PPT p92 明确：
 ## Sources
 
 - 石丽敏《Formation and Excretion of Urine》课程 PPT（2026 春），p92，`02_Raw/Lectures/尿的生成与排出-2026-春.pdf`
+
+> [!warning] 来源缺失（2026-09-14 核查）
+> 上列 PDF **不在库内**（全库检索无任何文件名含「尿」的原始文件）。该节点目前**无可检索来源**，
+> 故 `source_status` 已由 `needs_review` 改为 `unsourced`。
+> 请补回原始 PPT 后改回 `needs_review` 并完成核对。

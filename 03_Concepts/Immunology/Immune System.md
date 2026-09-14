@@ -155,7 +155,7 @@ last_reviewed: 2026-09-07
 - [[Innate Immunity]]
 - [[Adaptive Immunity]]
 - [[Immune Dysregulation]]
-- [[Antigen]]（待建）
+- [[Antigen]]
 - [[Antibody]]（待建）
 - [[Major Histocompatibility Complex]]（待建）
 - [[T Cell Receptor]]（待建）

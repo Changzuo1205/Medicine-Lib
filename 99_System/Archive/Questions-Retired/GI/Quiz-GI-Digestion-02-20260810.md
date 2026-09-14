@@ -1,6 +1,6 @@
 ---
 type: quiz
-status: active
+status: archived
 course:
 date: 2026-08-10
 round: 2

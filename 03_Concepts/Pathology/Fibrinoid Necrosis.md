@@ -52,7 +52,7 @@ last_reviewed: 2026-09-11
 - **胃溃疡底部小血管**
 
 > [!note] 临床关联
-> 纤维蛋白样坏死是**超敏反应 III 型**（免疫复合物型）的典型组织学表现，与 [[../Immunology/Immune Dysregulation]]（待建）密切相关。
+> 纤维蛋白样坏死是**超敏反应 III 型**（免疫复合物型）的典型组织学表现，与 [[../Immunology/Immune Dysregulation]]密切相关。
 
 ## Related Concepts
 
@@ -64,7 +64,7 @@ last_reviewed: 2026-09-11
 - [[Caseous Necrosis]]
 - [[Fat Necrosis]]
 - [[Gangrene]]
-- [[../Immunology/Immune Dysregulation]]（待建，超敏反应 III 型机制）
+- [[../Immunology/Immune Dysregulation]]（超敏反应 III 型机制）
 
 ## Sources
 

@@ -9,6 +9,97 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-14 — 全库隐形逻辑 bug 审计与按优先级修复（三阶段）
+
+> 用户要求：「全面搜索知识库，分析是否存在隐形逻辑bug」 → 「按优先级修复」。
+> 方法：7 轮静态不变量扫描 + 3 个语义审计员逐节点对照讲义原文（病理 51 文件 / 基础医学 34 节点 / 流行病学+学习层 26 文件）。
+> 结果：14 项 CRITICAL、约 30 项 WARNING，分三阶段修复。
+
+### Phase 1 — 结构性（消灭 ~60% 发现项，且防止复发）
+
+**§5.1 后验新增 3 项检查（`99_System/Ingest-SOP.md` 340 → 374 行）**
+
+- **§5.1.8 导航页与目录实际一致**：Discipline README 的「已建节点」占位符、待建清单是否仍含已建节点、MOC 分组数字是否等于表格行数、MOC 总数算式是否自洽、`AGENTS.md`/`Medicine MOC`/`Home`/`Knowledge-Status` 计数是否同步、布局类 README 的「暂不创建」是否已被事实推翻
+- **§5.1.9 陈旧「（待建）」标记扫描**（附检出正则）
+- **§5.1.10 归档层 status 一致性**（附检出命令）
+- **§3.2 type 枚举修正**：补入 `physiology`（AGENTS.md 允许但 SOP 漏列）、`review_session`、`exam_topic`、`reference_source`、`processing_record`；并**定案统一用下划线**（旧文档写 `wrong-answer`/`clinical-pearl` 连字符，而模板实际用下划线 → 两种拼写会让筛选器漏项）
+- 新增 **§5.1.11 `specialties` 取值合法**检查
+
+**计数与标签漂移**
+
+| 文件 | 修正 |
+|------|------|
+| `AGENTS.md` §4 | Pathology **22 → 48** 节点 |
+| `07_MOCs/Medicine MOC.md` | Pathology 22 → 48 |
+| `Chapter 1 MOC` | 「二、可逆性损伤 — 7 个节点」→ **8**（表内实列 8 行，含 Cell Injury 总论）；「已建概念节点 21 个」→ **22**（5+8+9=22）；「所有 21 个节点」→ 22 |
+| `08_Courses/Pathology/Lectures/01` | 同步锚点 `#…— 7 个节点` → `#…— 8 个节点`（否则锚点失效） |
+
+**「暂无」占位符腐烂（5 处）**
+
+- `03_Concepts/Clinical Epidemiology/README.md`：原「已建节点 _（暂无）_」→ 列出 **17 节点**；待建清单移除已建项；Course 去掉「（待建）」；注册学科列表补入 Pathology 与本学科；注册信息「无 Concept 节点」→「已建 17 个」
+- `03_Concepts/Human Parasitology/README.md`：原「暂无」→ **11 节点**；待建清单移除已建的「寄生虫生活史」
+- `08_Courses/Human Parasitology/Course.md`：「暂无」→ 11 节点清单
+- `03_Concepts/Immunology/README.md`：节点清单 4 → **16**（补抗原章 12 个）；待建清单移除已建的 Antigen
+- `08_Courses/Medical Immunology/Course.md`：Related knowledge 4 → 16
+- `03_Concepts/Diseases/README.md`：原「已有节点 _（暂无）_」→ 列出 `Diabetes Insipidus`
+- `08_Courses/README.md`：删除「当前尚未提供真实课程表，**暂不创建任何具体课程目录**」（实际已建 5 门课），改为课程总表 + 已知缺口
+
+**陈旧「（待建）」标记：11 处已删除**（目标文件已存在）
+`Adaptive Immunity:155` · `Immune System:158` · `Cell Death:50,51` · `Fibrinoid Necrosis:55,67` · `Gangrene:81` · `Liquefactive Necrosis:69` · `Necrosis:123,124,131`
+
+**归档层 status：67 个文件 `active` → `archived`**
+同层原有 8 个文件已标 `archived`（Inbox-Archive），67 个（Concepts-Retired / Questions-Retired）从未更新 → `status = active` 查询会扫入退役知识。现归档层 75/75 一致。
+
+**杂项结构**
+
+- `07_MOCs/Infectious Disease MOC.md`：`updated:` → `last_updated:`（字段名漂移）
+- `07_MOCs/Nephrology MOC.md`：2 条死链（归档文件加了日期前缀）→ 指向实际文件名
+- `05_Study/Review/Session-…`：死锚点 `[[Immune Dysregulation#待建节点]]` 删除；复习计划 4/5/3/3 → 实际 **2/2/2/4**
+- `08_Courses/Medical Immunology/Lectures/03 抗原.md`：锚点 `#抗原的基本特性` → `#抗原的基本特性（两大）`
+- `Ch1 MOC`：`玻璃质酸` → `透明质酸`；`脑梗塞式自噬` → `自噬`
+- `Ch2 MOC`：室壁瘤从「不利」改为按来源 [125] 与 `Scar Tissue` 的口径
+- `02_Raw/lectures` → `02_Raw/Lectures`（**6 处 / 4 文件**；大写敏感平台会断链）
+- **CRITICAL 歧义修复**：`Chapter 2 - Repair.md` 的 `aliases` 中删除 `Repair` —— 该文件 frontmatter 声明了此别名，正文却写「`Repair` 不作为本 MOC 别名」，且 `Repair.md` 同名存在（全库 7 条 `[[Repair]]` 歧义）。现全库文件名/别名冲突 = 0。
+
+### Phase 2 — 内容级医学事实（逐条核对**原始讲义 PDF**后修正）
+
+审计中先提取了 7 份讲义 PDF 的文本层（**均有文本层**），据此判定而非凭记忆：
+
+| 节点 | 原问题 | 依据 | 修正 |
+|------|--------|------|------|
+| `Parasitic Infection Characteristics` | 「内脏幼虫移行症」举例写「弓形虫」 | 讲义 p48 定义限定**蠕虫幼虫**且**未给任何举例**；弓形虫为原虫（`Medical Protozoology`），无幼虫阶段 | 删除该举例，改「讲义未举例」+ 警示 callout |
+| `Microbial Classification` | 古生菌被塞进「细菌（…）」括号内 | 讲义 p8 原文：**古生菌（archaea）· 细菌（bacterium）**为**并列**两支 | 改为「**古生菌** + **细菌**（细菌、支原体…）」+ 警示 |
+| `Parasitic Zoonoses` | 断言「人兽共患包括新现、再现、动物源性」 | 讲义 p17–19 把三者作为**同节并列主题**，非包含关系 | 定义收窄为动物源性 + 警示 |
+| `Medical Arthropodology` | 「蜱螨纲」与「蛛形纲」并列 | 蜱、螨属**蛛形纲**；且讲义**未涉及**纲级分类 | 合并修正 + 明确标注「不在讲义范围内，待教材核对」 |
+| `Fatty Change` | `[[Necrosis\|肝硬化]]` 指向坏死节点 | `Necrosis` 节点无肝硬化内容 | 改为 `[[Cirrhosis\|肝硬化]]（待建）` |
+| `Pathologic Calcification` | `[[Coagulative Necrosis]]（结核→干酪样坏死→钙化）` 链接与注解矛盾 | 该链讲的是干酪样坏死 | 改为 `[[Caseous Necrosis]]` |
+| `Q-Imm-08` | 表列「正常范围 5–6%」却给 4% 打 ✅、「0.2%」却给 0.5% 打 ✅，并断言「所有数据都在参考范围内」，与下方干扰项分析「应在 ≥5% 才考虑升高」冲突 | 讲义 p51 **确实**写「嗜酸性粒细胞（5-6%）」「嗜碱性粒细胞（0.2%）」→ 节点忠实，**缺陷在题目**把它当判定阈值 | 该列改标为「讲义所述占比」、去掉自相矛盾的 ✅、加修正警示；选项顺序 ACBD → **ABCD** |
+| `Innate Immunity` | 占比数值未标口径 | 同上 | 加警示说明这些是**典型占比而非判定阈值** |
+| `Cellular Aging` | 「端粒缩短」与「叠加损伤性、营养性多因素」为来源未述内容却写成事实 | 讲义 PARA 102–107 只给特征名与结局 | 删除 + `> [!info] Clinical Reasoning` 说明 |
+| `Cell Death` | 引用范围 PARA 228–230 覆盖不到其酶学表 | 酶学表实际在 PARA 243–248 | 补全引用范围 |
+| `Diabetes Insipidus` | 唯一来源 `02_Raw/Lectures/尿的生成与排出-2026-春.pdf` **全库不存在** | 全库检索无此文件 | `source_status: needs_review` → **`unsourced`** + 来源缺失警示 |
+
+### Phase 3 — 治理与设计
+
+- `03_Concepts/README.md` 新增「`specialties` 允许值」白名单：明确区分 ① `06_Specialties/` 临床专科 ② 已注册学科名 ③ 无目录的应用方向（Tropical Medicine 等）
+- **未执行（留待人工决策）**：是否移除 64 个节点中与目录冗余的 `specialties: Pathology/Immunology`；是否为 `Tropical Medicine`（11 节点）与 `Public Health and Preventive Medicine`（17 节点）补建 `06_Specialties/` 目录
+
+### 审计中发现并修复的**本次操作自身缺陷**
+
+- 我的两个修复脚本对「从字节解码、未做换行归一」的文本执行了 `replace("\n", nl)`，
+  对 CRLF 文件会把 `\r\n` 变成 `\r\r\n` → `Cell Death.md` 行数被翻倍（64 → 123）。
+  已定位并修复（`\r\r\n` → `\r\n`，全库扫描确认仅此 1 个文件受影响），并改用**字节级**替换重写全部后续脚本。
+  → 已记入 SOP §3.3 风险表同类问题；后续 8 个修复脚本均以字节操作，复检 `\r\r\n` = 0。
+
+### 本次审计**未修复**的项（低优先或需决策）
+
+- 7 个早期 Lecture 缺 `chapter:`、6 个缺 `## 章节目标` —— 已委派补齐（Phase 1 收尾）
+- `05_Study/Review/` 与 `08_Courses/<Course>/Reviews/` 的复习会话归属冲突（两处 README 口径不一致）
+- 61/102 概念节点存在未互惠出链（AGENTS.md §10；多为 MOC 枢纽的正常单向链接）
+- `Medical Immunology` 课程 Lecture 编号缺 02（该章未 /ingest）
+- `specialties` 轴对齐（见 Phase 3 待决策项）
+- 归档层 `archived_from` / `archived_date` 等遗留字段未纳入 `AGENTS.md` 字段表
+
 ## 2026-09-14 — 规范 /ingest 流程：课件来源必须同步创建课程层 Lecture
 
 > 用户要求：「规范 ingest 流程：ingest 课件时请同步创建 08_Courses 下各科目 lecture 中的相应章节。」
@@ -229,14 +320,14 @@ tags:
 | [[Caseous Necrosis]] | pathophysiology | 干酪样坏死 |
 | [[Fat Necrosis]] | pathophysiology | 脂肪坏死 |
 | [[Fibrinoid Necrosis]] | pathophysiology | 纤维蛋白样坏死 |
-| [[Gangrene]] | pathophysiology | 坏痁（干/湿/气） |
+| [[Gangrene]] | pathophysiology | 坏疽（干/湿/气） |
 | [[Apoptosis]] | pathophysiology | 调式（调引与调小体） |
 
 > **节点计数：21 个 pathophysiology + 1 个 MOC（该 MOC 本身不计入 active 节点总数）**
 
 #### System 层
 
-- **新建：** `02_Raw/lectures/Pathology/`（原始讲义目录）与 `02_Raw/lectures/Pathology/README.md`
+- **新建：** `02_Raw/Lectures/Pathology/`（原始讲义目录）与 `02_Raw/Lectures/Pathology/README.md`
 - **更新：** `99_System/Source-Registry.md` — 追加 `S-LEC-011`：Pathology Chapter 1 — Cellular Adaptation and Injury（优课联盟 UOOC，2026 秋）
 
 ### 安全网
@@ -280,7 +371,7 @@ tags:
 - **新建 Lectures/ 子目录**
 - **新建 Lecture**：`08_Courses/Pathology/Lectures/01 组织细胞适应与损伤.md`
   - 类型：lecture（chapter 1）
-  - 涻盖：适应 5 种 + 损伤 8 原因机制 + 可逆性变性 7 种 + 细胞死亡 6 亚型 + 调弎
+  - 覆盖：适应 5 种 + 损伤 8 原因机制 + 可逆性变性 7 种 + 细胞死亡 6 亚型 + 凋亡
   - 源头：`S-LEC-011`（[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx]]）
   - 并详细链接所有 21 个 [[03_Concepts/Pathology|θ理学学科]] 节点及第一章 MOC
   - 包含 `Class Notes` （源文本特点 / 我的疑问 / AI 补充）

@@ -43,13 +43,38 @@ _（暂无）_
 
 ## Related Medical Knowledge
 
+### 学科基础
+
 - [[Medical Microbiology]] — 医学微生物学（学科概述）
 - [[Microbial Classification]] — 微生物分类
 - [[Infection vs Transmission]] — 感染 vs 传染
 - [[Koch's Postulates]] — 郭霍法则
-- [[Bacterium]] — 细菌
-- [[Bacterial Morphology]] — 细菌的形态与大小
-- [[Bacterial Structure]] — 细菌的结构
+
+### 细菌学 · 形态与结构（第 1 章）
+
+- [[Bacterium]] — 细菌（定义 / 广义 vs 狭义）
+- [[Bacterial Morphology]] — 细菌的大小与形态
+- [[Bacterial Structure]] — 细菌的结构（总览 / 枢纽节点）
+- [[Bacterial Cell Wall]] — 细菌细胞壁
+- [[Peptidoglycan]] — 肽聚糖
+- [[Teichoic Acid]] — 磷壁酸
+- [[Outer Membrane]] — 外膜
+- [[Lipopolysaccharide]] — 脂多糖（LPS / 内毒素）
+- [[Bacterial L-Form]] — 细菌 L 型
+- [[Bacterial Cell Membrane]] — 细菌细胞膜
+- [[Bacterial Cytoplasm]] — 细菌细胞质
+- [[Bacterial Ribosome]] — 细菌核糖体
+- [[Plasmid]] — 质粒
+- [[Nucleoid]] — 核质（拟核）
+- [[Capsule]] — 荚膜
+- [[Flagellum]] — 鞭毛
+- [[Pilus]] — 菌毛
+- [[Spore]] — 芽胞
+- [[Gram Stain]] — 革兰染色
+- [[Acid-Fast Stain]] — 抗酸染色
+
+### 抗感染免疫（与 [[03_Concepts/Immunology/README|Immunology]] 交叉）
+
 - [[Innate Immunity]] — 抗感染固有免疫
 - [[Adaptive Immunity]] — 抗感染适应性免疫
 
@@ -57,6 +82,7 @@ _（暂无）_
 
 - 课程 PPT：
   - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf|《绪论》（赵巍，2026 秋）]]
-  - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]]
-- 来源登记：[[Source-Registry#S-LEC-005]]（绪论）· [[Source-Registry#S-LEC-006]]（细菌形态与结构）
+  - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构 1》（赵巍，2026 秋）]]
+  - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 2.pdf|《第1章 细菌的形态与结构 2》（赵巍，2026 秋）]]
+- 来源登记：[[Source-Registry#S-LEC-005]]（绪论）· [[Source-Registry#S-LEC-006]]（细菌形态与结构 1）· [[Source-Registry#S-LEC-013]]（细菌形态与结构 2）
 - 关联课程：[[../Human Parasitology/Course|人体寄生虫学 Course]]

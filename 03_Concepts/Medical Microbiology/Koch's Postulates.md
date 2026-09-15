@@ -53,6 +53,7 @@ last_reviewed: 2026-09-07
 
 ## Related Concepts
 
+- [[01 绪论]]
 - [[Medical Microbiology]]
 - [[Microbial Classification]]
 - [[Infection vs Transmission]]

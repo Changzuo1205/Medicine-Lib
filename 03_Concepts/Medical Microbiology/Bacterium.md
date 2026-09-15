@@ -56,9 +56,15 @@ last_reviewed: 2026-09-07
 
 ## Related Concepts
 
+- [[02 细菌的形态与结构]]
 - [[Bacterial Morphology]]
 - [[Bacterial Structure]]
 - [[Microbial Classification]]
+- [[Bacterial Cell Wall]]
+- [[Peptidoglycan]]
+- [[Nucleoid]]
+- [[Gram Stain]]
+- [[Acid-Fast Stain]]
 
 ## Sources
 

@@ -58,6 +58,14 @@ last_reviewed: 2026-09-07
 - **少数有害**：病原微生物引起感染性疾病
 - **机会致病性微生物**（条件致病菌）：正常情况下不致病，但在**特定情况**（菌群失调、免疫低下）下致病
 
+## Related Concepts
+
+- [[01 绪论]]
+- [[Medical Microbiology]]
+- [[Bacterium]]
+- [[Gram Stain]]
+- [[Acid-Fast Stain]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p7-15

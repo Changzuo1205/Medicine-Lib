@@ -9,6 +9,58 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-15 — /ingest 医学微生物学 第 1 章 细菌的形态与结构（第二部分）
+
+> 用户要求：「/ingest 微生物学 细菌的形态与结构2」。
+
+### 来源
+
+`02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 2.pdf`（64 页 PPT，赵巍，2026 秋）→ 登记为 **S-LEC-013**。
+第 1 章由**两次课**讲完：S-LEC-006（第一部分，16 页，形态学 + 结构总览）+ S-LEC-013（第二部分，64 页，结构分子细节 + 检查法）。
+
+### Created：17 个概念节点（医学微生物学 7 → 24）
+
+| 组 | 节点 | 来源页 |
+|----|------|--------|
+| 细胞壁（6） | `Bacterial Cell Wall` · `Peptidoglycan` · `Teichoic Acid` · `Outer Membrane` · `Lipopolysaccharide` · `Bacterial L-Form` | p16–p34 |
+| 细胞膜 · 细胞质 · 核质（5） | `Bacterial Cell Membrane` · `Bacterial Cytoplasm` · `Bacterial Ribosome` · `Plasmid` · `Nucleoid` | p35–p40 |
+| 特殊结构（4） | `Capsule` · `Flagellum` · `Pilus` · `Spore` | p41–p55 |
+| 检查法（2） | `Gram Stain` · `Acid-Fast Stain` | p56–p59 |
+
+### Updated
+
+- **`08_Courses/Medical Microbiology/Lectures/02 细菌的形态与结构.md`**（186 → 386 行）：补入第二部分全部内容（细胞壁分子组成 / 细胞膜 / 细胞质 / 核质 / 四种特殊结构 / 第三节检查法）；`章节目标` 与 `章节结构` 重写（第三节由「本次 PPT 未覆盖」改为已覆盖）；`## Related Medical Knowledge` 扩为本章 22 个节点；`来源` callout 与 frontmatter `topics` 同步
+- **`03_Concepts/Medical Microbiology/README.md`**：`已建节点（7）` → `已建节点（24）`，改为**分组 + 逐节点要点**索引（学科基础 4 / 细菌学 · 形态与结构 20 → 再分总论 3、细胞壁 6、胞内 5、特殊结构 4、检查法 2）
+- **`Bacterial Structure.md`**：由「总览 + 两处 `（待补充）` 占位」升级为**枢纽节点**（新增子节点索引表）；三处待建标记清理完毕 —— `Bacterial Cell Wall` 与 `Gram Stain` 已建为实链、`Endotoxin` 不单建而改指 `[[Lipopolysaccharide]]`
+- **`Bacterial Morphology.md`** · **`Bacterium.md`**：`Related Concepts` 补本章 Lecture 回链（§3.5.5）与新增节点链接
+- **`08_Courses/Medical Microbiology/Course.md`**：`Related Medical Knowledge` 改为分组清单；`Source` 段补第二部分 PDF 与 S-LEC-013
+- **`99_System/Source-Registry.md`**：新增 `S-LEC-013`
+- **计数回写**：`AGENTS.md` §4（7 → 24）、`00_Dashboard/Home.md`（100 → 117 节点；MedMicro 7 → 24）、`99_System/Knowledge-Status.md`（100 → 117）
+
+### 取舍与不确定性（不发明医学事实）
+
+- **不单建 `Endotoxin` 节点**：讲义把 LPS 直接定义为「G⁻ 菌的内毒素」，内毒素的毒性与生物学活性组分（脂质 A）属 LPS 节点内容 —— 按 SOP §2.3 作为上层节点内容处理，避免亚型节点膨胀
+- **讲义未给的机制一律未补**：革兰染色的**结果颜色判读**（讲义只有图题「革兰染色步骤及结果」，文本层无颜色描述）、染色作用时间/温度、芽胞 DPA 全称与分子机制、肽聚糖合成生化步骤、外膜孔蛋白分型 —— 均显式标注为讲义未展开
+- **原文存疑处保留原文**：`Christain Gram`（疑为 Christian）保留讲义拼写、未静默更正；`membrane teichoic acid` 与 `LTA（lipoteichoic acid）` 讲义并列使用，未擅自合并
+- 讲义 p46 为**无文本层**图片页（64 页中唯一 1 页）；p45 / p47 / p48 鞭毛马达内容零散，仅保留可读要点
+- **讲义内部矛盾（需人工裁决）**：p21 写「A 群链球菌 M 蛋白」，p30 写「乙型链球菌 M 蛋白」—— 同一蛋白两种归属，已在 `Bacterial Cell Wall` 中按 p30 原文采用，未擅自合并
+- **p28 厚度示意图的文本层丢配**：只剩「外膜 2-3nm / 肽聚糖 7-13nm / 20-80nm / 10~15nm」四个数值，与 G⁺/G⁻ 的配对关系丢失，节点内按 p27 表格（G⁺ 20~80nm、G⁻ 10~15nm）配对并如实说明依据
+- **革兰染色的结果颜色未写入**：讲义文本层只有图题「革兰染色步骤及结果」，**无 G⁺/G⁻ 颜色描述** → `Gram Stain` 以 `> [!question] 待核` 标注，未按记忆补「紫色 / 红色」
+
+### 验证（Ingest-SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 链接可解析（与 HEAD 逐文件对比） | **新增未解析链接 0** |
+| 5.1.7 课程层同步 | Lecture 02 更新并列出全部 22 个本章节点；Course.md 已回写；Lecture 引用 S-LEC-013 |
+| 5.1.8 计数与索引 | 学科概念节点 24（= README 索引 24；分组 4 + 20 = 24，子组 3+6+5+4+2 = 20） |
+| 5.1.9 陈旧「（待建）」 | 0（清理 2 处：`Bacterial Cell Membrane` / `Bacterial Ribosome` 中的 `Bacterial Cell Wall`） |
+| 5.1.12 链接写法 | Lecture 标题内 wikilink 0；`详见 [[Node]]。` 18 处；新节点全部裸基名 |
+| 编码与 EOL | 无 U+FFFD、无已知夾变字；31 个改动文件 EOL 各自一致、无 CRLF 双写、均有尾换行 |
+| 真自链 | 0 |
+
+> **顺带修复的既有缺口**（非本次 ingest 引入）：`Medical Microbiology` / `Microbial Classification` / `Infection vs Transmission` / `Koch's Postulates` 四个绪论节点缺 `## Related Concepts` 与所属 Lecture（`01 绪论`）回链，已按 §3.5.5 补齐；`Course.md` 中 `[[03_Concepts/Immunology]]`（指向目录、不可解析）改为 `[[03_Concepts/Immunology/README|Immunology]]`。
+
 ## 2026-09-14 — 病理学概念链接接入正文 + 链接写法规范校准
 
 > 用户要求：「把概念链接加进去」。
@@ -685,6 +737,7 @@ gitignore 规定「父目录被排除时，无法重新包含其中的文件」�
 - [ ] 后续 /ingest · ···时跟 SOP 检查清单实施、主动报告
 - [ ] 同步修改 · 完善 /setup · /study /quiz /case 的类似检查清单
 - [ ] 考虑给 /connect /audit /quiz 也增加 SOP 文件
+
 ## 2026-09-11 — 全面扫描与状态同步
 
 > 用户反馈：扫描知识库并同步状态文件。以 [[99_System/Ingest-SOP.md|Ingest-SOP]] 5.1 后验为准，重新扫描 281 个 .md 文件，重新令 Dashboard / Knowledge-Status / Change-Log 与实际一致。
@@ -745,6 +798,7 @@ gitignore 规定「父目录被排除时，无法重新包含其中的文件」�
 
 - 记录重大结构变化，不记录日常笔记修改
 - 格式：`日期 — 变更摘要`
+
 ## 2026-09-07 — 免疫学概述 /ingest
 
 - 注册讲座来源 `S-LEC-004`：`Medical Immunology Chapter 1 — 免疫学概述（杨艳艳，2026 秋）`

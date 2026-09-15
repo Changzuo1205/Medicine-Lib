@@ -71,9 +71,13 @@ last_reviewed: 2026-09-07
 
 ## Related Concepts
 
+- [[02 细菌的形态与结构]]
 - [[Bacterium]]
 - [[Bacterial Structure]]
 - [[Microbial Classification]]
+- [[Gram Stain]]
+- [[Acid-Fast Stain]]
+- [[Bacterial L-Form]]
 
 ## Sources
 

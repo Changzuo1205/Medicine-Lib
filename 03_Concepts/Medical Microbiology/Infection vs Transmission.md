@@ -52,6 +52,13 @@ last_reviewed: 2026-09-07
 - [[Meningitis]]（待建）
 - [[Otitis Media]]（待建）
 
+## Related Concepts
+
+- [[01 绪论]]
+- [[Medical Microbiology]]
+- [[Microbial Classification]]
+- [[Koch's Postulates]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p3

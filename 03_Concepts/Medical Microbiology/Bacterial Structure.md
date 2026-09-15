@@ -21,7 +21,9 @@ last_reviewed: 2026-09-07
 > [!info] 来源
 > - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构》（赵巍，2026 秋）]] — 第二节
 > - 来源登记：[[Source-Registry#S-LEC-006]]
-> - 注：本 PPT 仅介绍结构**总览**，具体细节（细胞壁肽聚糖、LPS、磷壁酸、荚膜化学、鞭毛结构、菌毛分型、芽胞形成机制）预计在后续章节展开
+> - 第二部分：[[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 2.pdf|《第1章 细菌的形态与结构 2》（赵巍，2026 秋）]] — 第二节、第三节
+> - 来源登记：[[Source-Registry#S-LEC-006]] · [[Source-Registry#S-LEC-013]]
+> - 本节点为**结构总览 / 枢纽节点**；各结构的分子细节见下方链接的子节点
 
 ## Normal / Pathological Concept
 
@@ -49,9 +51,20 @@ last_reviewed: 2026-09-07
 | **鞭毛（flagellum）** | **运动器官**；与**抗原性（H**相关**）**相关 | 鞭毛抗原（H 抗原）；动力试验用于鉴别 |
 | **菌毛（pilus / fimbriae）** | **黏附**宿主细胞；**性菌毛**传递质粒 | 普通菌毛 → 致病的关键；性菌毛 → 耐药性传递 |
 
-###（待补充）：**芽胞（spore）** 的形成机制与意义**（_本次 PPT 未覆盖，待后续章节_）
+### 子节点（第二部分已展开）
 
-###（待补充）：**荚膜**与**鞭毛**的详细分类与临床意义**（_本次 PPT 未覆盖，待后续章节_）
+| 结构 | 节点 |
+|------|------|
+| **细胞壁** | [[Bacterial Cell Wall]] · [[Peptidoglycan]] · [[Teichoic Acid]] · [[Outer Membrane]] · [[Lipopolysaccharide]] · [[Bacterial L-Form]] |
+| **细胞膜** | [[Bacterial Cell Membrane]] |
+| **细胞质** | [[Bacterial Cytoplasm]] · [[Bacterial Ribosome]] · [[Plasmid]] |
+| **核质** | [[Nucleoid]] |
+| **荚膜** | [[Capsule]] |
+| **鞭毛** | [[Flagellum]] |
+| **菌毛** | [[Pilus]] |
+| **芽胞** | [[Spore]] |
+
+> 检查法（显微镜 / 革兰染色 / 抗酸染色）见 [[Gram Stain]] · [[Acid-Fast Stain]]。
 
 ## Clinical Pearls
 
@@ -63,15 +76,22 @@ last_reviewed: 2026-09-07
 
 ## Related Concepts
 
+- [[02 细菌的形态与结构]]
 - [[Bacterium]]
 - [[Bacterial Morphology]]
 - [[Microbial Classification]]
-- [[Gram Stain]]（待建）
-- [[Bacterial Cell Wall]]（待建）
-- [[Endotoxin]]（待建）
+- [[Bacterial Cell Wall]]
+- [[Peptidoglycan]]
+- [[Lipopolysaccharide]]
+- [[Capsule]]
+- [[Flagellum]]
+- [[Pilus]]
+- [[Spore]]
+- [[Gram Stain]]
 
 ## Sources
 
 - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf]] — p15-16
-- 来源登记：[[Source-Registry#S-LEC-006]]
+- [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 2.pdf]] — p15-16（结构总览）
+- 来源登记：[[Source-Registry#S-LEC-006]] · [[Source-Registry#S-LEC-013]]
 - 进一步参考：医学微生物学第 10 版 第 2-4 章

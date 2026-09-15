@@ -54,6 +54,14 @@ last_reviewed: 2026-09-07
 | [[Immune Dysregulation]] | 免疫异常与感染性疾病的关系 |
 | [[Infection vs Transmission]] | 核心概念区分 |
 
+## Related Concepts
+
+- [[01 绪论]]
+- [[Microbial Classification]]
+- [[Infection vs Transmission]]
+- [[Koch's Postulates]]
+- [[Bacterium]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf]] — p16

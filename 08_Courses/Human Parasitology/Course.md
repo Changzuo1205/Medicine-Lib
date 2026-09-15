@@ -31,6 +31,7 @@ textbook:
 ## Lectures
 
 - [[Lectures/01 寄生虫学总论|01 寄生虫学总论]]
+- [[Lectures/02 蛔虫与鞭虫|02 蛔虫与鞭虫]]
 
 ## Exam Topics
 
@@ -46,16 +47,26 @@ _（暂无）_
 
 ## Related Medical Knowledge
 
-学科目录已含 **11 个概念节点**（2026-09-09 /ingest，来源 `S-LEC-009`）：
+学科目录已含 **20 个概念节点**（2026-09-09 /ingest 总论 `S-LEC-009`；2026-09-15 /ingest 线虫 `S-LEC-014`）：
 
-- 学科本体：[[../../03_Concepts/Human Parasitology/Parasitology|Parasitology]]
-- 分类与宿主关系：[[../../03_Concepts/Human Parasitology/Symbiosis Types|Symbiosis Types]] · [[../../03_Concepts/Human Parasitology/Parasite-Host Classification|Parasite-Host Classification]] · [[../../03_Concepts/Human Parasitology/Medical Helminthology|Medical Helminthology]] · [[../../03_Concepts/Human Parasitology/Medical Protozoology|Medical Protozoology]] · [[../../03_Concepts/Human Parasitology/Medical Arthropodology|Medical Arthropodology]]
-- 生活史与致病：[[../../03_Concepts/Human Parasitology/Parasite Life Cycle|Parasite Life Cycle]] · [[../../03_Concepts/Human Parasitology/Parasitic Infection Characteristics|Parasitic Infection Characteristics]]
-- 流行病与防控：[[../../03_Concepts/Human Parasitology/Parasitic Disease Epidemiology|Parasitic Disease Epidemiology]] · [[../../03_Concepts/Human Parasitology/Parasitic Zoonoses|Parasitic Zoonoses]] · [[../../03_Concepts/Human Parasitology/Parasitic Disease Prevention|Parasitic Disease Prevention]]
+**总论（11）**
+
+- 学科本体：[[Parasitology]]
+- 分类与宿主关系：[[Symbiosis Types]] · [[Parasite-Host Classification]] · [[Medical Helminthology]] · [[Medical Protozoology]] · [[Medical Arthropodology]]
+- 生活史与致病：[[Parasite Life Cycle]] · [[Parasitic Infection Characteristics]]
+- 流行病与防控：[[Parasitic Disease Epidemiology]] · [[Parasitic Zoonoses]] · [[Parasitic Disease Prevention]]
+
+**线虫各论 · 第 1 章 蛔虫与鞭虫（9）**
+
+- 概论：[[Nematode]] · [[Larva Migrans]]
+- 蛔虫：[[Ascaris lumbricoides]] · [[Ascariasis]] · [[Biliary Ascariasis]] · [[Loeffler Syndrome]]
+- 鞭虫：[[Trichuris trichiura]] · [[Trichuriasis]]
+- 检查：[[Stool Egg Examination]]
 
 ## Source
 
 - 关联课程：[[../Medical Microbiology/Course|医学微生物学 Course]]
 - 原始资料：
   - [[02_Raw/Lectures/Human Parasitology/第一讲 寄生虫学总论2026秋 28号字(1).pdf|《第一讲 寄生虫学总论 2026 秋》（申成华）]]
-- 来源登记：[[Source-Registry#S-LEC-009]]
+  - [[02_Raw/Lectures/Human Parasitology/临床第二讲蛔鞭.ppt|《临床第二讲 蛔鞭》（病原生物学教研室，2022 课件）]]
+- 来源登记：[[Source-Registry#S-LEC-009]]（总论）· [[Source-Registry#S-LEC-014]]（蛔虫与鞭虫）

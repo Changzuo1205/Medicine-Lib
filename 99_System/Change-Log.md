@@ -9,6 +9,62 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-15 — /ingest 人体寄生虫学 医学蠕虫学 第一章 线虫（蛔虫与鞭虫）
+
+> 用户要求：「/ingest 人体寄生虫学 蛔鞭」。
+
+### 来源
+
+`02_Raw/Lectures/Human Parasitology/临床第二讲蛔鞭.ppt`（50 页 PPT，课件版本 2022）→ 登记为 **S-LEC-014**。
+本讲 = 医学蠕虫学第一章「线虫」的第一讲：第一节 概论 + 第二节 似蚓蛔线虫 + 第三节 毛首鞭形线虫，末页附胆道蛔虫病病例分析。课程学时分配中「线虫概论及线虫各论」共 6 h，本讲为开篇。
+
+**提取方式**：来源是旧版二进制 `.ppt`，`pypdf` 不适用 → 改用 **PowerPoint COM** 提取全部文本（含表格，50 页）并导出 50 张幻灯片 PNG 备查。
+课件**属性（Title/Author/Company 全空）与首页均未标注讲者姓名** → 未代为署名，`instructor` 记为「病原生物学教研室（课件未标注讲者）」。
+
+### Created：9 个概念节点（人体寄生虫学 11 → 20）
+
+| 组 | 节点 | type | 来源 slide |
+|----|------|------|-----------|
+| 概论 | `Nematode` · `Larva Migrans` | pathophysiology | 2–9、8/10 |
+| 蛔虫 | `Ascaris lumbricoides` | pathophysiology | 10–19、32–34 |
+| | `Ascariasis` | disease | 20–31 |
+| | `Biliary Ascariasis` · `Loeffler Syndrome` | disease | 24–26、45–50 / 20–21 |
+| 鞭虫 | `Trichuris trichiura` | pathophysiology | 35–39、43 |
+| | `Trichuriasis` | disease | 40–43 |
+| 检查 | `Stool Egg Examination` | test | 31、43 |
+
+### Updated
+
+- **新建 `08_Courses/Human Parasitology/Lectures/02 蛔虫与鞭虫.md`**（本课程第 2 个 Lecture）：含 Lecture Overview / 章节目标 / 章节结构 / 三节正文 / 病例分析 / Class Notes / Related Medical Knowledge（9 节点 + 总论）/ Related Questions；正文用 `详见 [[Node]]。` 8 处
+- **`08_Courses/Human Parasitology/Course.md`**：Lectures 清单追加第 2 讲；`Related Medical Knowledge` 由 11 节点分组清单扩为 **20 节点**；`Source` 段补 `.ppt` 与 S-LEC-014
+- **`03_Concepts/Human Parasitology/README.md`**：`已建节点（11）` → **`（20）`**，新增「线虫各论 · 第 1 章 蛔虫与鞭虫（9）」分组索引；待建清单移除已建的 `Ascaris lumbricoides` / `Ascariasis` / 粪便虫卵检查
+- **`99_System/Source-Registry.md`**：新增 `S-LEC-014`
+- **计数回写**：`AGENTS.md` §4（11 → 20）、`00_Dashboard/Home.md`（117 → **126 节点**）、`99_System/Knowledge-Status.md`（117 → 126，并修掉该文件遗留的一处 `活跃概念节点 100` 陈旧值）
+
+### 取舍与不确定性（不发明医学事实）
+
+- **不收录药物剂量**：讲义给出具体给药方案（如鞭虫用丙硫咪唑）。按本学科 README「抗寄生虫药物」段的明确规定「本知识库**不存储具体剂量**」，9 个节点一律只写**药物名称**，并各加 `> [!warning]` 指向该规则与「用药前须核对指南」（AGENTS.md §3）
+- **`Endotoxin` 式的合并判断（§2.3）**：肺蛔虫症（Loeffler 综合征）与胆道蛔虫病**独立建节点** —— 前者是具独立命名的综合征且会在钩虫 / 粪类圆线虫讲次重复出现，后者讲义用 6 页病例分析专门展开；而蛔虫的其余并发症（肠梗阻、胰腺炎、阑尾炎、肝蛔虫病）**不单建**，作为 `Ascariasis` 的一节
+- **`Larva Migrans` 是薄节点**：讲义仅在 slide 8 与 slide 10 两处零散提及，节点内以 `> [!warning] 讲义覆盖度` 显式声明，未补机制或分类；并额外声明 slide 20 的「异位损害（Ectopic lesion）」属**蛔虫自身幼虫**表述、不得与幼虫移行症混同
+- **讲义内部不一致原样保留**：Loeffler 综合征在讲义中有四种写法（肺蛔虫症 / Loeffler 综合征 / Loffler's syndrome / 蛔蚴性肺炎），节点专设「名称表述」小节声明，未擅自统一；slide 35 的「腹泄、腹疼」按规范用字写作「腹泻、腹痛」
+- **静默更正已回填说明**：讲义 slide 10 把犬弓首线虫拼作 `Tosocara canis`，节点按规范学名 `Toxocara canis` 书写并**注明讲义原文拼写**；slide 17 英文表的「60 m45m」缺 μ，按 slide 15/16 补全为 60 × 45 μm（数值未改）
+- 讲义 p13/p25/p27/p28/p29/p30/p42 等为纯图片页，只保留可读要点；`Nematode` 的体壁与四大器官系统讲义只有条目无展开，未补描述
+
+### 验证（Ingest-SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 链接可解析（与 HEAD 逐文件对比） | **新增未解析链接 0** |
+| 5.1.7 课程层同步 | 新建 Lecture 02；Course.md 已回写；README 索引 = 20；Lecture 引用 S-LEC-014 |
+| 5.1.8 计数与索引 | 学科概念节点 20 = README 索引 20（总论 11 + 线虫各论 9） |
+| 5.1.9 陈旧「（待建）」 | 0 |
+| 5.1.12 链接写法 | Lecture 标题内 wikilink 0；`详见 [[Node]]。` 8 处；9 个新节点全部裸基名、无 `../` |
+| 本学科剂量规则 | 9 个节点**无任何数字剂量**（脚本检出） |
+| 编码与 EOL | 16 个改动文件 EOL 各自一致、无 CRLF 双写、均有尾换行 |
+
+> **顺带修复**：`Biliary Ascariasis` 原含一条 `[[Larva Migrans]]` 链接 —— 胆道蛔虫病（成虫钻入胆道）与幼虫移行症无医学关联，属凑链接，已按 AGENTS.md §10 删除。
+> **遗留警告**：同级节点单向链接 22 条（§5.2 建议项），绝大多数是「具体虫种节点 → 总论节点（`Medical Helminthology` / `Parasite Life Cycle`）」方向；反向补齐会给总论节点硬塞全部虫种链接，属 §10 禁止的凑链接，故保留并报告。
+
 ## 2026-09-15 — /ingest 医学微生物学 第 1 章 细菌的形态与结构（第二部分）
 
 > 用户要求：「/ingest 微生物学 细菌的形态与结构2」。

@@ -64,9 +64,11 @@ tags:
 
 ---
 
-## 已建节点（11）
+## 已建节点（20）
 
-> 2026-09-09 /ingest（来源 `S-LEC-009` 寄生虫学总论）。全部 `source_status: needs_review`。
+> 2026-09-09 /ingest（来源 `S-LEC-009` 寄生虫学总论）；2026-09-15 /ingest（来源 `S-LEC-014` 蛔虫与鞭虫）。全部 `source_status: needs_review`。
+
+### 总论（11）
 
 | 分组 | 节点 |
 |------|------|
@@ -75,18 +77,35 @@ tags:
 | 生活史与致病 | [[Parasite Life Cycle]] · [[Parasitic Infection Characteristics]] |
 | 流行病与防控 | [[Parasitic Disease Epidemiology]] · [[Parasitic Zoonoses]] · [[Parasitic Disease Prevention]] |
 
+### 线虫各论 · 第 1 章 蛔虫与鞭虫（9）
+
+| 分组 | 节点 | 要点 |
+|------|------|------|
+| 概论 | [[Nematode]] | 蠕虫 4 门 · 土源性 vs 生物源性 · 成虫形态（原体腔、体壁三层、四大器官系统）· 虫卵三层结构 · 生理 · 致病 · 分类（小杆纲 / 无尾感器纲） |
+| | [[Larva Migrans]] | 幼虫移行症（讲义仅提及；犬弓首线虫 → 内脏幼虫移行症） |
+| 蛔虫 | [[Ascaris lumbricoides]] | 成虫（20–35 / 15–31 cm）与**两种虫卵鉴别**（60×45 vs 90×40 μm）· 生活史六要素 · 感染率 12.72% → 0.90% · 5 条流行原因 + 4 条防治 |
+| | [[Ascariasis]] | 幼虫 / 成虫 / 超敏反应三部分致病 + 5 项并发症（胆道蛔虫症、肠梗阻、胰腺炎、阑尾炎、肝蛔虫病） |
+| | [[Biliary Ascariasis]] | 胆道蛔虫病：钻顶样绞痛典型表现 + 以黄疸、瘙痒为主的不典型表现（附完整病例） |
+| | [[Loeffler Syndrome]] | 肺蛔虫症（蛔蚴性肺炎）：嗜酸性粒细胞增多 + 游走性肺部阴影，1–2 周自限 |
+| 鞭虫 | [[Trichuris trichiura]] | 马鞭形成虫（前 3/5 为食管）· 两端透明栓虫卵 · 盲肠寄生 · 寿命 3–5 年 · 日产卵 5 000–20 000 |
+| | [[Trichuriasis]] | 慢性失血 → 贫血；儿童可致**直肠脱垂**；虫卵小须连续粪检三次以上 |
+| 检查 | [[Stool Egg Examination]] | 生理盐水直接涂片法 / 沉淀法 / 浮聚法 / 饱和盐水浮聚法 / 改良加藤法 / 痰中查蛔蚴 |
+
 ## 待建节点（Knowledge Gaps）
+
+> 2026-09-15：`Ascaris lumbricoides`、`Ascariasis`、`Trichuris trichiura`、`Trichuriasis` 已建，自下列清单移除。
+> 注：原清单只列了蛔虫、**未列鞭虫**，属清单遗漏 —— 本次按讲义第三节一并补建。
 
 ### 寄生虫（Parasite）
 
-- **蠕虫**：Ascaris lumbricoides（蛔虫）· Hookworm（钩虫）· Enterobius vermicularis（蛲虫）· Filaria（丝虫）· Trichinella spiralis（旋毛虫）· Angiostrongylus cantonensis（广州管圆线虫）· Schistosoma（血吸虫）· Clonorchis sinensis（肝吸虫）· Fasciolopsis buski（姜片虫）· Paragonimus（肺吸虫）· Taenia solium/saginata（猪/牛带绦虫）· Echinococcus（棘球绦虫）
+- **蠕虫**：Hookworm（钩虫）· Enterobius vermicularis（蛲虫）· Filaria（丝虫）· Trichinella spiralis（旋毛虫）· Angiostrongylus cantonensis（广州管圆线虫）· Schistosoma（血吸虫）· Clonorchis sinensis（肝吸虫）· Fasciolopsis buski（姜片虫）· Paragonimus（肺吸虫）· Taenia solium/saginata（猪/牛带绦虫）· Echinococcus（棘球绦虫）
 - **原虫**：Plasmodium（疟原虫）· Entamoeba histolytica（溶组织内阿米巴）· Toxoplasma gondii（弓形虫）· Leishmania（利什曼原虫）· Trichomonas vaginalis（阴道毛滴虫）· Giardia lamblia（蓝氏贾第鞭毛虫）· Pneumocystis（机会致病原虫）
 - **医学节肢动物**：Anopheles（按蚊）· Culex（库蚊）· Aedes（伊蚊）· …
 
 ### 寄生虫病（Disease）
 
 - Malaria（疟疾）· Amoebiasis（阿米巴病）· Toxoplasmosis（弓形虫病）· Leishmaniasis（黑热病）· Filariasis（丝虫病）
-- Ascariasis · Hookworm Disease · Enterobiasis · Trichinellosis
+- Hookworm Disease · Enterobiasis · Trichinellosis
 - Schistosomiasis · Clonorchiasis · Fasciolopsiasis · Paragonimiasis
 - Taeniasis · Cysticercosis（囊虫病）· Echinococcosis（包虫病）
 
@@ -98,11 +117,11 @@ tags:
 ### 机制（Pathophysiology）
 
 - 寄生虫致病机制（掠夺、损伤、毒性、免疫病理）
-- 寄生虫与宿主免疫的相互作用（与 [[03_Concepts/Immunology|Immunology]] 交叉）
+- 寄生虫与宿主免疫的相互作用（与 [[03_Concepts/Immunology/README|Immunology]] 交叉）
 
 ### 检查（Test）
 
-- 粪便虫卵检查 · 血液疟原虫涂片 · 皮肤活检 · 弓形虫 IgM/IgG · PCR
+- 血液疟原虫涂片 · 皮肤活检 · 弓形虫 IgM/IgG · PCR
 - 脑囊虫病影像（CT/MRI 可见钙化灶）
 
 ### 临床推理（Clinical Algorithm）
@@ -148,7 +167,7 @@ tags:
 1. **本目录定位**：存放**寄生虫相关**的 Concept 节点（Disease / Drug / Parasite / Pathophysiology / Test）。
 2. **微生物相关节点** → [[../Medical Microbiology/README|Medical Microbiology]] 学科目录（已拆分独立）。
 3. **Drug 节点归属**：抗寄生虫药物原则上放在本目录的 `Drugs/` 子目录（待建立）。
-4. **与 [[03_Concepts/Immunology|Immunology]] 协作**：免疫学概念放 Immunology；本学科只放**寄生虫感染相关**的免疫应用（如寄生虫免疫逃逸、寄生虫疫苗等）。
+4. **与 [[03_Concepts/Immunology/README|Immunology]] 协作**：免疫学概念放 Immunology；本学科只放**寄生虫感染相关**的免疫应用（如寄生虫免疫逃逸、寄生虫疫苗等）。
 5. **来源优先**：所有寄生虫病、药物剂量必须以 WHO 寄生虫病指南为准。
 
 ## 注册与拆分历史

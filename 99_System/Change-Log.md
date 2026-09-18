@@ -9,6 +9,58 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-18 — /ingest 病理学 第三章 局部血液循环障碍
+
+> 用户要求：「/ingest 病理学 血障」。
+
+### 来源
+
+`02_Raw/Lectures/Pathology/笔记—血障.docx`（311 段，优课联盟 UOOC 慕课笔记，2026 秋）→ 登记为 **S-LEC-015**。
+沿用第一、二章的 docx 提取口径（stdlib `zipfile` + 段落号索引，`[NNN]` 编号与既有节点引用格式一致）。
+本次为求无 XML 泄漏改用 `ElementTree` 重抽（原正则法在第 310 段漏出 `<w:tabs>` 标签残留），两法段落号一致。
+
+### Created：21 个概念节点（病理学 48 → 69；全库 126 → 147）
+
+| 节 | 节点 | type | 来源段落 |
+|----|------|------|---------|
+| 第一节 充血和淤血 | `Hyperemia` · `Congestion` · `Pulmonary Congestion` · `Hepatic Congestion` | pathophysiology | 006–065 |
+| 第二节 出血 | `Hemorrhage` | pathophysiology | 066–080 |
+| 第三节 血栓形成 | `Thrombosis` · `Virchow's Triad` · `Thrombus Types` · `Thrombus Outcome` · `Thrombosis Consequences` · `Disseminated Intravascular Coagulation` | pathophysiology | 081–187 |
+| 第四节 栓塞 | `Embolism` · `Pulmonary Embolism` · `Systemic Arterial Embolism` · `Fat Embolism` · `Gas Embolism` · `Amniotic Fluid Embolism` | pathophysiology | 188–255 |
+| 第五节 梗死 | `Infarction` · `Anemic Infarction` · `Hemorrhagic Infarction` · `Septic Infarction` | pathophysiology | 256–310 |
+
+### Updated
+
+- **新建 `08_Courses/Pathology/Lectures/03 局部血液循环障碍.md`**：含 Lecture Overview / 章节目标 / 章节结构 / 五节正文 / Class Notes / Related Medical Knowledge（21 节点 + 跨章）/ Related Questions；正文 `详见 [[Node]]。` 21 处
+- **`08_Courses/Pathology/Course.md`**：Lectures 清单追加第 3 讲；`Related Medical Knowledge` 由 48 扩为 **69 节点**（新增第三章 5 组）；`Knowledge Gaps` 增列「第三章遗留」；`Source` 段补 `.docx` 与 S-LEC-015；**顺带修掉 2 处指向已删除小节的陈旧导航说明**（`## 本章知识导航`，该小节 2026-09-14 已按 §3.5.5 移除）
+- **`03_Concepts/Pathology/README.md`**：`已建节点（48）` → **`（69）`**，新增「第三章 局部血液循环障碍」5 组、21 行逐节点索引；「学科范围」中第三章由「（待 /ingest）」改为已建并逐节点链接；「待建节点」中删除第三章条目、改为「第三章遗留（讲义未覆盖）」
+- **`99_System/Source-Registry.md`**：新增 `S-LEC-015`
+- **计数回写**：`AGENTS.md` §4（48 → 69）、`00_Dashboard/Home.md`（126 → **147 节点**；病理学 48 → 69）、`99_System/Knowledge-Status.md`（126 → 147）
+
+### 结构与取舍（不发明医学事实）
+
+- **讲义只有一个显式节标题**：`第五节 梗死`（另有小节号 `一、充血`）。第二节～第四节的标题在讲义中**不存在** —— Lecture 内以 `> [!warning] 讲义结构说明` 明确标注哪些标题是原文、哪些是按内容边界倒推，未伪造节标题（SOP §3.5.6）
+- **讲义未覆盖第六节 水肿**：仅在开篇导图与「淤血性水肿 / 淤血性积液」中提及 → 不建节点，记入 README「第三章遗留」与 Course `Knowledge Gaps`
+- **不单建亚型节点**（§2.3）：四种血栓（白 / 混合 / 红 / 透明）合为一个 `Thrombus Types` 节点（它们是同一延续性血栓的头/体/尾三段），而**不**照第一章坏死亚型的先例拆分；三种梗死则按讲义分节独立成节点
+- **脑梗死的归属存疑已如实标注**：讲义把脑梗死排在「（一）贫血性梗死」之后，但脑是**液化性坏死**而脾/肾/心为凝固性坏死 → 节点内以 `> [!warning]` 说明讲义未作归属判断，未替讲义下结论
+- **讲义未给出的内容一律不补**：DIC 的诊断标准/分期/实验室指标、羊水栓塞发生率与病死率、脂肪栓塞综合征（FES）诊断标准、肺栓塞危险分层与抗凝溶栓指征、（羊水栓塞）抢救流程 —— 各节点以 `> [!warning]` 列出缺口
+- **讲义只提问不给答案**：`讨论：术后久卧，如何预防下肢静脉血栓形成？`（[126]）在 `Thrombosis` 节点如实记录为讲义提问，**未自行作答**
+- 讲义正文的缩写（PLT / RBC / WBC / cap / A / V / En）原样保留并在首次出现处以中文标注；讲义「淤血性硬化」一语**未**被升格命名为「淤血性肝硬化」
+
+### 验证（Ingest-SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 链接可解析（与 HEAD 逐文件对比） | **新增未解析链接 0** |
+| 5.1.7 课程层同步 | 新建 Lecture 03；Course.md 已回写并清除陈旧导航说明；README 索引 = 69；Lecture 引用 S-LEC-015 |
+| 5.1.8 计数与索引 | 学科概念节点 69 = README 索引 69（第一章 22 + 第二章 26 + 第三章 21） |
+| 5.1.9 陈旧「（待建）」 | 0 |
+| 5.1.12 链接写法 | Lecture 标题内 wikilink 0；`详见 [[Node]]。` 21 处；21 个新节点全部裸基名、无 `../` |
+| 编码与 EOL | 29 个改动文件 EOL 各自一致、无 CRLF 双写、均有尾换行 |
+
+> **顺带清理**：`03_Concepts/Pathology/README.md` 的「已建节点」段下原有一个只含 `（待建）Pathology`（未链接文本）的「学科基础」小节 —— 该条目本身在文末「待建节点」中已列，已从「已建」段移除，改为一行指引（§5.1.8 精神：已建段不列待建项）。
+> **遗留警告**：第三章节点之间单向链接 **14 条**（§5.2 建议项）。已把其中有实义的 6 条补齐（`Embolism ← Thrombosis / Thrombus Types`、`Thrombosis ← Thrombus Outcome / DIC`、`Thrombus Types ← Thrombosis Consequences`、`Anemic Infarction ← Systemic Arterial Embolism`）；其余为「上游概念 → 下游罕见并发症」方向的弱关联，按 AGENTS.md §10「不为凑链接而链接」保留并报告。
+
 ## 2026-09-15 — /ingest 人体寄生虫学 医学蠕虫学 第一章 线虫（蛔虫与鞭虫）
 
 > 用户要求：「/ingest 人体寄生虫学 蛔鞭」。

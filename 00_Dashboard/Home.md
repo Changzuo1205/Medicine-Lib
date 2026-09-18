@@ -19,7 +19,7 @@ last_refresh: 2026-09-14
 | AGENTS.md 规范 | ✅ 已就绪 | 32 节规则完整；V2 起改用"按学科组织" |
 | 目录骨架 | ✅ 已就绪 | 00–07 + 99 + 08_Courses |
 | 已注册学科 | 5 | `[[03_Concepts/Immunology\|Immunology]]` / `[[03_Concepts/Medical Microbiology\|Medical Microbiology]]` / `[[03_Concepts/Human Parasitology\|Human Parasitology]]` / `[[03_Concepts/Clinical Epidemiology\|Clinical Epidemiology]]` / `[[03_Concepts/Pathology\|Pathology]]` |
-| 知识节点 | ✅ 已创建 | 1 Disease · 16 Immunology · 24 Medical Microbiology · 17 Clinical Epidemiology · 20 Human Parasitology · 48 Pathology = **126 节点**（active 状态） |
+| 知识节点 | ✅ 已创建 | 1 Disease · 16 Immunology · 24 Medical Microbiology · 17 Clinical Epidemiology · 20 Human Parasitology · 69 Pathology = **147 节点**（active 状态） |
 | 退役存档 | 38 概念节点 | 见 [[99_System/Archive/Concepts-Retired/\|Concepts-Retired]]（另含 2 份原 README；按学科注册时可复活） |
 | 原始资料 | ✅ 部分导入 | 12 份原始课件在 `02_Raw/Lectures/`（5 个学科子目录）；Source-Registry 已登记 12 个讲座来源（S-LEC-001~012） |
 | 临床推理材料 | ⚠️ 尚未创建 | `04_Clinical/` 全部子目录空 |
@@ -36,7 +36,7 @@ last_refresh: 2026-09-14
 - [[03_Concepts/Human Parasitology/README|Human Parasitology]] — 人体寄生虫学（**20 节点**；从原病原与感染性疾病 Ⅰ拆分）
 - [[03_Concepts/Clinical Epidemiology/README|Clinical Epidemiology]] — 临床流行病学（17 节点：已 /ingest 完成）
   - [[Clinical Epidemiology (concept)]] · [[Epidemiology]] · [[Distribution by Population]] · [[Distribution by Time]] · [[Distribution by Place]]
-- [[03_Concepts/Pathology/README|Pathology]] — 病理学（**48 节点**；已 /ingest 第一章 + 第二章）
+- [[03_Concepts/Pathology/README|Pathology]] — 病理学（**69 节点**；已 /ingest 第一章 + 第二章 + 第三章 局部血液循环障碍）
   - [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]]
   - [[02 损伤的修复|第二章 · 损伤的修复]]
 
@@ -113,7 +113,7 @@ _（尚无内容 — 学习活动开始后在此记录）_
 | 免疫学子节点 | `03_Concepts/Immunology/` 内"待建"清单 | 高（详见 [[03_Concepts/Immunology/README\|Immunology README]]） |
 | 医学微生物学子节点 | 03_Concepts/Medical Microbiology/ 内待建清单 | 高（详见 [[03_Concepts/Medical Microbiology/README\|Medical Microbiology README]]） |
 | 人体寄生虫学子节点 | 03_Concepts/Human Parasitology/ 内待建清单 | 高（详见 [[03_Concepts/Human Parasitology/README\|Human Parasitology README]]） |
-| 病理学第一/二章遗留 | 03_Concepts/Pathology/ 内待建清单 | 中（肝硬化 · 室壁瘤 · 骨痂改建调控；详见 [[03_Concepts/Pathology/README\|Pathology README]]） |
+| 病理学第一/二/三章遗留 | 03_Concepts/Pathology/ 内待建清单 | 中（肝硬化 · 室壁瘤 · 骨痂改建调控 · 第三章第六节 水肿未覆盖；详见 [[03_Concepts/Pathology/README\|Pathology README]]） |
 | 鉴别诊断 | `04_Clinical/Differential/` | 高 |
 | 临床算法 | `04_Clinical/Algorithms/` | 高 |
 | 病例 | `04_Clinical/Cases/` | 中 |

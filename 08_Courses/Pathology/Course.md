@@ -32,15 +32,20 @@ textbook: 人卫版《病理学》（第 9/10 版，待核对）
 - [[Lectures/01 组织细胞适应与损伤|01 组织细胞适应与损伤]]
   - 来源：[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx]]
   - 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]]
-  - 章节导航：本 Lecture 内（`## 章节结构` / `## 本章知识导航`）
+  - 章节导航：本 Lecture 内（`## 章节结构` / `## Related Medical Knowledge`）
   - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
 - [[Lectures/02 损伤的修复|02 损伤的修复]]
   - 来源：[[02_Raw/Lectures/Pathology/笔记—修复.docx]]
   - 来源登记：[[99_System/Source-Registry#S-LEC-012|S-LEC-012]]
-  - 章节导航：本 Lecture 内（`## 章节结构` / `## 本章知识导航`）
+  - 章节导航：本 Lecture 内（`## 章节结构` / `## Related Medical Knowledge`）
+  - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
+- [[Lectures/03 局部血液循环障碍|03 局部血液循环障碍]]
+  - 来源：[[02_Raw/Lectures/Pathology/笔记—血障.docx]]
+  - 来源登记：[[99_System/Source-Registry#S-LEC-015|S-LEC-015]]
+  - 章节导航：本 Lecture 内（`## 章节结构` / `## Related Medical Knowledge`）
   - 关联学科：[[../../03_Concepts/Pathology/README|Pathology 学科目录]]
 
-_（后续章节待 /ingest 时补建 Lecture：局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病）_
+_（后续章节待 /ingest 时补建 Lecture：炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病）_
 
 ## Exam Topics
 
@@ -57,11 +62,12 @@ _（暂无；待 /study 时创建）_
 详见 [[../../03_Concepts/Pathology/README|Pathology README]] 中“待建节点”清单：
 - 第一章待建：Lipofuscin · 自由基损伤 · 缺血-再灌注损伤 · 钙超载 · 焦亡 / 自噬 · 坏死形态学鉴别流程
 - 第二章待建：肝硬化机制 · 室壁瘤 · 缩窄性心包炎 · 骨痂改建分子调控 · 修复的临床算法
-- 后续章节：局部血液循环障碍 · 炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病
+- 第三章遗留（讲义未覆盖）：**第六节 水肿**（笔记未记；仅在开篇导图与「淤血性水肿 / 淤血性积液」中出现）· 缺血（列在开篇导图「血量异常」中，全章无专节）
+- 后续章节：炎症 · 肿瘤 · 免疫病理 · 各系统疾病 · 传染病
 
 ## Related Medical Knowledge
 
-学科目录已含 48 个概念节点（第一章 22 + 第二章 26），分布：
+学科目录已含 69 个概念节点（第一章 22 + 第二章 26 + 第三章 21），分布：
 
 | 类别 | 节点数 | 覆盖 |
 |------|--------|------|
@@ -74,13 +80,18 @@ _（暂无；待 /study 时创建）_
 | 纤维性修复 | 3 | Fibrous Repair · Granulation Tissue · Scar Tissue |
 | 创伤愈合 | 5 | Wound Healing · 一期 / 二期愈合 · Fracture Healing · Factors Affecting Wound Healing |
 | 特定病变 | 2 | Traumatic Neuroma · Keloid |
+| **第三章** 充血和淤血 | 4 | Hyperemia · Congestion · Pulmonary Congestion · Hepatic Congestion |
+| **第三章** 出血 | 1 | Hemorrhage |
+| **第三章** 血栓形成 | 6 | Thrombosis · Virchow's Triad · Thrombus Types · Thrombus Outcome · Thrombosis Consequences · Disseminated Intravascular Coagulation |
+| **第三章** 栓塞 | 6 | Embolism · Pulmonary Embolism · Systemic Arterial Embolism · Fat Embolism · Gas Embolism · Amniotic Fluid Embolism |
+| **第三章** 梗死 | 4 | Infarction · Anemic Infarction · Hemorrhagic Infarction · Septic Infarction |
 
-完整列表见 [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]] 与 [[02 损伤的修复|第二章 · 损伤的修复]]。
+完整列表见 [[01 组织细胞适应与损伤|第一章 · 组织细胞适应与损伤]] · [[02 损伤的修复|第二章 · 损伤的修复]] · [[03 局部血液循环障碍|第三章 · 局部血液循环障碍]]。
 
 ## Source
 
-- 原始课件：[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx|《病理学》第一章 笔记（优课联盟 UOOC，2026 秋）]] · [[02_Raw/Lectures/Pathology/笔记—修复.docx|《病理学》第二章 笔记（优课联盟 UOOC，2026 秋）]]
-- 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]] · [[99_System/Source-Registry#S-LEC-012|S-LEC-012]]
+- 原始课件：[[02_Raw/Lectures/Pathology/笔记—组织细胞适应与损伤.docx|《病理学》第一章 笔记（优课联盟 UOOC，2026 秋）]] · [[02_Raw/Lectures/Pathology/笔记—修复.docx|《病理学》第二章 笔记]] · [[02_Raw/Lectures/Pathology/笔记—血障.docx|《病理学》第三章 笔记]]
+- 来源登记：[[99_System/Source-Registry#S-LEC-011|S-LEC-011]] · [[99_System/Source-Registry#S-LEC-012|S-LEC-012]] · [[99_System/Source-Registry#S-LEC-015|S-LEC-015]]
 - evidence_level: C（医学教育资料 / 课程笔记）；source_status: needs_review
 - **待核对**：人卫版《病理学》第 9/10 版对应章节（reference textbook，文本层可用）
 - 关联学科目录：[[../../03_Concepts/Pathology/README|Pathology]]

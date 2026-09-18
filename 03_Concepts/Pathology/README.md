@@ -31,22 +31,25 @@ created: 2026-09-11
   - [[Fibrous Repair|纤维性修复]]：[[Granulation Tissue|肉芽组织]] → [[Scar Tissue|瘢痕组织]]
   - [[Wound Healing|创伤愈合]]：[[Healing by First Intention|一期]] / [[Healing by Second Intention|二期愈合]]、[[Fracture Healing|骨折愈合]]、[[Factors Affecting Wound Healing|影响因素]]
   - 特定病变：[[Traumatic Neuroma|创伤性神经瘤]] · [[Keloid|瘢痕疙瘩]]
-- **局部血液循环障碍**（待 /ingest）
+- **局部血液循环障碍**：[[03 局部血液循环障碍]]（Lecture；章节导航在本 Lecture 内）
+  - 充血与淤血：[[Hyperemia|充血]] · [[Congestion|淤血]] · 器官淤血（[[Pulmonary Congestion|肺]] · [[Hepatic Congestion|肝]]）
+  - [[Hemorrhage|出血]]
+  - 血栓形成：[[Thrombosis|血栓形成]] · [[Virchow's Triad|三要素]] · [[Thrombus Types|类型]] · [[Thrombus Outcome|结局]] · [[Thrombosis Consequences|影响]] · [[Disseminated Intravascular Coagulation|DIC]]
+  - 栓塞：[[Embolism|栓塞]] · [[Pulmonary Embolism|肺动脉栓塞]] · [[Systemic Arterial Embolism|体循环动脉栓塞]] · [[Fat Embolism|脂肪栓塞]] · [[Gas Embolism|气体栓塞]] · [[Amniotic Fluid Embolism|羊水栓塞]]
+  - 梗死：[[Infarction|梗死]] · [[Anemic Infarction|贫血性]] · [[Hemorrhagic Infarction|出血性]] · [[Septic Infarction|败血性]]
 - **炎症**（待 /ingest）
 - **肿瘤**（待 /ingest）
 
 ### 2. 各论（Systemic Pathology）— 不同器官特殊病变规律（待 /ingest）
 - 心血管系统 · 呼吸系统 · 消化系统 · 泌尿系统 · 生殖系统 · 神经内分泌系统 · 造血免疫系统 · 皮肤骨骼系统
 
-## 已建节点（48）
+## 已建节点（69）
 
 > **学科节点索引**（分组 + 逐节点要点）。概念知识本体在各节点文件内。
 > 章节正文、`## 章节结构` 与 `## Related Medical Knowledge` 见对应 Lecture；
 > 原 `Chapter 1/2` 导航页的索引功能于 2026-09-14 并入本节（章节导航的归属见 [[99_System/Ingest-SOP|Ingest-SOP]] §3.5.5）。
 
-### 学科基础
-
-- （待建）[[Pathology]] — 病理学学科定义节点
+> `[[Pathology]]`（病理学学科定义）尚未建立，见本文末「待建节点」。
 
 ### 第一章 细胞和组织的适应与损伤（Chapter 1）
 
@@ -148,6 +151,56 @@ created: 2026-09-11
 |------|------|------|
 | [[Traumatic Neuroma]] 创伤性神经瘤 | pathophysiology | 断端相隔太远 / 瘢痕阻隔 / 截肢失去远端 → 再生轴突与增生结缔组织混杂卷曲成团 → 顽固性疼痛 |
 | [[Keloid]] 瘢痕疙瘩 | pathophysiology | 瘢痕过度增生 → 肥大突起不规则 |
+### 第三章 局部血液循环障碍（Chapter 3）
+
+章节文件：[[03 局部血液循环障碍]]（Lecture）— **21 个概念节点**
+
+#### 第一节 充血和淤血 — 4 个节点
+
+| 概念 | type | 要点 |
+|------|------|------|
+| [[Hyperemia]] 充血 | pathophysiology | **动脉性充血**，主动性；机制 = 血管舒张神经 + 舒血管活性物质 → 细动脉/毛细血管扩张；生理性 vs 病理性（炎症性 / 减压后）；鲜红、温度升高 |
+| [[Congestion]] 淤血 | pathophysiology | **被动**过程；原因 3 类（静脉受压 / 静脉腔阻塞 / 心力衰竭）；还原血红蛋白↑ → **发绀**；后果 5 类（淤血性水肿 / 积液 / 出血 / 实质细胞萎缩变性坏死 / 硬化） |
+| [[Pulmonary Congestion]] 肺淤血 | pathophysiology | 急性（肺泡腔水肿液 + 少量 RBC）vs 慢性（肺泡间隔纤维性增厚 + **心衰细胞**）→ **肺褐色硬化**；临床咳**粉红色泡沫痰或铁锈色痰** |
+| [[Hepatic Congestion]] 肝淤血 | pathophysiology | 中央区暗红 + 周边区脂变黄 → **槟榔肝（nutmeg liver）**；进展为小叶中央区肝窦扩张出血、周边区脂变、间质纤维组织增生（讲义称**淤血性硬化**） |
+
+#### 第二节 出血 — 1 个节点
+
+| 概念 | type | 要点 |
+|------|------|------|
+| [[Hemorrhage]] 出血 | pathophysiology | **破裂性** vs **漏出性**（血管壁损害 / 血小板异常 / 凝血因子缺乏）；内出血（体腔积血、血肿）vs 外出血（自然管道、皮肤粘膜：瘀点/紫癜/瘀斑）；影响取决于出血量、速度、部位及类型 |
+
+#### 第三节 血栓形成 — 6 个节点
+
+| 概念 | type | 要点 |
+|------|------|------|
+| [[Thrombosis]] 血栓形成 | pathophysiology | 活体心血管内血液凝固形成**固体质块**；凝血 ⇄ 纤溶动态平衡；形成过程 5 步（**水泥 = 血小板黏集堆，钢筋 = 纤维蛋白**） |
+| [[Virchow's Triad]] 血栓形成三要素 | pathophysiology | ① **心血管内皮细胞损伤（最重要、最常见）** ② 血流状态异常 ③ 血液凝固性增加；含完整内皮的抗凝（PGI2 / NO / ADP 酶 / 凝血酶调节蛋白 / 蛋白 S / t-PA）与损伤内皮的促凝（组织因子 III / vWF / PAI） |
+| [[Thrombus Types]] 血栓类型 | pathophysiology | **白色**（头，疣状赘生物）· **混合**（体，层状，含附壁血栓）· **红色**（尾，无粘连、易脱落）· **透明**（微循环，DIC，纤维蛋白性血栓） |
+| [[Thrombus Outcome]] 血栓的结局 | pathophysiology | 软化溶解吸收 · **机化（约 2 周）与再通** · 钙化（静脉石 / 动脉石） |
+| [[Thrombosis Consequences]] 血栓对机体的影响 | pathophysiology | 有利（止血）vs 不利：阻塞血管（梗死 / 坏疽）· 血栓栓塞 · **心瓣膜变形**（狭窄 / 关闭不全）· 广泛性出血 |
+| [[Disseminated Intravascular Coagulation]] DIC | pathophysiology | 微循环内**透明血栓**（微血栓）；凝血因子大量消耗 → 血液凝固障碍 → **出血性休克**；讲义仅零散提及，**无专节** |
+
+#### 第四节 栓塞 — 6 个节点
+
+| 概念 | type | 要点 |
+|------|------|------|
+| [[Embolism]] 栓塞 | pathophysiology | 循环血液中**不溶异物**阻塞血管腔；栓子运行途径 5 种（体静脉右心 / 主动脉左心 / 门静脉 / **交叉性（反常性）** / **逆行性**）；血栓栓塞占 **99%** |
+| [[Pulmonary Embolism]] 肺动脉栓塞 | pathophysiology | 来源 **95% 下肢深静脉**；后果 4 种（中小栓子无严重后果 / 出血性梗死 / 骑跨性栓塞猝死 / 广泛小分支栓塞猝死）；**猝死机制 3 条**（急性右心衰 · 迷走反射痉挛 · 血小板 5-HT、TXA₂） |
+| [[Systemic Arterial Embolism]] 体循环动脉栓塞 | pathophysiology | 来源（左心腔 / 动脉 / 腔静脉）；后果取决于侧支循环与缺血耐受性：有侧支无梗死（肝、上肢）· 无侧支梗死（**脑、心、肾、脾**） |
+| [[Fat Embolism]] 脂肪栓塞 | pathophysiology | 长骨骨折 / 脂肪挫伤 / 烧伤 / 高血脂 + 应激；**> 20 µm 阻肺**，**< 20 µm 经肺入体循环 → 脑水肿、点状出血**；大量入血 → 窒息、右心衰猝死 |
+| [[Gas Embolism]] 气体栓塞 | pathophysiology | **空气栓塞**（> 100 ml → 右心泡沫血 → 猝死）· **减压病**（N₂ 溶解缓慢 → 氮气栓塞，又称**沉箱病 / 潜水员病**；股骨头无菌性坏死） |
+| [[Amniotic Fluid Embolism]] 羊水栓塞 | pathophysiology | 羊水经子宫壁破裂静脉窦入血 → 栓塞肺细小分支；光镜见**角化鳞状上皮、胎毛、胎脂、胎粪、黏液**；后果含**过敏性休克 + DIC** → 猝死 |
+
+#### 第五节 梗死 — 4 个节点
+
+| 概念 | type | 要点 |
+|------|------|------|
+| [[Infarction]] 梗死 | pathophysiology | 血管阻塞、血流停滞导致缺氧性**坏死**；原因 4 类；形状看血管分布（锥形 / 地图状 / 节段形）· 质地看坏死类型 · 颜色看含血量 |
+| [[Anemic Infarction]] 贫血性梗死 | pathophysiology | 条件 = 组织致密 + 侧支不丰富；部位**脾、肾、心**；灰白锥形 + 褐色充血出血带；镜下**凝固性坏死**；另含**脑梗死**（液化性坏死 → 胶质瘢痕） |
+| [[Hemorrhagic Infarction]] 出血性梗死 | pathophysiology | 条件 = **严重淤血 + 组织疏松**；**肺**（下叶肋膈缘，锥形/楔形）· **肠**（节段性暗红 → 麻痹性梗阻 → 穿孔 → 腹膜炎） |
+| [[Septic Infarction]] 败血性梗死 | pathophysiology | 急性感染性心内膜炎赘生物含菌脱落 → 体循环栓塞；镜下**菌团 + 大量炎细胞 → 脓肿形成** |
+
 ## 待建节点（Knowledge Gaps）
 
 ### 学科基础
@@ -160,7 +213,10 @@ created: 2026-09-11
 - 干细胞治疗应用相关疾病（帕金森病 / 阿尔茨海默病 / 糖尿病 / 心肌梗死）
 
 ### 总论后续章节
-- 第三章 局部血液循环障碍（充血、淤血、出血、血栓、栓塞、梗死、水肿）
+### 第三章遗留（讲义未覆盖）
+- **第六节 水肿**（本讲笔记未覆盖；仅出现在开篇导图与「淤血性水肿 / 淤血性积液」中）
+- 缺血（列在开篇导图的「血量异常」中，但全章无专节）
+- 讲义正文出现但未展开：DIC 的诊断标准与分期 · 羊水栓塞发生率与病死率 · 脂肪栓塞综合征（FES）诊断标准 · 肺栓塞危险分层与治疗指征
 - 第四章 炎症（炎症的概念、原因、基本病理变化、介质、类型、结局）
 - 第五章 肿瘤（肿瘤的概念、形态、异型性、命名、生长扩散、分级分期、病因）
 - 第六章 免疫病理（超敏反应、自身免疫病、免疫缺陷病、移植排斥）

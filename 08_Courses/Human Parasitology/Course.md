@@ -39,7 +39,7 @@ _（暂无；待 review 后补充）_
 
 ## Reviews
 
-_（暂无）_
+- [[08_Courses/Human Parasitology/Reviews/Session-2026-09-21-Ascaris-Trichuris|Session-2026-09-21-Ascaris-Trichuris]] — /review Session（2026-09-21）
 
 ## Knowledge Gaps
 

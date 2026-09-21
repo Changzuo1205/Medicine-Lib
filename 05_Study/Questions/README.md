@@ -32,11 +32,31 @@ Concept 扩展题（10）：
 - Differential：[[Q-Imm-10-Innate-vs-Adaptive-Timeline]] · [[Q-Imm-11-Humoral-vs-Cellular-Targets]]
 - Clinical Reasoning：[[Q-Imm-12-OPSI-Splenectomy]] · [[Q-Imm-13-HIV-CD4-Depletion]] · [[Q-Imm-14-MALT-sIgA]] · [[Q-Imm-15-Immune-Disease-Match]]
 
+### 人体寄生虫学（Para）— 13 道
+
+#### 蛔虫与鞭虫（2026-09-21 `/review` 生成）
+
+讲义原始思考题（slide 44，5）：
+
+- [[Q-Para-01-Nematode-Morphology-Features]]（Recall） — 线虫纲的主要形态特征
+- [[Q-Para-02-Ascaris-vs-Trichuris-Life-Cycle]]（Differential） — 蛔虫与鞭虫生活史的异同
+- [[Q-Para-03-Ascaris-Pathogenesis-Complications]]（Recall） — 蛔虫致病机理与并发症
+- [[Q-Para-04-Stool-Diagnosis-Ascaris-Trichuris]]（Interpretation） — 两种虫病的实验室诊断
+- [[Q-Para-05-Ascaris-Endemic-Factors-Prevention]]（Management） — 蛔虫病的流行因素与防治
+
+概念扩展题（8）：
+
+- Recall：[[Q-Para-08-Ascaris-Migration-Route]]
+- Interpretation：[[Q-Para-06-Fertile-vs-Unfertile-Egg]] · [[Q-Para-07-Trichuris-Egg-Small-Easy-to-Miss]]
+- Differential：[[Q-Para-10-Biliary-Ascariasis-Typical-Pain]] · [[Q-Para-12-Loeffler-Syndrome-Identification]]
+- Clinical Reasoning：[[Q-Para-09-Biliary-Ascariasis-Atypical-Case]] · [[Q-Para-11-Rectal-Prolapse-Trichuriasis]]
+- Management：[[Q-Para-13-Prevention-and-Deworming-Timing]]
+
 ## 命名规范
 
 `Q-<课程代码>-<序号>-<主题>.md`
 
-- `<课程代码>`：Imm（免疫学）、CircS2（循环 §2）、Ur（泌尿）、GI（消化）等
+- `<课程代码>`：Imm（免疫学）、**Para（人体寄生虫学）**、CircS2（循环 §2）、Ur（泌尿）、GI（消化）等
 - `<序号>`：两位数（01–99）
 - `<主题>`：英文短语，简要描述题目考查点
 

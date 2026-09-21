@@ -12,7 +12,7 @@ tags:
 
 ## 节点清单
 
-已建 **16 个节点**（第一章 4 + 第三章 抗原 12）。
+已建 **31 个节点**（第一章 4 + 第三章 抗原 12 + 第四章 抗体 15）。
 
 ### 第一章 · 免疫学概述（`S-LEC-004`）
 
@@ -36,16 +36,44 @@ tags:
 - [[Adjuvant]] — 佐剂
 - [[Mitogen]] — 促有丝分裂原
 
+### 第四章 · 抗体（免疫球蛋白）（`S-LEC-016`）
+
+**第一节 Ig 的结构**
+
+- [[Antibody]] — 抗体（type: physiology）—— Ig vs Ab 定义、Y 形异源四聚体、重链 5 类 / 轻链 2 型、结构域、亚类与亚型
+- [[Variable Region and Constant Region]] — 可变区与恒定区 —— CDR/HVR、骨架区、CH/CL、铰链区
+- [[Immunoglobulin Antigenicity]] — 免疫球蛋白的免疫原性 —— 同种型 / 同种异型 / 独特型
+- [[J Chain and Secretory Piece]] — J 链与分泌片
+- [[Ig Enzymatic Fragments]] — 酶解片段 —— 木瓜蛋白酶（Fab + Fc）· 胃蛋白酶（F(ab')₂ + pFc'）
+- [[Immunoglobulin Superfamily]] — 免疫球蛋白超家族（IgSF）
+
+**第二节 Ig 的生物学活性**
+
+- [[Antibody Functions]] — 抗体的生物学功能 —— V 区（BCR / 中和）· C 区（激活补体 CDC / 结合 Fc 受体：调理、ADCC、Ⅰ型超敏 / 穿过胎盘和黏膜）
+
+**第三节 不同类别 Ig 的生理及病理意义**
+
+- [[IgM]] — 五聚体、分子量最大、最早合成、初次应答最早、宫内感染、未成熟 B 细胞标志
+- [[IgG]] — 含量最高、再次应答主力、唯一穿过胎盘、半衰期 20～23 天
+- [[IgA]] — 血清型单体 / SIgA 二聚体、黏膜局部免疫、母乳传递
+- [[IgD]] — mIgD = B 细胞成熟标志、铰链区长、半寿期 3 天
+- [[IgE]] — 含量最少、亲细胞抗体、结合 FcεRⅠ → Ⅰ型超敏反应
+
+**第四节 人工制备抗体**
+
+- [[Polyclonal Antibody]] — 多克隆抗体
+- [[Monoclonal Antibody]] — 单克隆抗体（杂交瘤技术）
+- [[Engineering Antibody]] — 基因工程抗体（第三代抗体、人源化）
+
 ## 待建节点（Knowledge Gaps）
 
-> **未摄入章节**：本学科已 /ingest 第一章（`S-LEC-004`）与第三章（`S-LEC-010`），**第二章（免疫器官与免疫细胞）尚未摄入** ——
-> 课程层 Lecture 编号因此为 01、03，无 02。
+> **未摄入章节**：本学科已 /ingest 第一章（`S-LEC-004`）、第三章（`S-LEC-010`）与第四章（`S-LEC-016`），
+> **第二章（免疫器官与免疫细胞）尚未摄入** —— 课程层 Lecture 编号因此为 01、03、04，**无 02**。
 
 见各节点"Related Concepts"列表中的"待建"标注：
 
 ### 细胞与分子
 
-- Antibody / Immunoglobulin（抗体 / 免疫球蛋白）
 - Complement（补体）
 - Cytokine（细胞因子）
 - Cell Adhesion Molecule（细胞黏附分子）

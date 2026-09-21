@@ -44,6 +44,7 @@ last_reviewed: 2026-09-09
 
 - [[Antigen]]
 - [[Epitope]]
+- [[Polyclonal Antibody]]
 
 ## Sources
 

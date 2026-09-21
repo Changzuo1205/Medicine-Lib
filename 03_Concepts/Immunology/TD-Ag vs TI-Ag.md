@@ -57,6 +57,13 @@ last_reviewed: 2026-09-09
   - **胞外菌**（含荚膜多糖）→ 主要诱导 TI-Ag 应答（IgM 为主）
   - **病毒感染** → 主要诱导 TD-Ag 应答（IgG、CTL）
 
+## Related Concepts
+
+- [[03 抗原]]
+- [[Antigen]]
+- [[T Cell Epitope vs B Cell Epitope]]
+- [[Antigen Classification by Origin]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p29-30

@@ -43,6 +43,14 @@ last_reviewed: 2026-09-09
 - **受体**：T 细胞表面 **TCR**；B 细胞表面 **BCR**
 - **效应产物**：活化 T 细胞（细胞免疫）/ 抗体（体液免疫）
 
+## Related Concepts
+
+- [[03 抗原]]
+- [[Antibody]]
+- [[Epitope]]
+- [[Complete Antigen vs Hapten]]
+- [[TD-Ag vs TI-Ag]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p2

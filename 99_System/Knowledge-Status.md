@@ -12,8 +12,8 @@ tags:
 
 ## 摘要（2026-09-14 /ingest 病理学第二章后更新）
 
-- **V2 结构**：`Physiology/` 与 `Pathophysiology/` 已退役（存档 38 个概念节点 + 2 份原 README），活跃概念节点 147
-- **活跃概念节点**：147 = 学科节点 146（16 Immunology · **24 Medical Microbiology** · 17 Clinical Epidemiology · **20 Human Parasitology** · **69 Pathology**）+ 跨学科目录 1（Diseases）
+- **V2 结构**：`Physiology/` 与 `Pathophysiology/` 已退役（存档 38 个概念节点 + 2 份原 README），活跃概念节点 162
+- **活跃概念节点**：162 = 学科节点 161（**31 Immunology** · **24 Medical Microbiology** · 17 Clinical Epidemiology · **20 Human Parasitology** · **69 Pathology**）+ 跨学科目录 1（Diseases）
 - **已注册学科**：5（`[[03_Concepts/Immunology|Immunology]]` · `[[03_Concepts/Medical Microbiology|Medical Microbiology]]` · `[[03_Concepts/Human Parasitology|Human Parasitology]]` · `[[03_Concepts/Clinical Epidemiology|Clinical Epidemiology]]` · `[[03_Concepts/Pathology|Pathology]]`）
 - **已摄入讲座**：12 份（含免疫学 2 讲：免疫学概述、抗原；病理学 2 讲：第一/二章）
 - **已注册来源**：12 个讲座 ID（S-LEC-001 ~ 012，见 [[Source-Registry]]）；最近新增 S-LEC-012 = Pathology Chapter 2（损伤的修复）

@@ -44,6 +44,13 @@ last_reviewed: 2026-09-09
 - **抗体识别**：天然抗体主要识别 **B 细胞表位**（构象表位为主）
 - **T 细胞识别**：天然 T 细胞只识别 **MHC 提呈的 T 细胞表位**（线性表位）
 
+## Related Concepts
+
+- [[03 抗原]]
+- [[Epitope]]
+- [[Complete Antigen vs Hapten]]
+- [[TD-Ag vs TI-Ag]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p15-16

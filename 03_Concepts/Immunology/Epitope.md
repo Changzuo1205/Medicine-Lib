@@ -45,6 +45,13 @@ last_reviewed: 2026-09-09
 
 详见 [[T Cell Epitope vs B Cell Epitope]]。
 
+## Related Concepts
+
+- [[03 抗原]]
+- [[T Cell Epitope vs B Cell Epitope]]
+- [[Variable Region and Constant Region]]
+- [[Antigen]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p13-16

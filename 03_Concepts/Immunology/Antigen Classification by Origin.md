@@ -45,6 +45,13 @@ last_reviewed: 2026-09-09
 | 自身抗原 | **自身免疫病**（如系统性红斑狼疮、桥本甲状腺炎、1 型糖尿病）|
 | 独特型抗原 | **免疫调节网络**（Jerne 1974 网络理论）；自身抗体形成机制 |
 
+## Related Concepts
+
+- [[03 抗原]]
+- [[Antigen]]
+- [[Endogenous vs Exogenous Antigen]]
+- [[TD-Ag vs TI-Ag]]
+
 ## Sources
 
 - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf]] — p31-33

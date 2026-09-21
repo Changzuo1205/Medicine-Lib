@@ -9,6 +9,61 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-21 — /ingest 医学免疫学 第四章 抗体（免疫球蛋白）
+
+> 用户要求：「/ingest 免疫学 抗体」。
+
+### 来源
+
+`02_Raw/Lectures/Medical Immunology/第四章 抗体.pdf`（46 页 PPT，杨艳艳，基础医学院免疫学系，2026 秋）→ 登记为 **S-LEC-016**。
+课程层 Lecture 编号沿用「章号 = 编号」口径，故本讲为 **`04 抗体`**（第二章仍未摄入，编号无 02）。
+
+### Created：15 个概念节点（医学免疫学 16 → 31；全库 147 → 162）
+
+| 节 | 节点 | type | 来源页 |
+|----|------|------|--------|
+| 第一节 Ig 的结构 | `Antibody` · `Variable Region and Constant Region` · `Ig Enzymatic Fragments` | physiology | p4、p6–p16、p23 |
+| | `Immunoglobulin Antigenicity` · `J Chain and Secretory Piece` · `Immunoglobulin Superfamily` | physiology | p17–p22、p25 |
+| 第二节 Ig 的生物学活性 | `Antibody Functions` | physiology | p27–p31 |
+| 第三节 各类 Ig | `IgM` · `IgG` · `IgA` · `IgD` · `IgE` | physiology | p33–p38 |
+| 第四节 人工制备抗体 | `Polyclonal Antibody` · `Monoclonal Antibody` · `Engineering Antibody` | physiology | p40–p44 |
+
+### Updated
+
+- **新建 `08_Courses/Medical Immunology/Lectures/04 抗体.md`**：含 Lecture Overview / 章节目标 / 章节结构 / 四节正文 / Class Notes / Related Medical Knowledge（15 节点 + 跨章）/ Related Questions；正文 `详见 [[Node]]。` 13 处
+- **`08_Courses/Medical Immunology/Course.md`**：Lectures 清单追加第 4 讲；`Related Medical Knowledge` 由 16 扩为 **31 节点**；`Knowledge Gaps` 的已摄入章节补第四章；**`Source` 段补上此前遗漏的第三章 PPT 与 `S-LEC-010`**
+- **`03_Concepts/Immunology/README.md`**：节点清单 `16` → **`31`**，新增「第四章 · 抗体」分组（按四节分列）；「待建节点」中删除已建的 `Antibody / Immunoglobulin`；「未摄入章节」说明补第四章
+- **`99_System/Source-Registry.md`**：新增 `S-LEC-016`
+- **计数回写**：`AGENTS.md` §4（16 → 31）、`00_Dashboard/Home.md`（147 → **162 节点**；免疫学 16 → 31）、`99_System/Knowledge-Status.md`（147 → 162）
+
+### 本讲特点：章节目标是**来源直接给出**的
+
+讲义 p2「重点难点」**明确标注了三层掌握程度** —— 掌握：抗体的结构及功能；熟悉：抗体的多样性、免疫原性及决定因素；了解：人工制备抗体的方法。
+因此本 Lecture 的 `## 章节目标` **直接引用讲义 p2**，**不套用**其他章节使用的 `> [!info] Clinical Reasoning`（inference）标注 —— 这是本库首次遇到自带掌握层级的课件。
+
+### 结构与取舍（不发明医学事实）
+
+- **节点粒度对照讲义四节目录**：五类 Ig 各建独立节点（含量 / 结构 / 膜型与分泌型 / 临床意义各自独立）；而 `CDC`、`ADCC`、`调理作用` **不单建节点** —— 讲义对它们只有名称级描述（p28 一行 + p29 效应细胞标注「NK \ Mφ」），按 SOP §2.3 收在 `Antibody Functions` 内，待后续讲次展开时再独立
+- **`Ig ⊃ Ab` 关系已标注为推导**：讲义 p4 给出两个定义但未显式写出包含关系，Lecture 与 `Antibody` 节点均以引用块呈现并注明「由两个定义推出、非讲义原句」
+- **讲义自相矛盾/未说明处一律标注，不代为判断**：① IgE「CH2 和 CH3 结构域」结合 FcεRⅠ，而 p14 说 ε 链含 CH1～CH4 → 标 warning；② CH「9 种」的具体构成讲义未列；③ 高变区三区段（27～31、49～53、94～98）用哪套编号体系讲义未注明；④ p43 的 HGPRT 缺陷型在选择培养基中的作用机制未说明；⑤ p44「为什么人源化？」以设问提出但**未作答** → 只提示可结合「同种型抗原」跨节点思考，并标注该关联非讲义陈述
+- **ADCC 效应细胞的表述差异已标注**：讲义 p29 把效应细胞标为 NK 与 Mφ，未区分二者角色 —— 本库不代为补充
+
+### 验证（Ingest-SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 链接可解析（与 HEAD 逐文件对比） | **新增未解析链接 0** |
+| 5.1.7 课程层同步 | 新建 Lecture 04；Course.md 已回写（并补上遗漏的第三章来源）；README 索引 = 31 |
+| 5.1.8 计数与索引 | 学科概念节点 31（第一章 4 + 第三章 12 + 第四章 15） |
+| 5.1.9 陈旧「（待建）」 | 0 |
+| 5.1.12 链接写法 | Lecture 标题内 wikilink 0；`详见 [[Node]]。` 13 处；15 个新节点全部裸基名、无 `../` |
+| 章节目标来源 | 引自讲义 p2 重点难点，**未**使用 inference 标注 |
+| 编码与 EOL | 所有改动文件 EOL 各自一致、无 CRLF 双写、均有尾换行 |
+
+> **顺带修复 1**：`08_Courses/Medical Immunology/Course.md` 的 `## Source` 段此前**只有第一章 PPT 与 S-LEC-004**，第三章的 PPT 与 `S-LEC-010` 从未登记（Course.md 自身 `Knowledge Gaps` 却写着「已摄入第三章」）—— 已补齐。
+> **顺带修复 2**：第三章有 **5 个节点缺失 `## Related Concepts` 整节**（`Antigen` · `Epitope` · `Antigen Classification by Origin` · `T Cell Epitope vs B Cell Epitope` · `TD-Ag vs TI-Ag`）—— 该节为 `99_System/Templates/07_Pathophysiology.md` 的必备小节，且 §3.5.5 要求的「概念节点 → 所属章节 Lecture」回链正写在其中。已为 5 个节点补建该节（首行 `[[03 抗原]]`，只加链接、未增删任何医学内容）。
+> **遗留警告**：免疫学 31 个节点之间单向链接 **45 条**（§5.2 建议项）。本次已把有实义的补齐（五类 Ig **两两全互链**、`Antigen ← Antibody`、`Epitope ← Variable Region and Constant Region`、`Cross-Reaction ← Polyclonal Antibody`）；其余绝大多数是「具体节点 → 泛化枢纽节点」方向（`X → Antibody` 13 条、`X → Antigen` 约 15 条），属枢纽式单向，反向补齐等于让枢纽节点罗列全部子节点 —— 那是 README 节点索引的职责，按 AGENTS.md §10 保留并报告。
+
 ## 2026-09-18 — /ingest 病理学 第三章 局部血液循环障碍
 
 > 用户要求：「/ingest 病理学 血障」。

@@ -28,6 +28,7 @@ textbook:
 
 - [[Lectures/01 绪论|01 绪论]]
 - [[Lectures/02 细菌的形态与结构|02 细菌的形态与结构]]
+- [[Lectures/03 细菌的生理|03 细菌的生理]]
 
 ## Exam Topics
 
@@ -84,5 +85,6 @@ _（暂无）_
   - [[02_Raw/Lectures/Medical Microbiology/1 绪论.pdf|《绪论》（赵巍，2026 秋）]]
   - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 1.pdf|《第1章 细菌的形态与结构 1》（赵巍，2026 秋）]]
   - [[02_Raw/Lectures/Medical Microbiology/1 2 第1章 细菌的形态与结构 2.pdf|《第1章 细菌的形态与结构 2》（赵巍，2026 秋）]]
+  - [[02_Raw/Lectures/Medical Microbiology/3 第2章 细菌的生理 .pdf|《第2章 细菌的生理》（赵巍，2026 秋）]]
 - 来源登记：[[Source-Registry#S-LEC-005]]（绪论）· [[Source-Registry#S-LEC-006]]（细菌形态与结构 1）· [[Source-Registry#S-LEC-013]]（细菌形态与结构 2）
 - 关联课程：[[../Human Parasitology/Course|人体寄生虫学 Course]]

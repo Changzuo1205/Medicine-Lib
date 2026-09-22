@@ -9,6 +9,58 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-22 — /ingest 医学微生物学 第 2 章 细菌的生理
+
+> 用户要求：「/ingest 微生物学 细菌的生理」。
+
+### 来源
+
+`02_Raw/Lectures/Medical Microbiology/3 第2章 细菌的生理 .pdf`（51 页 PPT，赵巍，病原生物学系，2026 秋）→ 登记为 **S-LEC-017**。
+课程层编号沿用「讲次序号」口径（01 绪论 · 02 细菌的形态与结构），故本讲为 **`03 细菌的生理`**，frontmatter `chapter: 3`。
+
+### Created：16 个概念节点（医学微生物学 24 → 40；全库 162 → 178）
+
+| 组 | 节点 | 来源页 |
+|----|------|--------|
+| 理化性状与营养（4） | `Bacterial Physicochemical Properties` · `Bacterial Nutritional Requirements` · `Bacterial Nutrient Uptake` · `Bacterial Nutritional Types` | p3、p5–p6、p8–p10 |
+| 生长条件与规律（4） | `Factors Affecting Bacterial Growth` · `Bacterial Oxygen Requirements` · `Bacterial Growth and Reproduction` · `Bacterial Growth Curve` | p11–p14、p16–p19 |
+| 代谢（3） | `Bacterial Energy Metabolism` · `Bacterial Biochemical Reactions` · `Bacterial Anabolic Products` | p20–p35 |
+| 人工培养与分类（5） | `Bacterial Culture Methods` · `Culture Medium` · `Bacterial Growth in Culture` · `Colony` · `Bacterial Taxonomy and Nomenclature` | p37–p50 |
+
+### Updated
+
+- **新建 `08_Courses/Medical Microbiology/Lectures/03 细菌的生理.md`**：含 Lecture Overview / 章节目标 / 章节结构 / 五节正文 / Class Notes / Related Medical Knowledge（16 节点 + 跨章）/ Related Questions；正文 `详见 [[Node]]。` 18 处
+- **`08_Courses/Medical Microbiology/Course.md`**：Lectures 清单追加第 3 讲；`Source` 段补第 2 章 PPT
+- **`03_Concepts/Medical Microbiology/README.md`**：`已建节点（24）` → **`（40）`**，新增「细菌学 · 生理（第 2 章）」16 行逐节点索引
+- **`99_System/Source-Registry.md`**：新增 `S-LEC-017`
+- **计数回写**：`AGENTS.md` §4（24 → 40）、`00_Dashboard/Home.md`（162 → **178 节点**；医学微生物学 24 → 40）、`99_System/Knowledge-Status.md`（162 → 178）
+
+### 本讲特点：章节目标是**来源直接给出**的（第二次）
+
+讲义 p2 有**五条学习目标**（描述/阐述/复述/列举/描述），p51 另有「**本章重点与难点**」明确列出**掌握 / 熟悉 / 了解**三层。
+因此本 Lecture 的 `## 章节目标` **直接引用讲义 p2 与 p51 原文**，**不套用** `> [!info] Clinical Reasoning`（inference）标注 —— 与 `04 抗体` 同属自带掌握层级的课件。
+
+### 结构与取舍（不发明医学事实）
+
+- **节点粒度对照讲义实况**：`Colony`（菌落）**独立成节点** —— 因为 p51 明确把「掌握细菌菌落概念及意义」列为**掌握**；而 `Uses of Bacterial Culture`（人工培养的用途，p47）**不单建**，收在 `Bacterial Culture Methods` 内（讲义仅 4 行）
+- **`Factors` 与 `Oxygen Requirements` 分工**：p12 的「气体」既是 5 因素之一、又是学习目标第 3 条的独立主题 → 拆成两个节点，`Factors` 只留一句概述 + 链接，避免重复
+- **讲义矛盾/未说明处一律标注，不代为判断**：① p5 成分比例只给「水 75%~90%、10%~25%」两档，未说明后者范围与各成分比例；② p6 未给细菌等电点测定方法与 G⁺ 更低的原理；③ p22 未说明厌氧呼吸与发酵的关系、未给戊糖磷酸途径产能数值；④ p24 糖发酵原理图只标两个「酶」字未给酶名；⑤ p28 编号从 3 直接跳到 **5**（缺 4）；⑥ p34 的合成代谢产物编号未从 1 起（p33 已用 1）；⑦ p48/p50 未标出「界」与「域」是否同一层级
+- **讲义未展开的内容不补**：内毒素—外毒素系统对比表、外毒素分类、各类培养基配方、MALDI-TOF 与分子分型、细菌代谢的酶合成调节 —— 各节点以 `> [!warning]` 列出缺口
+- **`type` 字段的取舍**：本讲 16 个节点一律用 **`physiology`**（讲义主题即「生理」，描述正常细菌生理，符合 AGENTS.md §5 的类型语义）。这与本学科第 1 章 24 个节点此前统一标 `pathophysiology` **不一致** —— 属既有的类型标注松散问题，已在报告中提出但**未擅自批量重标**（SOP §27）
+- 讲义 p4、p15、p18、p24、p44、p50 等为**纯图片或示意图页**，只保留可读要点
+
+### 验证（Ingest-SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 链接可解析（与 HEAD 逐文件对比） | **新增未解析链接 0** |
+| 5.1.7 课程层同步 | 新建 Lecture 03；Course.md 已回写；README 索引 = 40；Lecture 引用 S-LEC-017 |
+| 5.1.8 计数与索引 | 学科概念节点 40 = README 索引 40（学科基础 4 + 第 1 章 20 + 第 2 章 16） |
+| 5.1.9 陈旧「（待建）」 | 0 |
+| 5.1.12 链接写法 | Lecture 标题内 wikilink 0；`详见 [[Node]]。` 18 处；16 个新节点全部裸基名、无 `../` |
+| 章节目标来源 | 引自讲义 p2 学习目标 + p51 本章重点与难点，**未**使用 inference 标注 |
+| 编码与 EOL | 所有改动文件 EOL 各自一致、无 CRLF 双写、均有尾换行 |
+
 ## 2026-09-21 — /review 寄生虫 蛔虫与鞭虫（首次复习会话）
 
 > 用户要求：「/review 寄生虫 蛔虫与鞭虫」。

@@ -65,7 +65,7 @@ tags:
 
 ---
 
-## 已建节点（24）
+## 已建节点（40）
 
 ### 学科基础（4）
 
@@ -112,6 +112,36 @@ tags:
 - [[Acid-Fast Stain]] — 抗酸细菌（分枝杆菌属）；苯酚复红加热 → 3% 盐酸乙醇 → 亚甲蓝；阳性红色
 
 ---
+
+### 细菌学 · 生理（第 2 章）（16）
+
+**理化性状与营养（4）**
+
+- [[Bacterial Physicochemical Properties]] — 细菌的理化性状 —— 化学组成（水 75%~90% + 原核特有成分）· 物理性状（比浊法、pI、渗透压）
+- [[Bacterial Nutritional Requirements]] — 细菌的营养物质 —— 水 / 碳源 / 氮源 / 无机盐 / 生长因子
+- [[Bacterial Nutrient Uptake]] — 摄取机制 —— 被动扩散（简单·易化）vs 主动转运（ABC / 离子偶联 / 基团转移 / 载铁体）
+- [[Bacterial Nutritional Types]] — 营养类型 —— 自养菌 vs 异养菌；**所有病原菌都是异养菌**
+
+**影响生长的因素与生长规律（4）**
+
+- [[Factors Affecting Bacterial Growth]] — 营养 / pH / 温度 / 气体 / 渗透压
+- [[Bacterial Oxygen Requirements]] — 对氧需求的分类 —— 专性需氧 · 微需氧 · 兼性厌氧 · 专性厌氧
+- [[Bacterial Growth and Reproduction]] — 二分裂无性繁殖；代时 20～30 分钟（结核分枝杆菌 18～20 小时）
+- [[Bacterial Growth Curve]] — 生长曲线四期 —— 迟缓期 / 对数期 / 稳定期 / 衰亡期及意义
+
+**代谢（3）**
+
+- [[Bacterial Energy Metabolism]] — 能量代谢 —— EMP 途径 / 戊糖磷酸途径 / 需氧呼吸（30-32 ATP）/ 厌氧呼吸（2 ATP）
+- [[Bacterial Biochemical Reactions]] — 生化反应 —— 糖发酵 · VP · 甲基红 · 吲哚 · 枸橼酸盐 · **IMViC**
+- [[Bacterial Anabolic Products]] — 合成代谢产物及医学意义 —— **热原质** · 内毒素 / 外毒素 / 侵袭性酶 · 抗生素 · 细菌素 · 维生素
+
+**人工培养与分类（5）**
+
+- [[Bacterial Culture Methods]] — 分离培养 / 纯培养 / 发酵培养 + 人工培养的用途
+- [[Culture Medium]] — 培养基 —— 定义 + 5 类（基础 / 增菌营养 / 选择 / 鉴别 / 厌氧）+ 3 种物理状态
+- [[Bacterial Growth in Culture]] — 生长现象 —— 液体（混浊·沉淀·菌膜）· 半固体（鞭毛判定）
+- [[Colony]] — 菌落 —— 特征 8 项 · cfu 计数 · 纯培养的操作单位
+- [[Bacterial Taxonomy and Nomenclature]] — 分类与命名 —— 分类层级与单位 · 拉丁文双名法 · 大肠埃希菌分类学位置
 
 ## 待建节点（Knowledge Gaps）
 

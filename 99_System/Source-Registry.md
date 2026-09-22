@@ -57,6 +57,7 @@ _（暂无）_
 | S-LEC-014 | Human Parasitology Chapter 1 — 线虫（第一节 概论 / 第二节 似蚓蛔线虫 / 第三节 毛首鞭形线虫）Clinical Lecture 2: Ascaris & Trichuris  | 病原生物学教研室（课件未标注讲者） | 2022 课件 / 2026 秋授课 | needs_review |
 | S-LEC-015 | Pathology Chapter 3 — 局部血液循环障碍（充血和淤血 / 出血 / 血栓形成 / 栓塞 / 梗死） | 优课联盟 UOOC（2026 秋） | 2026 秋 | needs_review |
 | S-LEC-016 | Medical Immunology Chapter 4 — 抗体（免疫球蛋白：结构 / 生物学活性 / 各类 Ig / 人工制备抗体） | 杨艳艳 | 2026 秋 | needs_review |
+| S-LEC-017 | Medical Microbiology Chapter 2 — 细菌的生理（理化性状 / 营养与生长繁殖 / 代谢 / 人工培养 / 分类与命名） | 赵巍 | 2026 秋 | needs_review |
 
 ## Other Sources — 其他
 

@@ -183,7 +183,7 @@ AI 不应随意修改原始资料。
 ```text
 # 已注册学科（Disciplines）— 节点数为概念节点，不含 README；章节导航在 08_Courses 的 Lecture 内
 Immunology/             ← V2 注册学科 1（免疫学，31 节点；2026-09-21 /ingest 第四章 抗体）
-Medical Microbiology/   ← V2 注册学科 2（医学微生物学，24 节点；从病原与感染性疾病 Ⅰ 拆分；2026-09-15 /ingest 第 1 章第一、二部分）
+Medical Microbiology/   ← V2 注册学科 2（医学微生物学，40 节点；从病原与感染性疾病 Ⅰ 拆分；2026-09-15 /ingest 第 1 章，2026-09-22 /ingest 第 2 章）
 Human Parasitology/     ← V2 注册学科 3（人体寄生虫学，20 节点；从病原与感染性疾病 Ⅰ 拆分；2026-09-15 /ingest 线虫第一章）
 Clinical Epidemiology/  ← V2 注册学科 4（临床流行病学，17 节点）
 Pathology/              ← V2 注册学科 5（病理学，69 节点；2026-09-11 注册，2026-09-14 /ingest 第一、二章，2026-09-18 /ingest 第三章）

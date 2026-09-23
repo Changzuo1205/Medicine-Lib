@@ -12,7 +12,7 @@ tags:
 
 ## 节点清单
 
-已建 **31 个节点**（第一章 4 + 第三章 抗原 12 + 第四章 抗体 15）。
+已建 **46 个节点**（第一章 4 + 第三章 抗原 12 + 第四章 抗体 15 + 第五章 补体 15）。
 
 ### 第一章 · 免疫学概述（`S-LEC-004`）
 
@@ -65,16 +65,47 @@ tags:
 - [[Monoclonal Antibody]] — 单克隆抗体（杂交瘤技术）
 - [[Engineering Antibody]] — 基因工程抗体（第三代抗体、人源化）
 
+### 第五章 · 补体系统（`S-LEC-018`）
+
+**概述（2）**
+
+- [[Complement System]] — 补体系统（type: physiology）—— Ehrlich 命名由来、定义（30 余种）、理化性质（56℃ 30 min 灭活）、代谢
+- [[Complement Components]] — 组成与命名 —— 命名 5 条规则 + 固有成分 / 调节蛋白 / 补体受体三大类
+
+**激活（5）**
+
+- [[Complement Activation]] — 三条途径总论与比较（C3/C5 转化酶组合是核心考点）
+- [[Classical Pathway]] — 经典途径 —— IC 激活、C1→C1r→C1s→C4→C2→C3、**C4b2a / C4b2a3b**
+- [[Alternative Pathway]] — 旁路途径 —— 不依赖抗体、从 C3 开始、**C3bBb / C3bBb3b**、P 因子稳定、正反馈放大
+- [[Lectin Pathway]] — 凝集素途径 —— MBL/FCN 识别糖结构、MASP2 裂解 C4/C2、MASP1 可激活旁路
+- [[Membrane Attack Complex]] — 攻膜复合物（MAC）—— C5b6789n、渗漏斑
+
+**调节（1）**
+
+- [[Complement Regulation]] — 补体激活的调节 —— 经典前端（C1INH / C4bp / I 因子 / MCP / CR1 / DAF）· 旁路前端（含 P 因子稳定）· MAC（CD59 / S 蛋白 / 簇集素）
+
+**生物学意义（5）**
+
+- [[Complement-Dependent Cytotoxicity]] — 补体依赖的细胞毒作用（CDC）
+- [[Opsonization]] — 调理作用（C3b / C4b / iC3b）
+- [[Anaphylatoxin and Chemotaxis]] — 过敏毒素与趋化作用（C5a / C3a / C4a）
+- [[Immune Adherence]] — 免疫黏附（C3b + CR1 → 肝脾清除 IC）
+- [[Complement Pathophysiological Significance]] — 病理生理学意义 —— 抗感染桥梁 / 参与适应性免疫 / 与其他级联系统相互作用 / 与炎症性疾病
+
+**与疾病（2）**
+
+- [[Complement Deficiency]] — 遗传性补体缺陷（type: pathophysiology）—— C1INH → HAE · DAF → PNH
+- [[Complement and Infection]] — 补体与感染性疾病（type: pathophysiology）—— 病原体借补体受体入侵（EBV→CR2 / 麻疹→MCP / 柯萨奇·大肠埃希菌→DAF）
+
 ## 待建节点（Knowledge Gaps）
 
-> **未摄入章节**：本学科已 /ingest 第一章（`S-LEC-004`）、第三章（`S-LEC-010`）与第四章（`S-LEC-016`），
+> **未摄入章节**：本学科已 /ingest 第一章（`S-LEC-004`）、第三章（`S-LEC-010`）、第四章（`S-LEC-016`）与第五章（`S-LEC-018`），
 > **第二章（免疫器官与免疫细胞）尚未摄入** —— 课程层 Lecture 编号因此为 01、03、04，**无 02**。
 
 见各节点"Related Concepts"列表中的"待建"标注：
 
 ### 细胞与分子
 
-- Complement（补体）
 - Cytokine（细胞因子）
 - Cell Adhesion Molecule（细胞黏附分子）
 - MHC（Major Histocompatibility Complex）

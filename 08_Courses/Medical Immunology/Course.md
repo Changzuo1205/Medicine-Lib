@@ -36,6 +36,7 @@ Ag（抗原） → T / B 活化 → 效应细胞 / 浆细胞 → Ab / Tm / Bm
 - [[Lectures/01 免疫学概述|01 免疫学概述]]
 - [[Lectures/03 抗原|03 抗原]]
 - [[Lectures/04 抗体|04 抗体]]
+- [[Lectures/05 补体系统|05 补体系统]]
 
 ## Exam Topics
 
@@ -47,7 +48,7 @@ _（暂无；待 review 后补充）_
 
 ## Knowledge Gaps
 
-**已摄入章节**：第一章（`S-LEC-004`）、第三章（`S-LEC-010`）、第四章（`S-LEC-016`）。
+**已摄入章节**：第一章（`S-LEC-004`）、第三章（`S-LEC-010`）、第四章（`S-LEC-016`）、第五章（`S-LEC-018`）。
 **⚠️ 缺第二章**：因此本课程 Lecture 编号为 `01`、`03`（**无 02**）—— 该章尚未 `/ingest`，
 **不是文件丢失**。补做第二章后请新增 `Lectures/02 <章节名>.md` 并回写本节。
 
@@ -79,11 +80,12 @@ _（暂无；待 review 后补充）_
 
 ## Related Medical Knowledge
 
-学科目录已含 **31 个概念节点**（第一章 4 + 第三章 抗原 12 + 第四章 抗体 15）。
+学科目录已含 **46 个概念节点**（第一章 4 + 第三章 抗原 12 + 第四章 抗体 15 + 第五章 补体 15）。
 
 - 第一章：[[Immune System]] · [[Innate Immunity]] · [[Adaptive Immunity]] · [[Immune Dysregulation]]
 - 第三章：[[Antigen]] · [[Complete Antigen vs Hapten]] · [[Epitope]] · [[T Cell Epitope vs B Cell Epitope]] · [[Cross-Reaction]] · [[Immunogenicity Factors]] · [[TD-Ag vs TI-Ag]] · [[Antigen Classification by Origin]] · [[Endogenous vs Exogenous Antigen]] · [[Superantigen]] · [[Adjuvant]] · [[Mitogen]]
 - 第四章：[[Antibody]] · [[Variable Region and Constant Region]] · [[Immunoglobulin Antigenicity]] · [[J Chain and Secretory Piece]] · [[Ig Enzymatic Fragments]] · [[Immunoglobulin Superfamily]] · [[Antibody Functions]] · [[IgM]] · [[IgG]] · [[IgA]] · [[IgD]] · [[IgE]] · [[Polyclonal Antibody]] · [[Monoclonal Antibody]] · [[Engineering Antibody]]
+- 第五章：[[Complement System]] · [[Complement Components]] · [[Complement Activation]] · [[Classical Pathway]] · [[Alternative Pathway]] · [[Lectin Pathway]] · [[Membrane Attack Complex]] · [[Complement Regulation]] · [[Complement-Dependent Cytotoxicity]] · [[Opsonization]] · [[Anaphylatoxin and Chemotaxis]] · [[Immune Adherence]] · [[Complement Pathophysiological Significance]] · [[Complement Deficiency]] · [[Complement and Infection]]
 
 ## Source
 
@@ -91,4 +93,5 @@ _（暂无；待 review 后补充）_
   - [[02_Raw/Lectures/Medical Immunology/第一章 免疫学概述.pdf|《第一章 免疫学概述》（杨艳艳）]]
   - [[02_Raw/Lectures/Medical Immunology/第三章 抗原.pdf|《第三章 抗原》（杨艳艳）]]
   - [[02_Raw/Lectures/Medical Immunology/第四章 抗体.pdf|《第四章 抗体（免疫球蛋白）》（杨艳艳）]]
-- 来源登记：[[Source-Registry#S-LEC-004]]（第一章）· [[Source-Registry#S-LEC-010]]（第三章）· [[Source-Registry#S-LEC-016]]（第四章）
+  - [[02_Raw/Lectures/Medical Immunology/第五章 补体系统.pdf|《第五章 补体系统》（杨艳艳）]]
+- 来源登记：[[Source-Registry#S-LEC-004]]（第一章）· [[Source-Registry#S-LEC-010]]（第三章）· [[Source-Registry#S-LEC-016]]（第四章）· [[Source-Registry#S-LEC-018]]（第五章）

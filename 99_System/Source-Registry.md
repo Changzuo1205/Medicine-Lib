@@ -58,6 +58,7 @@ _（暂无）_
 | S-LEC-015 | Pathology Chapter 3 — 局部血液循环障碍（充血和淤血 / 出血 / 血栓形成 / 栓塞 / 梗死） | 优课联盟 UOOC（2026 秋） | 2026 秋 | needs_review |
 | S-LEC-016 | Medical Immunology Chapter 4 — 抗体（免疫球蛋白：结构 / 生物学活性 / 各类 Ig / 人工制备抗体） | 杨艳艳 | 2026 秋 | needs_review |
 | S-LEC-017 | Medical Microbiology Chapter 2 — 细菌的生理（理化性状 / 营养与生长繁殖 / 代谢 / 人工培养 / 分类与命名） | 赵巍 | 2026 秋 | needs_review |
+| S-LEC-018 | Medical Immunology Chapter 5 — 补体系统（概述 / 三条激活途径 / 激活的调节 / 生物学意义 / 与疾病） | 杨艳艳 | 2026 秋 | needs_review |
 
 ## Other Sources — 其他
 

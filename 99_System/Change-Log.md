@@ -9,6 +9,64 @@ tags:
 
 记录 Medicine-Lib 的重大结构变化。
 
+## 2026-09-23 — /ingest 医学免疫学 第五章 补体系统
+
+> 用户要求：「/ingest 免疫学 补体系统」。
+
+### 来源
+
+`02_Raw/Lectures/Medical Immunology/第五章 补体系统.pdf`（58 页 PPT，杨艳艳，基础医学院免疫学系，2026 秋）→ 登记为 **S-LEC-018**。
+课程层编号沿用「章号 = 编号」口径，本讲为 **`05 补体系统`**（第二章仍未摄入，编号无 02）。
+
+### Created：15 个概念节点（医学免疫学 31 → 46；全库 178 → 193）
+
+| 组 | 节点 | type | 来源页 |
+|----|------|------|--------|
+| 概述（2） | `Complement System` · `Complement Components` | physiology | p4–p10 |
+| 激活（5） | `Complement Activation` · `Classical Pathway` · `Alternative Pathway` · `Lectin Pathway` · `Membrane Attack Complex` | physiology | p13–p33 |
+| 调节（1） | `Complement Regulation` | physiology | p35–p40 |
+| 生物学意义（5） | `Complement-Dependent Cytotoxicity` · `Opsonization` · `Anaphylatoxin and Chemotaxis` · `Immune Adherence` · `Complement Pathophysiological Significance` | physiology | p43–p48、p53 |
+| 与疾病（2） | `Complement Deficiency` · `Complement and Infection` | **pathophysiology** | p50–p51 |
+
+### Updated
+
+- **新建 `08_Courses/Medical Immunology/Lectures/05 补体系统.md`**：含 Lecture Overview / 章节目标 / 章节结构 / 五节正文 / **课堂测试题** / Class Notes / Related Medical Knowledge（15 节点 + 跨章）/ Related Questions；正文 `详见 [[Node]]。` 16 处
+- **`08_Courses/Medical Immunology/Course.md`**：Lectures 清单追加第 5 讲；`Related Medical Knowledge` 由 31 扩为 **46 节点**；`Knowledge Gaps` 已摄入章节补第五章；`Source` 段补第五章 PPT 与 `S-LEC-018`
+- **`03_Concepts/Immunology/README.md`**：节点清单 `31` → **`46`**，新增「第五章 · 补体系统」分组（按概述/激活/调节/生物学意义/与疾病分列）；「待建节点」中删除已建的 `Complement（补体）`；「未摄入章节」说明补第五章
+- **`99_System/Source-Registry.md`**：新增 `S-LEC-018`
+- **计数回写**：`AGENTS.md` §4（31 → 46）、`00_Dashboard/Home.md`（178 → **193 节点**；免疫学 31 → 46）、`99_System/Knowledge-Status.md`（178 → 193）
+
+### 本讲特点：章节目标**来源直接给出**（第三次），且讲义自带 8 道测试题
+
+- 讲义 p3「重点难点」明确标注三层（掌握：三条激活途径及生物学功能；熟悉：组成及调控因素；了解：成分与调控异常和相关疾病），p57 另有「本章要点」三条（三条途径区别 / 生物功能 / **Complement、MAC 概念**）→ `## 章节目标` **直接引用原文**，未用 inference 标注
+- 讲义 p11–p54 嵌入 **8 道自测题** → 按本学科既有做法在 Lecture 内新增 **`## 课堂测试题` 块**（题干 + 选项，正确答案加粗），编号 **Q-Imm-25~32**
+
+### 顺带修复：`03 抗原` Lecture 的一处**不成立的声明**
+
+`08_Courses/Medical Immunology/Lectures/03 抗原.md` 的课堂测试题块标题原为「**已转写为正式 Q 节点**」，但其 9 道题（`Q-Imm-16`~`24`）**从未建为独立文件**（已用 glob 逐号核实：`05_Study/Questions/` 下只有 `Q-Imm-01`~`15`）—— 该声明与事实不符。
+已改为「**讲义原题，记录于本块**」，与同文件 `## Related Questions` 的「已记录于课堂测试题块」口径一致；并**保留 16–24 号为该块占用**，故本讲补体的题目从 **25** 起编号。
+> 待办建议：若希望把这 9 道题并入正式题目体系，应另起 `/quiz` 作业补建 `Q-Imm-16`~`24` 节点（本知识库不在 `/ingest` 中代建）。
+
+### 结构与取舍（不发明医学事实）
+
+- **节点粒度对照讲义实况**：四类生物学功能**各自独立成节点**（CDC / 调理作用 / 过敏毒素与趋化 / 免疫黏附），因为讲义 p43–p46 逐条展开且均为可独立引用的命名概念；而第五节的「**补体与炎症性疾病**」（p53，仅 2 条）**并入** `Complement Pathophysiological Significance`，并在节点内注明该归并**非讲义原结构**
+- **`type` 按语义区分**：13 个正常生理/机制节点用 `physiology`；`Complement Deficiency` 与 `Complement and Infection` 讲缺陷与疾病关联，用 `pathophysiology` —— 与本学科既有的 `Immune Dysregulation`（pathophysiology）口径一致
+- **讲义排版错乱处如实标注、不代为重构**：① p33 三条途径比较表中 **MBL 途径的「参与成分」格缺失**，C5-9/B/D/P 因子归属在文本层重复；② p20 写 MAC 致「**胞内渗透压降低**」→ 溶破（与常见教材表述不同）；③ p40 同时列 `MIRL = CD59 = HRF20` 与「同源限制因子（HRF）」并附注 `CD59 also known as HRF20`，四名是否同义未讲清；④ p17 的抗体活化 C1q 能力序列**未列 IgG4**；⑤ p8 补体受体清单只到 CR1～CR5，未说明 p48 出现的 **CR2 = CD21** —— 全部以 `> [!warning]` 保留原样
+- **讲义未展开的内容不补**：补体受体的分布与功能、补体与凝血/纤溶/激肽交互的分子节点、补体抑制剂的临床应用、HAE/PNH 的临床细节、C3d-CD21 协同刺激的具体信号通路 —— 各节点以 `> [!warning]` 列出缺口
+- 讲义 p48 的**英文图注**（C3 片段 + BCR + CD21 提高亲和力）已译为中文要点并注明出自该页英文图注
+
+### 验证（Ingest-SOP §5）
+
+| 检查项 | 结果 |
+|--------|------|
+| 5.1.1 链接可解析（与 HEAD 逐文件对比） | **新增未解析链接 0** |
+| 5.1.7 课程层同步 | 新建 Lecture 05；Course.md 已回写；README 索引 = 46；Lecture 引用 S-LEC-018 |
+| 5.1.8 计数与索引 | 学科概念节点 46 = README 索引 46（第一章 4 + 第三章 12 + 第四章 15 + 第五章 15） |
+| 5.1.9 陈旧「（待建）」 | 0 |
+| 5.1.12 链接写法 | Lecture 标题内 wikilink 0；`详见 [[Node]]。` 16 处；15 个新节点全部裸基名、无 `../` |
+| 课堂测试题 | Q-Imm-25~32 八题齐备；`03 抗原` 的不成立声明已修正 |
+| 编码与 EOL | 所有改动文件 EOL 各自一致、无 CRLF 双写、均有尾换行 |
+
 ## 2026-09-22 — /ingest 医学微生物学 第 2 章 细菌的生理
 
 > 用户要求：「/ingest 微生物学 细菌的生理」。
